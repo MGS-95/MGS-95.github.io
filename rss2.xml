@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0"
+  xmlns:atom="http://www.w3.org/2005/Atom"
+  xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>エンジニアになりたい者</title>
+    <link>https://MGS-95.github.io/</link>
+    
+    <atom:link href="https://mgs-95.github.io/rss2.xml" rel="self" type="application/rss+xml"/>
+    
+    <description>まだ無能だけど頑張っていきたい者</description>
+    <pubDate>Sat, 02 Oct 2021 16:57:51 GMT</pubDate>
+    <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>markdown</title>
+      <link>https://mgs-95.github.io/2021/10/03/markdown/</link>
+      <guid>https://mgs-95.github.io/2021/10/03/markdown/</guid>
+      <pubDate>Sat, 02 Oct 2021 16:53:54 GMT</pubDate>
+      
+        
+        
+      <description>&lt;hr&gt;
+
+&lt;p&gt;&lt;code&gt;이것부터 말합니다. MarkDonw, Markup언어는 Python, Javascript, Java같은 프로그래밍 언어와는 다른 언어입니다.&lt;/code&gt;&lt;/p&gt;
+</description>
+        
+      
+      
+      
+      <content:encoded><![CDATA[<hr><p><code>이것부터 말합니다. MarkDonw, Markup언어는 Python, Javascript, Java같은 프로그래밍 언어와는 다른 언어입니다.</code></p>]]></content:encoded>
+      
+      
+      <category domain="https://MGS-95.github.io/categories/Language/">Language</category>
+      
+      <category domain="https://MGS-95.github.io/categories/Language/MarkDown/">MarkDown</category>
+      
+      
+      <category domain="https://MGS-95.github.io/tags/Hexo/">Hexo</category>
+      
+      <category domain="https://MGS-95.github.io/tags/MarkDown/">MarkDown</category>
+      
+      <category domain="https://MGS-95.github.io/tags/Language/">Language</category>
+      
+      
+      <comments>https://mgs-95.github.io/2021/10/03/markdown/#disqus_thread</comments>
+      
+    </item>
+    
+    <item>
+      <title>Hexo 블로그 관련 A to Z</title>
+      <link>https://mgs-95.github.io/2021/09/04/Introduction/</link>
+      <guid>https://mgs-95.github.io/2021/09/04/Introduction/</guid>
+      <pubDate>Sat, 04 Sep 2021 07:17:42 GMT</pubDate>
+      
+        
+        
+      <description>&lt;hr &gt;
+
+&lt;h3 id=&quot;설치-및-배포-관련&quot;&gt;&lt;a href=&quot;#설치-및-배포-관련&quot; class=&quot;headerlink&quot; title=&quot;설치 및 배포 관련&quot;&gt;&lt;/a&gt;&lt;strong&gt;설치 및 배포 관련&lt;/strong&gt;&lt;/h3&gt;&lt;ol&gt;
+&lt;li&gt;&lt;a href=</description>
+        
+      
+      
+      
+      <content:encoded><![CDATA[<hr ><h3 id="설치-및-배포-관련"><a href="#설치-및-배포-관련" class="headerlink" title="설치 및 배포 관련"></a><strong>설치 및 배포 관련</strong></h3><ol><li><a href="https://hexo.io/ko/index.html">Hexo 공식 사이트</a></li><li><a href="https://github.com/hexojs/hexo">Hexo 설치 공식 가이드 1</a> (단, 사전에 <a href="https://git-scm.com/downloads">Git</a> 설치 필요)</li><li><a href="https://hexo.io/docs/">Hexo 설치 공식 가이드 2</a></li><li><a href="https://velog.io/@recordboy/%ED%97%A5%EC%86%8CHEXO%EB%A5%BC-%EC%9D%B4%EC%9A%A9%ED%95%9C-%EA%B9%83%ED%97%88%EB%B8%8C-%EB%B8%94%EB%A1%9C%EA%B7%B8-%EB%A7%8C%EB%93%A4%EA%B8%B0">헥소(HEXO)를 이용한 깃허브 블로그 만들기</a></li><li><a href="https://futurecreator.github.io/2016/06/14/get-started-with-hexo/">워드프레스보다 쉬운 Hexo 블로그 시작하기</a></li><li><a href="https://github.com/ppoffice/hexo-theme-icarus">이카루스 테마</a></li></ol><hr ><h3 id="간단-명령어-모음"><a href="#간단-명령어-모음" class="headerlink" title="간단 명령어 모음"></a><strong>간단 명령어 모음</strong></h3><ol><li><h4 id="게시물-생성"><a href="#게시물-생성" class="headerlink" title="게시물 생성"></a>게시물 생성</h4></li></ol><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p><ol><li><h4 id="서버-실행-본인-프로젝트-파일-경로에서-Terminal로-실행"><a href="#서버-실행-본인-프로젝트-파일-경로에서-Terminal로-실행" class="headerlink" title="서버 실행 (본인 프로젝트 파일 경로에서 Terminal로 실행)"></a>서버 실행 (본인 프로젝트 파일 경로에서 Terminal로 실행)</h4></li></ol><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p><ol start="3"><li><h4 id="정적-파일들-생성"><a href="#정적-파일들-생성" class="headerlink" title="정적 파일들 생성"></a>정적 파일들 생성</h4></li></ol><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p><ol start="4"><li><h4 id="원격-사이트에-배포-ex-Github"><a href="#원격-사이트에-배포-ex-Github" class="headerlink" title="원격 사이트에 배포 ex) Github"></a>원격 사이트에 배포 ex) Github</h4></li></ol><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p><hr >]]></content:encoded>
+      
+      
+      <category domain="https://MGS-95.github.io/categories/Hexo/">Hexo</category>
+      
+      
+      <category domain="https://MGS-95.github.io/tags/Hexo/">Hexo</category>
+      
+      
+      <comments>https://mgs-95.github.io/2021/09/04/Introduction/#disqus_thread</comments>
+      
+    </item>
+    
+    <item>
+      <title>첫 투고</title>
+      <link>https://mgs-95.github.io/2021/09/04/hello-world/</link>
+      <guid>https://mgs-95.github.io/2021/09/04/hello-world/</guid>
+      <pubDate>Fri, 03 Sep 2021 18:29:45 GMT</pubDate>
+      
+        
+        
+      <description>&lt;hr &gt;
+
+&lt;p&gt;&lt;strong&gt;한 번 마음 잡고 깃 블로그를 운영하고자 합니다.&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;기타 설정은 물론, 아직 검색엔진조차 제대로 설정하지 않아 구글이나 네이버에 검색도 안되기 때문에,&lt;/p&gt;
+&lt;p&gt;아마 이 글을 보시는 분들은</description>
+        
+      
+      
+      
+      <content:encoded><![CDATA[<hr ><p><strong>한 번 마음 잡고 깃 블로그를 운영하고자 합니다.</strong></p><p>기타 설정은 물론, 아직 검색엔진조차 제대로 설정하지 않아 구글이나 네이버에 검색도 안되기 때문에,</p><p>아마 이 글을 보시는 분들은 제 깃허브를 통해 들어오신 분들일 듯 합니다. <del>(국비지원 동기들 보고 있나)</del><br><br><br>거창한 건 없고, 프로필 제목 처럼 제 지식을 간단하게 아카이브로 남기고자 합니다.</p><p>첫 투고이니 간단하게 제 소개를 하자면, </p><blockquote><p><em><strong>국비지원으로 IT공부를 시작한 비전공자 개발조무사</strong></em> </p></blockquote><p>라고 생각합니다. 비전공자를 비하하는 게 아니라 제 실력이 그렇다는 겁니다.</p><p>사실 이 포스팅도 꽤 고민 끝에 수정하였는데, 다음부터는 착실하게 포스팅 하고자 합니다.</p><hr >]]></content:encoded>
+      
+      
+      <category domain="https://MGS-95.github.io/categories/Memo/">Memo</category>
+      
+      
+      <category domain="https://MGS-95.github.io/tags/%E5%88%9D%E5%BF%83%E8%80%85/">初心者</category>
+      
+      <category domain="https://MGS-95.github.io/tags/%E5%88%9D%E6%8A%95%E7%A8%BF/">初投稿</category>
+      
+      <category domain="https://MGS-95.github.io/tags/%EC%B2%AB-%ED%88%AC%EA%B3%A0/">첫 투고</category>
+      
+      <category domain="https://MGS-95.github.io/tags/%EC%B2%AB-%EA%B8%80/">첫 글</category>
+      
+      
+      <comments>https://mgs-95.github.io/2021/09/04/hello-world/#disqus_thread</comments>
+      
+    </item>
+    
+  </channel>
+</rss>
