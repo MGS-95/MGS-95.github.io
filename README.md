@@ -20,7 +20,9 @@
 1. 편집기(Editor) : VSCODE (거의 범용적으로 사용하고, md 파일 미리 보기가 가능하기에 저도 애용합니다)
 2. OS : Windows 10 (Home, Pro, Education 모두 가능)
 3. 필수 구성
+
 3-1. Nodejs : 현재 최신 안정화 된 버전(LTS)인 14.18.0을 사용
+
 3-2. Git : 현재 최신 버전인 2.33을 사용
 <br><br><br>
 
