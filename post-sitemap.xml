@@ -9,24 +9,32 @@
 
 
     <url>
-        <loc>https://MGS-95.github.io/2021/10/03/markdown/</loc>
-        <lastmod>2021-10-03T04:02:30.227Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
         <loc>https://MGS-95.github.io/2021/09/04/hello-world/</loc>
-        <lastmod>2021-10-03T03:12:53.063Z</lastmod>
+        <lastmod>2021-10-03T06:14:33.706Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
     </url>
 
     <url>
-        <loc>https://MGS-95.github.io/2021/09/04/Introduction/</loc>
-        <lastmod>2021-10-03T02:44:28.069Z</lastmod>
+        <loc>https://MGS-95.github.io/2021/10/03/markdown/</loc>
+        <lastmod>2021-10-03T06:11:47.881Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://MGS-95.github.io/2021/10/03/add-dark-theme-in-icarus/</loc>
+        <lastmod>2021-10-03T05:37:04.944Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://MGS-95.github.io/2021/09/04/install-hexo/</loc>
+        <lastmod>2021-10-03T05:20:06.165Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
