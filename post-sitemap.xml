@@ -9,56 +9,72 @@
 
 
     <url>
-        <loc>https://MGS-95.github.io/2021/10/03/devops/</loc>
-        <lastmod>2021-10-03T12:58:49.027Z</lastmod>
+        <loc>https://MGS-95.github.io/2021/10/03/2021-10-03-007-memo/</loc>
+        <lastmod>2021-10-03T17:27:25.904Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
     </url>
 
     <url>
-        <loc>https://MGS-95.github.io/2021/10/03/on-premise/</loc>
-        <lastmod>2021-10-03T12:53:38.153Z</lastmod>
+        <loc>https://MGS-95.github.io/2021/10/03/2021-10-03-006-recommend-url/</loc>
+        <lastmod>2021-10-03T16:54:18.385Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
     </url>
 
     <url>
-        <loc>https://MGS-95.github.io/2021/10/03/markdown/</loc>
-        <lastmod>2021-10-03T10:44:43.422Z</lastmod>
+        <loc>https://MGS-95.github.io/2021/10/03/2021-10-03-005-on-premise/</loc>
+        <lastmod>2021-10-03T14:23:14.496Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
     </url>
 
     <url>
-        <loc>https://MGS-95.github.io/2021/10/03/add-dark-theme-in-icarus/</loc>
-        <lastmod>2021-10-03T10:36:03.909Z</lastmod>
+        <loc>https://MGS-95.github.io/2021/10/03/2021-10-03-004-devops/</loc>
+        <lastmod>2021-10-03T14:23:09.500Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
     </url>
 
     <url>
-        <loc>https://MGS-95.github.io/2021/10/03/recommend-video-001/</loc>
-        <lastmod>2021-10-03T10:22:49.769Z</lastmod>
+        <loc>https://MGS-95.github.io/2021/10/03/2021-10-03-003-recommend-video/</loc>
+        <lastmod>2021-10-03T14:23:00.912Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
     </url>
 
     <url>
-        <loc>https://MGS-95.github.io/2021/09/04/install-hexo/</loc>
-        <lastmod>2021-10-03T07:44:19.295Z</lastmod>
+        <loc>https://MGS-95.github.io/2021/10/03/2021-10-03-002-add-dark-theme-in-icarus/</loc>
+        <lastmod>2021-10-03T14:22:52.500Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
     </url>
 
     <url>
-        <loc>https://MGS-95.github.io/2021/09/04/hello-world/</loc>
-        <lastmod>2021-10-03T06:14:33.706Z</lastmod>
+        <loc>https://MGS-95.github.io/2021/09/04/2021-09-04-002-install-hexo/</loc>
+        <lastmod>2021-10-03T14:22:22.917Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://MGS-95.github.io/2021/10/03/2021-10-03-001-markdown/</loc>
+        <lastmod>2021-10-03T14:22:08.290Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://MGS-95.github.io/2021/09/04/2021-09-04-001-hello-world/</loc>
+        <lastmod>2021-10-03T14:21:45.816Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
