@@ -27,7 +27,7 @@
 <hr>
 
 1. 편집기(Editor) : [VSCODE](https://code.visualstudio.com/) (거의 범용적으로 사용하고, md 파일 미리 보기가 가능하기에 저도 애용합니다)
-2. OS : Windows 10 (Home, Pro, Education 모두 가능)
+2. OS : [Windows 10](https://www.microsoft.com/ko-kr/software-download/windows10) (Home, Pro, Education 모두 가능)
 
 
 
