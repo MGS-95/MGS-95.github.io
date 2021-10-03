@@ -9,7 +9,7 @@
     <atom:link href="https://mgs-95.github.io/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>まだ無能だけど頑張っていきたい者</description>
-    <pubDate>Sat, 02 Oct 2021 16:57:51 GMT</pubDate>
+    <pubDate>Sun, 03 Oct 2021 01:31:41 GMT</pubDate>
     <generator>http://hexo.io/</generator>
     
     <item>
@@ -22,13 +22,12 @@
         
       <description>&lt;hr&gt;
 
-&lt;p&gt;&lt;code&gt;이것부터 말합니다. MarkDonw, Markup언어는 Python, Javascript, Java같은 프로그래밍 언어와는 다른 언어입니다.&lt;/code&gt;&lt;/p&gt;
-</description>
+&lt;h3 id=&quot;개요&quot;&gt;&lt;a href=&quot;#개요&quot; class=&quot;headerlink&quot; title=&quot;개요&quot;&gt;&lt;/a&gt;개요&lt;/h3&gt;&lt;p&gt;&lt;code&gt;이것부터 말합니다. MarkDonw, Markup언어는 Python, Javascript, Java같은 </description>
         
       
       
       
-      <content:encoded><![CDATA[<hr><p><code>이것부터 말합니다. MarkDonw, Markup언어는 Python, Javascript, Java같은 프로그래밍 언어와는 다른 언어입니다.</code></p>]]></content:encoded>
+      <content:encoded><![CDATA[<hr><h3 id="개요"><a href="#개요" class="headerlink" title="개요"></a>개요</h3><p><code>이것부터 말합니다. MarkDonw, Markup언어는 Python, Javascript, Java같은 프로그래밍 언어와는 다른 언어입니다.</code></p><hr><h3 id="참고-사이트"><a href="#참고-사이트" class="headerlink" title="참고 사이트"></a>참고 사이트</h3>]]></content:encoded>
       
       
       <category domain="https://MGS-95.github.io/categories/Language/">Language</category>
