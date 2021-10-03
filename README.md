@@ -1,4 +1,5 @@
-# MGS-95.github.io
-The First Web Application Using Github
+# https://mgs-95.github.io/
+<hr>
+## 깃허브에 배포한 개인 블로그
 
 
