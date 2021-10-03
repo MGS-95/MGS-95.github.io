@@ -1,5 +1,5 @@
-### https://mgs-95.github.io/
-<br><br>
+## https://mgs-95.github.io/
+<br>
 #### 1. 개요
 <hr>
 깃허브에 배포한 개인 블로그입니다.
