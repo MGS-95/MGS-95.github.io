@@ -9,8 +9,23 @@
     <atom:link href="https://mgs-95.github.io/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>まだ無能だけど頑張っていきたい者</description>
-    <pubDate>Sun, 03 Oct 2021 05:37:04 GMT</pubDate>
+    <pubDate>Sun, 03 Oct 2021 07:57:39 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>recommend-video-001</title>
+      <link>https://mgs-95.github.io/2021/10/03/recommend-video-001/</link>
+      <guid>https://mgs-95.github.io/2021/10/03/recommend-video-001/</guid>
+      <pubDate>Sun, 03 Oct 2021 07:57:39 GMT</pubDate>
+      
+      
+      
+      
+      
+      
+      <comments>https://mgs-95.github.io/2021/10/03/recommend-video-001/#disqus_thread</comments>
+      
+    </item>
     
     <item>
       <title>이카루스 테마에 다크모드 적용하는 법</title>
@@ -93,7 +108,7 @@
       
       
       
-      <content:encoded><![CDATA[<hr><br><h3 id="1-설치-및-배포-관련"><a href="#1-설치-및-배포-관련" class="headerlink" title="[1] 설치 및 배포 관련"></a><strong>[1] 설치 및 배포 관련</strong></h3><hr><p>(사전에 <a href="https://git-scm.com/downloads">Git</a> 설치 필요)</p><ol><li>[공식] <a href="https://hexo.io/ko/index.html">Hexo 공식 사이트</a></li><li>[공식] <a href="https://github.com/hexojs/hexo">Hexo 설치 공식 가이드 1</a></li><li>[공식] <a href="https://hexo.io/docs/">Hexo 설치 공식 가이드 2</a></li><li>[개인] <a href="https://velog.io/@recordboy/%ED%97%A5%EC%86%8CHEXO%EB%A5%BC-%EC%9D%B4%EC%9A%A9%ED%95%9C-%EA%B9%83%ED%97%88%EB%B8%8C-%EB%B8%94%EB%A1%9C%EA%B7%B8-%EB%A7%8C%EB%93%A4%EA%B8%B0">헥소(HEXO)를 이용한 깃허브 블로그 만들기</a></li><li>[개인] <a href="https://futurecreator.github.io/2016/06/14/get-started-with-hexo/">워드프레스보다 쉬운 Hexo 블로그 시작하기</a></li><li>[개인] <a href="https://github.com/ppoffice/hexo-theme-icarus">Hexo 이카루스 테마</a></li></ol><p><br><br><br></p><h3 id="2-간단-명령어-모음"><a href="#2-간단-명령어-모음" class="headerlink" title="[2] 간단 명령어 모음"></a><strong>[2] 간단 명령어 모음</strong></h3><hr ><ol><li><strong>게시물 생성</strong></li></ol><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p><br><ol start="2"><li><strong>서버 실행 (본인 프로젝트 파일 경로에서 Terminal로 실행)</strong></li></ol><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p><br><ol start="3"><li><strong>정적 파일들 생성</strong></li></ol><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p><br><ol start="4"><li><strong>원격 사이트에 배포 ex) Github</strong></li></ol><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p><p><br><hr></p>]]></content:encoded>
+      <content:encoded><![CDATA[<hr><br><h3 id="1-설치-및-배포-관련"><a href="#1-설치-및-배포-관련" class="headerlink" title="[1] 설치 및 배포 관련"></a><strong>[1] 설치 및 배포 관련</strong></h3><hr><p>(사전에 <a href="https://git-scm.com/downloads">Git</a> 설치 필요)</p><ol><li>[공식] <a href="https://hexo.io/ko/index.html">Hexo 공식 사이트</a></li><li>[공식] <a href="https://github.com/hexojs/hexo">Hexo 설치 공식 가이드 1</a></li><li>[공식] <a href="https://hexo.io/docs/">Hexo 설치 공식 가이드 2</a></li><li>[개인] <a href="https://velog.io/@recordboy/%ED%97%A5%EC%86%8CHEXO%EB%A5%BC-%EC%9D%B4%EC%9A%A9%ED%95%9C-%EA%B9%83%ED%97%88%EB%B8%8C-%EB%B8%94%EB%A1%9C%EA%B7%B8-%EB%A7%8C%EB%93%A4%EA%B8%B0">헥소(HEXO)를 이용한 깃허브 블로그 만들기</a></li><li>[개인] <a href="https://futurecreator.github.io/2016/06/14/get-started-with-hexo/">워드프레스보다 쉬운 Hexo 블로그 시작하기</a></li><li>[개인] <a href="https://futurecreator.github.io/2016/06/21/hexo-basic-usage/">Hexo 기본 사용법</a></li><li>[개인] <a href="https://github.com/ppoffice/hexo-theme-icarus">Hexo 이카루스 테마</a></li></ol><p><br><br><br></p><h3 id="2-간단-명령어-모음"><a href="#2-간단-명령어-모음" class="headerlink" title="[2] 간단 명령어 모음"></a><strong>[2] 간단 명령어 모음</strong></h3><hr ><ol><li><strong>게시물 생성</strong></li></ol><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p><br><ol start="2"><li><strong>서버 실행 (본인 프로젝트 파일 경로에서 Terminal로 실행)</strong></li></ol><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p><br><ol start="3"><li><strong>정적 파일들 생성</strong></li></ol><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p><br><ol start="4"><li><strong>원격 사이트에 배포 ex) Github</strong></li></ol><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p><p><br><hr></p>]]></content:encoded>
       
       
       <category domain="https://MGS-95.github.io/categories/Hexo/">Hexo</category>
