@@ -12354,3 +12354,7 @@ body.night .twikoo code {
     background-color: #373d48;
   }
 }
+img[src$="centerme"] {
+  display: block;
+  margin: 0 auto;
+}

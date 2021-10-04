@@ -9,8 +9,16 @@
 
 
     <url>
-        <loc>https://MGS-95.github.io/2021/10/03/2021-10-03-007-memo/</loc>
-        <lastmod>2021-10-03T17:27:25.904Z</lastmod>
+        <loc>https://MGS-95.github.io/2021/10/03/2021-10-03-004-devops/</loc>
+        <lastmod>2021-10-04T13:13:57.568Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://MGS-95.github.io/2021/10/04/2021-10-04-002-allow-cors-issue-in-springboot/</loc>
+        <lastmod>2021-10-04T13:13:21.422Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
@@ -18,7 +26,23 @@
 
     <url>
         <loc>https://MGS-95.github.io/2021/10/03/2021-10-03-006-recommend-url/</loc>
-        <lastmod>2021-10-03T16:54:18.385Z</lastmod>
+        <lastmod>2021-10-04T12:13:38.280Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://MGS-95.github.io/2021/10/03/2021-10-03-007-memo/</loc>
+        <lastmod>2021-10-04T12:12:27.753Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://MGS-95.github.io/2021/10/04/2021-10-04-001-how-to-compile-typescript/</loc>
+        <lastmod>2021-10-04T12:12:08.438Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
@@ -27,14 +51,6 @@
     <url>
         <loc>https://MGS-95.github.io/2021/10/03/2021-10-03-005-on-premise/</loc>
         <lastmod>2021-10-03T14:23:14.496Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://MGS-95.github.io/2021/10/03/2021-10-03-004-devops/</loc>
-        <lastmod>2021-10-03T14:23:09.500Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
