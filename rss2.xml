@@ -9,8 +9,80 @@
     <atom:link href="https://mgs-95.github.io/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>まだ無能だけど頑張っていきたい者</description>
-    <pubDate>Sat, 09 Oct 2021 06:55:16 GMT</pubDate>
+    <pubDate>Sat, 09 Oct 2021 12:45:53 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>쿠키, 웹 스토리지 사용법(JavaScript)</title>
+      <link>https://mgs-95.github.io/2021/10/09/2021-10-09-003-web-storage/</link>
+      <guid>https://mgs-95.github.io/2021/10/09/2021-10-09-003-web-storage/</guid>
+      <pubDate>Sat, 09 Oct 2021 10:09:45 GMT</pubDate>
+      
+      <description>&lt;hr&gt;&lt;br&gt;
+
+&lt;h3 id=&quot;1-개요&quot;&gt;&lt;a href=&quot;#1-개요&quot; class=&quot;headerlink&quot; title=&quot;[1] 개요&quot;&gt;&lt;/a&gt;&lt;strong&gt;[1] 개요&lt;/strong&gt;&lt;/h3&gt;&lt;hr&gt;
+
+&lt;p&gt;사실 카테고리를 어디에 둘까 매우 고민했습니다.&lt;/p&gt;
+&lt;p&gt;IT 정보로 두려고 했는데, &lt;strong&gt;사용법이 주&lt;/strong&gt; 가 되려면 자바스크립트 코드는 필수니,&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;고민 끝에 언어 카테고리에 적고, 쿠키, 웹 스토리지가 뭔지 간략하게 설명하려고 합니다.&lt;/strong&gt;&lt;/p&gt;</description>
+      
+      
+      
+      <content:encoded><![CDATA[<hr><br><h3 id="1-개요"><a href="#1-개요" class="headerlink" title="[1] 개요"></a><strong>[1] 개요</strong></h3><hr><p>사실 카테고리를 어디에 둘까 매우 고민했습니다.</p><p>IT 정보로 두려고 했는데, <strong>사용법이 주</strong> 가 되려면 자바스크립트 코드는 필수니,</p><p><strong>고민 끝에 언어 카테고리에 적고, 쿠키, 웹 스토리지가 뭔지 간략하게 설명하려고 합니다.</strong></p><span id="more"></span><p><br><br><br></p><h3 id="2-설명"><a href="#2-설명" class="headerlink" title="[2] 설명"></a><strong>[2] 설명</strong></h3><hr><p>우선 대부분 크롬, 파이어폭스, 엣지와 같은 대중적인 브라우저를 사용한다는 가정하에 설명드립니다.<br>저는 크롬을 사용하겠습니다.</p><p>F12를 누르면 개발자 도구가 나오는데, 여기에서 응용프로그램(Application)탭을 클릭합니다.</p><p>그리고 왼쪽 사이드바에서 쿠키, 세션 스토리지, 로컬 스토리지가 나옵니다.</p><p><img src="/img/2021-10-09/002/001.png?style=centerme" alt="이런 화면이 나옵니다." title="대체 텍스트"></p><p><strong>이번 포스트에서는 위의 화면에서 로컬 스토리지, 세션 스토리지, 쿠키를 다룰 예정입니다.</strong></p><p>IndexedDB, 웹 SQL등은 사용자의 브라우저에 저장하는 DB API정도로 이해하면 됩니다.</p><p>어쨋든 위의 3개 저장소를 특정 사이트에서 각각 눌러보면 어떤 목록이 나오거나 안나오기도 합니다.</p><br><blockquote><p>그래서 여길 왜 들어가야 하는데? </p></blockquote><p>지금부터 사용할 코드들이 위 3개 저장소에서 저장되기 때문입니다.</p><blockquote><h3 id="쿠키"><a href="#쿠키" class="headerlink" title="쿠키"></a><strong>쿠키</strong></h3><ul><li><strong>우리가 방문한 웹 사이트의 정보를 클라이언트(우리의 브라우저)에 저장하는 파일</strong>입니다.</li><li>따라서 <strong>브라우저를 닫고 다시 켜도 만료 일자가 남아 있으면 사이트를 들어가도 이전에 설정한 정보 그대로로 보여줍니다.</strong></li><li>쿠키는 특정 사이트 내 최대 저장 갯수가 제한되어 있고, 만료 일자를 정해야 합니다.</li><li>예시) 특정 사이트에서 나오는 하루 동안 보지 않기 팝업창</li></ul></blockquote><blockquote><h3 id="웹-스토리지-세션-HTML5-이상부터-지원"><a href="#웹-스토리지-세션-HTML5-이상부터-지원" class="headerlink" title="웹 스토리지 - 세션 (HTML5 이상부터 지원)"></a><strong>웹 스토리지 - 세션 (HTML5 이상부터 지원)</strong></h3><ul><li><strong>우리가 방문한 웹 사이트의 정보를 클라이언트(우리의 브라우저)에 저장하는 파일</strong>입니다.</li><li>다만, <strong>쿠키와는 다르게 브라우저를 닫으면 저장된 정보가 다 없어집니다.</strong></li><li>예시) 특정 입력 페이지(회원가입 페이지), 일회성 로그인 페이지, 비로그인 장바구니 페이지</li></ul></blockquote><blockquote><h3 id="웹-스토리지-로컬-HTML5-이상부터-지원"><a href="#웹-스토리지-로컬-HTML5-이상부터-지원" class="headerlink" title="웹 스토리지 - 로컬 (HTML5 이상부터 지원)"></a><strong>웹 스토리지 - 로컬 (HTML5 이상부터 지원)</strong></h3><ul><li><strong>우리가 방문한 웹 사이트의 정보를 클라이언트(우리의 브라우저)에 저장하는 파일</strong>입니다.</li><li>이 정보는 <strong>따로 삭제하지 않는 이상 브라우저를 닫아도 영구적으로 남아있습니다.</strong></li><li>예시) 자동 로그인, 특정 사이트 다크모드 등 <del>(제 블로그에서 사용 중입니다)</del></li></ul></blockquote><p>그 외 보안성이라던가, 데이터 용량관련 설명도 있는데,</p><p><strong>사용법을 남기려고 했지, 그런건 필요가 없다고 생각이 듭니다.</strong></p><p><br><br><br></p><h3 id="3-구현"><a href="#3-구현" class="headerlink" title="[3] 구현"></a><strong>[3] 구현</strong></h3><hr><ol><li><p><strong>Local Storage</strong></p><p> 1-1. web-storage 라는 폴더에 index.html과 가져올 js파일인 reference.js를 만듭니다(= 프로젝트 생성)</p> <hr><p> <img src="/img/2021-10-09/003/001.png?style=centerme" alt="빈 껍데기부터 생성합니다" title="대체 텍스트"></p> <hr><p> 1-2. 그리고 이를 vscode 확장팩인 Live Server로 구동시켜봅니다(오프라인에서 직접 열어도)</p> <hr><p> <img src="/img/2021-10-09/003/002.png?style=centerme" alt="구동한 모습" title="대체 텍스트"></p> <hr><p> 1-3. reference.js에서 Local Storage를 생성합니다.</p> <figure class="highlight javascript"><figcaption><span>reference.js</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">(<span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;</span><br><span class="line">  <span class="keyword">var</span> value = <span class="string">&quot;영구 저장 값&quot;</span>;</span><br><span class="line">  <span class="built_in">localStorage</span>.setItem(<span class="string">&quot;local&quot;</span>, value);</span><br><span class="line">&#125;)();</span><br></pre></td></tr></table></figure><p> 1-4. 위의 값을 저장 하면 Live Server가 재시작 되므로 바로 콘솔창을 확인할 수 있습니다.</p> <hr><p> <img src="/img/2021-10-09/003/003.png?style=centerme" alt="localStorage가 저장된 모습" title="대체 텍스트"></p> <hr><p> <strong>위의 값은 브라우저를 닫고 다시 켜도 같은 주소 (위에서는 <a href="http://127.0.0.1:5500/)%EB%A9%B4">http://127.0.0.1:5500/)면</a> 영구적으로 남게 됩니다.</strong></p><p> 물론 삭제도 가능합니다. 콘솔창에서 키 / 값 쪽 영역에서 마우스 우클릭하고 삭제 버튼을 누르면 삭제가 됩니다.</p></li><li><p><strong>Session Storage</strong></p><p> 2-1. <strong>Local Storage와 구현 방식은 동일합니다.</strong> JS코드만 바꿔주도록 합니다.</p> <figure class="highlight javascript"><figcaption><span>reference.js</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">(<span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;</span><br><span class="line">  <span class="keyword">var</span> value = <span class="string">&quot;브라우저 끄면 사라지는 값&quot;</span>;</span><br><span class="line">  sessionStorage.setItem(<span class="string">&quot;session&quot;</span>, value);</span><br><span class="line">&#125;)();</span><br></pre></td></tr></table></figure><p> 2-2. <strong>위의 값은 브라우저를 닫으면 사라지게 됩니다</strong>. (지금은 즉시 실행 함수에 의해 무조건 다시 생김)</p> <hr><p> <img src="/img/2021-10-09/003/004.png?style=centerme" alt="sessionStorage가 저장된 모습" title="대체 텍스트"></p> <hr></li><li><p><strong>Cookie</strong></p><p> 3-1. document.cookie 라는 JS 내장 기능을 이용합니다.</p> <figure class="highlight javascript"><figcaption><span>reference.js</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">(<span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;</span><br><span class="line">  <span class="built_in">document</span>.cookie = <span class="string">&quot;name=value; max-age=3600;&quot;</span>;</span><br><span class="line">&#125;)();</span><br></pre></td></tr></table></figure><p> 3-2. 그럼 콘솔에서는 아래와 같이 나옵니다.</p> <hr><p> <img src="/img/2021-10-09/003/005.png?style=centerme" alt="sessionStorage가 저장된 모습" title="대체 텍스트"></p> <hr><p> 3-3. 위에 필드명에 쓰여진 대로 domain, path, expire / max-age.. 여러가지 정보를 직접 설정 할 수 있습니다. 위 코드 같은 경우엔 쿠키의 유효시간을 1시간(max-age=3600)으로 주었습니다. 자세한건 <strong><a href="https://ko.javascript.info/cookie">모던 JavScript 튜토리얼 쿠키편</a></strong> 을 참고하시면 됩니다.</p></li></ol><p><br><br><br></p><h3 id="4-결론"><a href="#4-결론" class="headerlink" title="[4] 결론"></a><strong>[4] 결론</strong></h3><hr><blockquote><p>예시 사용법에 나와있는 대로 쓰임새를 생각하여, 골라서 쓰시면 됩니다.</p></blockquote><p>다시 말씀드리면,</p><ol><li>세션 스토리지는 정보의 1회성 저장에 용이하며,</li><li>로컬 스토리지는 정보의 영구 저장에 용이하고,</li><li>쿠키는 정보의 특정 기간동안 저장에 용이합니다. </li></ol><p>그 외에 세션이라는, 서버(백엔드) 메모리에 저장되는 데이터도 있지만, 여기서는 다루지 않겠습니다.<br><br>※ <strong>세션은 세션 스토리지와 다른 개념</strong>입니다. (<a href="https://www.quora.com/What-is-the-difference-between-session-server-side-and-session-storage-browser-When-do-I-use-session-storage-vs-cookies">영문 참고</a>)</p><p><br><br><br></p><h3 id="5-참고-사이트"><a href="#5-참고-사이트" class="headerlink" title="[5] 참고 사이트"></a><strong>[5] 참고 사이트</strong></h3><hr><ol><li><a href="https://velog.io/@kler/TIL4-%EB%A1%9C%EC%BB%AC%EC%8A%A4%ED%86%A0%EB%A6%AC%EC%A7%80-%EC%84%B8%EC%85%98%EC%8A%A4%ED%86%A0%EB%A6%AC%EC%A7%80-%EC%BF%A0%ED%82%A4-%EC%A0%95%EB%A6%AC">로컬스토리지, 세션스토리지, 쿠키 정리</a></li><li><a href="https://triplexlab.tistory.com/114">[JavaScript]로컬스토리지, 세션스토리지, 쿠키 정리</a></li><li><a href="https://jindev-t.tistory.com/107">[TIL] Cookie vs LocalStorage vs SessionStorage</a></li><li><a href="https://www.daleseo.com/js-web-storage/">[자바스크립트] 웹 스토리지 (localStorage, sessionStorage) 사용법</a></li><li><a href="https://velog.io/@dorazi/%EC%BF%A0%ED%82%A4-%EC%9B%B9-%EC%8A%A4%ED%86%A0%EB%A6%AC%EC%A7%80-%EB%A1%9C%EC%BB%AC-%EC%8A%A4%ED%86%A0%EB%A6%AC%EC%A7%80-%EC%84%B8%EC%85%98-%EC%8A%A4%ED%86%A0%EB%A6%AC%EC%A7%80">쿠키, 웹 스토리지 (로컬 스토리지, 세션 스토리지)</a></li></ol>]]></content:encoded>
+      
+      
+      <category domain="https://MGS-95.github.io/categories/Language/">Language</category>
+      
+      <category domain="https://MGS-95.github.io/categories/Language/Javascript/">Javascript</category>
+      
+      
+      <category domain="https://MGS-95.github.io/tags/javascript/">javascript</category>
+      
+      <category domain="https://MGS-95.github.io/tags/js/">js</category>
+      
+      <category domain="https://MGS-95.github.io/tags/cookie/">cookie</category>
+      
+      <category domain="https://MGS-95.github.io/tags/session-storage/">session-storage</category>
+      
+      <category domain="https://MGS-95.github.io/tags/local-storage/">local-storage</category>
+      
+      
+      <comments>https://mgs-95.github.io/2021/10/09/2021-10-09-003-web-storage/#disqus_thread</comments>
+      
+    </item>
+    
+    <item>
+      <title>추천 영상 [2] - React 입문자들이 알아야할 Redux 쉽게설명 (8분컷)</title>
+      <link>https://mgs-95.github.io/2021/10/09/2021-10-09-002-describe-redux/</link>
+      <guid>https://mgs-95.github.io/2021/10/09/2021-10-09-002-describe-redux/</guid>
+      <pubDate>Sat, 09 Oct 2021 09:40:31 GMT</pubDate>
+      
+      <description>&lt;hr&gt;&lt;br&gt;
+
+&lt;div class=&quot;video-container&quot;&gt;&lt;iframe src=&quot;https://www.youtube.com/embed/QZcYz2NrDIs&quot; frameborder=&quot;0&quot; loading=&quot;lazy&quot; allowfullscreen&gt;&lt;/iframe&gt;&lt;/div&gt;</description>
+      
+      
+      
+      <content:encoded><![CDATA[<hr><br><div class="video-container"><iframe src="https://www.youtube.com/embed/QZcYz2NrDIs" frameborder="0" loading="lazy" allowfullscreen></iframe></div><span id="more"></span><br><p>저와 같이 Redux가 뭔지도 모르는 사람들에게 쉽게 개념을 설명해주는 좋은 강의라고 생각합니다.</p><p>자세히 공부하면 어려워지는 건 모든 개념이나 기술은 다 그렇기에,</p><p>지금은 단순히 쓰는 <u><strong>이유</strong></u>에 대해서만 알아도 충분하다는 생각이 듭니다.</p><p>회사에서는 Angular를 쓰기에, 아주 조금 배운것 마저 다 잊어버렸긴 한데..</p><p>책도 있으니 시간에 여유가 생기면 다시 공부하고자 합니다.</p><p>P.S.</p><p>위에서 설명해주신 유튜버분의 다른 영상들도 재밌고 쉽게 가르치는 느낌이니, <br>다른 영상들도 보시길 추천드립니다.</p><p><br><hr></p>]]></content:encoded>
+      
+      
+      <category domain="https://MGS-95.github.io/categories/Recommend/">Recommend</category>
+      
+      <category domain="https://MGS-95.github.io/categories/Recommend/Video/">Video</category>
+      
+      
+      <category domain="https://MGS-95.github.io/tags/youtube/">youtube</category>
+      
+      <category domain="https://MGS-95.github.io/tags/javascript/">javascript</category>
+      
+      <category domain="https://MGS-95.github.io/tags/redux/">redux</category>
+      
+      <category domain="https://MGS-95.github.io/tags/react/">react</category>
+      
+      
+      <comments>https://mgs-95.github.io/2021/10/09/2021-10-09-002-describe-redux/#disqus_thread</comments>
+      
+    </item>
     
     <item>
       <title>자바스크립트 동작 원리</title>
@@ -158,9 +230,9 @@
       
       <category domain="https://MGS-95.github.io/tags/memo/">memo</category>
       
-      <category domain="https://MGS-95.github.io/tags/Youtube/">Youtube</category>
-      
       <category domain="https://MGS-95.github.io/tags/%EB%82%B4-%EC%83%9D%EA%B0%81/">내 생각</category>
+      
+      <category domain="https://MGS-95.github.io/tags/youtube/">youtube</category>
       
       <category domain="https://MGS-95.github.io/tags/%EB%B9%84%EC%A0%84%EA%B3%B5/">비전공</category>
       
@@ -187,12 +259,12 @@
       
       
       
-      <content:encoded><![CDATA[<hr><br><h3 id="1-개요"><a href="#1-개요" class="headerlink" title="[1] 개요"></a><strong>[1] 개요</strong></h3><hr><p>이 포스트는 참고할 좋은 사이트가 보일 때마다 <del>(무지성으로)</del> 링크를 추가할 예정입니다.</p><span id="more"></span><p>만약 해당 사이트에 관련되 IT 정보를 정리해서 따로 포스팅한다면,</p><p>체크박스에 표시를 하여 정리 완료되었다는 표시를 할 예정입니다.</p><p><br><br><br></p><h3 id="2-목록"><a href="#2-목록" class="headerlink" title="[2] 목록"></a><strong>[2] 목록</strong></h3><hr><ol><li><input disabled="" type="checkbox"> <a href="https://blog.kingbbode.com/35">젠킨스 사용하여 자동 배포환경 만들어보기</a></li><li><input disabled="" type="checkbox"> <a href="https://boards.greenhouse.io/deliveryherokoreatech">딜리버리 히어로 코리아 채용 사이트</a></li><li><input disabled="" type="checkbox"> <a href="https://medium.com/deliverytechkorea">Delivery Tech Korea 요기요 기술 블로그</a></li><li><input disabled="" type="checkbox"> <a href="https://velog.io/@sukiworld/gather.town">gather.town 소개 및 사용법 - 우왕 가상오피스다!!!</a></li><li><input disabled="" type="checkbox"> <a href="https://medium.com/finda-tech/prometheus%EB%9E%80-cf52c9a8785f">Prometheus란?</a></li><li><input disabled="" type="checkbox"> <a href="https://www.google.com/search?q=graphql+%EC%9D%B4%EB%9E%80">[구글검색] GraphQL이란</a></li><li><input disabled="" type="checkbox"> <a href="https://julynine2.tistory.com/30">구글 서치 콘솔 사이트맵 등록 오류, URL 색인 요청 해보기</a></li><li><input checked="" disabled="" type="checkbox"> <a href="https://velog.io/@trollering12312/hexo-%EC%8B%9C%EC%9E%91%ED%95%98%EA%B8%B0">hexo 시작하기</a></li><li><input disabled="" type="checkbox"> <a href="https://ko.javascript.info/">모던 JavaScript 튜토리얼</a></li><li><input disabled="" type="checkbox"> <a href="https://dev-pengun.tistory.com/entry/Spring-Boot-CORS-%EC%84%A4%EC%A0%95%ED%95%98%EA%B8%B0#toc-addMapping">[Spring Boot] CORS 설정하기</a></li><li><input disabled="" type="checkbox"> <a href="https://youtu.be/HraOg7W3VAM">개발자라면 꼭 알아야할 Hash Table 의 모든 것!</a></li><li><input disabled="" type="checkbox"> <a href="https://datadoctorblog.com/2020/03/25/HEXO-md-image-center/">HEXO 이미지 삽입(이미지 중앙 정렬 방법 포함)</a></li></ol>]]></content:encoded>
+      <content:encoded><![CDATA[<hr><br><h3 id="1-개요"><a href="#1-개요" class="headerlink" title="[1] 개요"></a><strong>[1] 개요</strong></h3><hr><p>이 포스트는 참고할 좋은 사이트가 보일 때마다 <del>(무지성으로)</del> 링크를 추가할 예정입니다.</p><span id="more"></span><p>만약 해당 사이트에 관련되 IT 정보를 정리해서 따로 포스팅한다면,</p><p>체크박스에 표시를 하여 정리 완료되었다는 표시를 할 예정입니다.</p><p><br><br><br></p><h3 id="2-목록"><a href="#2-목록" class="headerlink" title="[2] 목록"></a><strong>[2] 목록</strong></h3><hr><ol><li><input disabled="" type="checkbox"> <a href="https://blog.kingbbode.com/35">젠킨스 사용하여 자동 배포환경 만들어보기</a></li><li><input disabled="" type="checkbox"> <a href="https://boards.greenhouse.io/deliveryherokoreatech">딜리버리 히어로 코리아 채용 사이트</a></li><li><input disabled="" type="checkbox"> <a href="https://medium.com/deliverytechkorea">Delivery Tech Korea 요기요 기술 블로그</a></li><li><input disabled="" type="checkbox"> <a href="https://velog.io/@sukiworld/gather.town">gather.town 소개 및 사용법 - 우왕 가상오피스다!!!</a></li><li><input disabled="" type="checkbox"> <a href="https://medium.com/finda-tech/prometheus%EB%9E%80-cf52c9a8785f">Prometheus란?</a></li><li><input disabled="" type="checkbox"> <a href="https://www.google.com/search?q=graphql+%EC%9D%B4%EB%9E%80">[구글검색] GraphQL이란</a></li><li><input disabled="" type="checkbox"> <a href="https://julynine2.tistory.com/30">구글 서치 콘솔 사이트맵 등록 오류, URL 색인 요청 해보기</a></li><li><input checked="" disabled="" type="checkbox"> <a href="https://velog.io/@trollering12312/hexo-%EC%8B%9C%EC%9E%91%ED%95%98%EA%B8%B0">hexo 시작하기</a></li><li><input disabled="" type="checkbox"> <a href="https://ko.javascript.info/">모던 JavaScript 튜토리얼</a></li><li><input disabled="" type="checkbox"> <a href="https://dev-pengun.tistory.com/entry/Spring-Boot-CORS-%EC%84%A4%EC%A0%95%ED%95%98%EA%B8%B0#toc-addMapping">[Spring Boot] CORS 설정하기</a></li><li><input disabled="" type="checkbox"> <a href="https://youtu.be/HraOg7W3VAM">개발자라면 꼭 알아야할 Hash Table 의 모든 것!</a></li><li><input disabled="" type="checkbox"> <a href="https://datadoctorblog.com/2020/03/25/HEXO-md-image-center/">HEXO 이미지 삽입(이미지 중앙 정렬 방법 포함)</a></li><li><input disabled="" type="checkbox"> <a href="https://racoonlotty.tistory.com/entry/%EC%BF%A0%ED%82%A4%EC%99%80-%EC%84%B8%EC%85%98-%EA%B7%B8%EB%A6%AC%EA%B3%A0-%EB%A1%9C%EC%BB%AC-%EC%8A%A4%ED%86%A0%EB%A6%AC%EC%A7%80%EC%99%80-%EC%84%B8%EC%85%98-%EC%8A%A4%ED%86%A0%EB%A6%AC%EC%A7%80">쿠키와 세션 그리고 로컬 스토리지와 세션 스토리지</a></li></ol>]]></content:encoded>
       
       
-      <category domain="https://MGS-95.github.io/categories/Recommend/">Recommend</category>
+      <category domain="https://MGS-95.github.io/categories/recommend/">recommend</category>
       
-      <category domain="https://MGS-95.github.io/categories/Recommend/URL/">URL</category>
+      <category domain="https://MGS-95.github.io/categories/recommend/url/">url</category>
       
       
       
@@ -287,7 +359,7 @@
       
       
       
-      <content:encoded><![CDATA[<hr><br><div class="video-container"><iframe src="https://www.youtube.com/embed/h7-p7Iqv7sM" frameborder="0" loading="lazy" allowfullscreen></iframe></div><span id="more"></span><br><p>간략하게 소개하자면, 개발자 유튜버들이 어떤 기술이 좋으니 꼭 쓰라는 것에 대해<br>충분한 고민을 하고 난 뒤 결정을 하라는 내용입니다.</p><p>해당 영상에서 느낀점을 적기엔 뭔가 감상문이 될 것 같아서 적지는 않겠습니다.</p><p>다만, 1년 하고도 좀 더 지난 영상임에도 지금 생각해도 맞는 말이라고 생각합니다.</p><p>한 번쯤 보시는 걸 추천합니다. </p><p><br><hr></p>]]></content:encoded>
+      <content:encoded><![CDATA[<hr><br><div class="video-container"><iframe src="https://www.youtube.com/embed/h7-p7Iqv7sM" frameborder="0" loading="lazy" allowfullscreen></iframe></div><span id="more"></span><br><p>간략하게 소개하자면, 개발자 유튜버들이 어떤 기술이 좋으니 꼭 쓰라는 것에 대해<br>충분한 고민을 하고 난 뒤 결정을 하라는 내용입니다.</p><p>해당 영상에서 느낀점을 적기엔 뭔가 감상문이 될 것 같아서 적지는 않겠습니다.</p><p>다만, 1년 하고도 좀 더 지난 영상임에도 지금 생각해도 맞는 말이라고 생각합니다.</p><p>한 번쯤 보시는 걸 추천합니다.</p><p><br><hr></p>]]></content:encoded>
       
       
       <category domain="https://MGS-95.github.io/categories/Recommend/">Recommend</category>
@@ -324,7 +396,7 @@
       <category domain="https://MGS-95.github.io/categories/Hexo/">Hexo</category>
       
       
-      <category domain="https://MGS-95.github.io/tags/Hexo/">Hexo</category>
+      <category domain="https://MGS-95.github.io/tags/hexo/">hexo</category>
       
       
       <comments>https://mgs-95.github.io/2021/10/03/2021-10-03-002-add-dark-theme-in-icarus/#disqus_thread</comments>
@@ -354,11 +426,11 @@
       <category domain="https://MGS-95.github.io/categories/Language/MarkDown/">MarkDown</category>
       
       
-      <category domain="https://MGS-95.github.io/tags/Hexo/">Hexo</category>
+      <category domain="https://MGS-95.github.io/tags/hexo/">hexo</category>
       
-      <category domain="https://MGS-95.github.io/tags/MarkDown/">MarkDown</category>
+      <category domain="https://MGS-95.github.io/tags/markdown/">markdown</category>
       
-      <category domain="https://MGS-95.github.io/tags/Language/">Language</category>
+      <category domain="https://MGS-95.github.io/tags/language/">language</category>
       
       
       <comments>https://mgs-95.github.io/2021/10/03/2021-10-03-001-markdown/#disqus_thread</comments>
@@ -394,7 +466,7 @@
       <category domain="https://MGS-95.github.io/categories/Hexo/">Hexo</category>
       
       
-      <category domain="https://MGS-95.github.io/tags/Hexo/">Hexo</category>
+      <category domain="https://MGS-95.github.io/tags/hexo/">hexo</category>
       
       
       <comments>https://mgs-95.github.io/2021/09/04/2021-09-04-002-install-hexo/#disqus_thread</comments>
