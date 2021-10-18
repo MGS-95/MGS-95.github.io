@@ -9,8 +9,46 @@
     <atom:link href="https://mgs-95.github.io/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>まだ無能だけど頑張っていきたい者</description>
-    <pubDate>Sat, 09 Oct 2021 12:52:13 GMT</pubDate>
+    <pubDate>Mon, 18 Oct 2021 15:05:24 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>Vue3 설치 시 vscode Vetur Extension 오류 일시적인 해결법</title>
+      <link>https://mgs-95.github.io/2021/10/18/2021-10-18-001-vue3-start-error/</link>
+      <guid>https://mgs-95.github.io/2021/10/18/2021-10-18-001-vue3-start-error/</guid>
+      <pubDate>Mon, 18 Oct 2021 14:15:02 GMT</pubDate>
+      
+      <description>&lt;hr&gt;&lt;br&gt;
+
+&lt;h3 id=&quot;1-개요&quot;&gt;&lt;a href=&quot;#1-개요&quot; class=&quot;headerlink&quot; title=&quot;[1] 개요&quot;&gt;&lt;/a&gt;&lt;strong&gt;[1] 개요&lt;/strong&gt;&lt;/h3&gt;&lt;hr&gt;
+
+&lt;p&gt;역시 작심 3일인가 봅니다. 오랜만의 포스팅입니다.&lt;/p&gt;
+&lt;p&gt;그럼에도 불구하고 오늘은 간단한 포스팅을 하고자 합니다.&lt;/p&gt;</description>
+      
+      
+      
+      <content:encoded><![CDATA[<hr><br><h3 id="1-개요"><a href="#1-개요" class="headerlink" title="[1] 개요"></a><strong>[1] 개요</strong></h3><hr><p>역시 작심 3일인가 봅니다. 오랜만의 포스팅입니다.</p><p>그럼에도 불구하고 오늘은 간단한 포스팅을 하고자 합니다.</p><span id="more"></span><p>주제넘게, 회사에서 쓰이는 Angular 도 제대로 알지도 못하는 주제에 Vue를 조금 공부해보고자 설치하였습니다.</p><p>사실 여기에서 제 얘기를 길게 말해봤자 해결법을 보러 오신 분들은 관심 없을테니 본론으로 들어갑니다. </p><p><br><br><br></p><h3 id="2-원인"><a href="#2-원인" class="headerlink" title="[2] 원인"></a><strong>[2] 원인</strong></h3><hr><blockquote><p>미리 말해두겠지만, 경고창을 닫는 방법이지, 완전한 해결법은 아니라고 생각합니다.<br>어디에서는 <a href="https://vuejs.github.io/vetur/guide/FAQ.html#vetur-can-t-find-tsconfig-json-jsconfig-json-in-xxxx-xxxxxx">Vuter 공식 FAQ</a>를 보라고 하지만 저는 해결이 안되었습니다</p></blockquote><p>일단 오류는 다음과 같습니다.</p><hr><p><img src="/img/2021-10-18/001/001.png?style=centerme" alt="우측하단에 나오는 Vetur 경고창" title="대체 텍스트"><br><img src="/img/2021-10-18/001/002.png?style=centerme" alt="App.vue에서 문법 오류로 나오는 HelloWorld 태그" title="대체 텍스트"></p><hr><blockquote><p><strong>Vetur can’t find ‘package.json’ in /xxxx/xxxxxx.</strong><br><strong>Vetur can’t find tsconfig.json, jsconfig.json in /xxxx/xxxxxx.</strong><br><strong>The template root requires exactly one element.eslint-plugin-vue</strong></p></blockquote><p>경고2개, 문법 오류1개입니다.</p><p>자료를 찾아보고, 인터넷에 쓰여져있는 여러가지의 해결 방법을 해봤으나, 결국엔 그냥 껐습니다.</p><p><br><br><br></p><h3 id="3-해결"><a href="#3-해결" class="headerlink" title="[3] 해결"></a><strong>[3] 해결</strong></h3><hr><p>vscode에서 F1 누르고</p><blockquote><p>Preferences: Open Settings (JSON)</p></blockquote><p>를 입력합니다. 그 후 나오는 json 파일에서 아래의 4줄을 입력합니다.</p><figure class="highlight json"><figcaption><span>setting.json</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">                ...</span><br><span class="line">    <span class="attr">&quot;vetur.validation.template&quot;</span>: <span class="literal">false</span>,</span><br><span class="line">    <span class="attr">&quot;vetur.validation.script&quot;</span>: <span class="literal">false</span>,</span><br><span class="line">    <span class="attr">&quot;vetur.validation.style&quot;</span>: <span class="literal">false</span>,</span><br><span class="line">    <span class="attr">&quot;vetur.ignoreProjectWarning&quot;</span>: <span class="literal">true</span>,</span><br><span class="line">                ...</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><p>위의 3줄은 Vetur can’t find … 에 대한 경고를 제거하는 코드이고, </p><p>마지막 한줄은 문법 오류를 제거하는 코드입니다. <del>(사실 Vetur만 삭제하면 끝날 일인데)</del></p><p>그런데</p><p><strong>이 글을 작성하면서 조금 더 찾아보니 마지막 아래 줄에 대한 해결 방법이 있긴 했습니다.</strong></p><blockquote><p>“vetur.ignoreProjectWarning”: true</p></blockquote><p>처음 App.vue에는 </p><figure class="highlight html"><figcaption><span>App.vue</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">template</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">img</span> <span class="attr">alt</span>=<span class="string">&quot;Vue logo&quot;</span> <span class="attr">src</span>=<span class="string">&quot;./assets/logo.png&quot;</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">HelloWorld</span> <span class="attr">msg</span>=<span class="string">&quot;Welcome to Your Vue.js App&quot;</span>/&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">template</span>&gt;</span></span><br></pre></td></tr></table></figure><p>이런 식으로 작성되어 있을 텐데, 이것을</p><figure class="highlight html"><figcaption><span>App.vue</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">template</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">div</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">img</span> <span class="attr">alt</span>=<span class="string">&quot;Vue logo&quot;</span> <span class="attr">src</span>=<span class="string">&quot;./assets/logo.png&quot;</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">HelloWorld</span> <span class="attr">msg</span>=<span class="string">&quot;Welcome to Your Vue.js App&quot;</span>/&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">template</span>&gt;</span></span><br></pre></td></tr></table></figure><p><strong>이런 식으로 하나의 template 태그 아래, 하나의 div 태그만 두고, 그 안에 모든 html을 작성하면 됩니다.</strong></p><p><br><br><br></p><h3 id="4-결론"><a href="#4-결론" class="headerlink" title="[4] 결론"></a><strong>[4] 결론</strong></h3><hr><blockquote><p>벌써부터 공부하기 두려운 프레임워크입니다</p></blockquote><p>아니 </p><p>시작하기도 전부터 터지는 오류, 경고에</p><p>Vue에서 많이 쓰인다는 UI 프레임워크인 Vuetify도 Vue3는 지원 안한다고 해서, 결국 구글링의 연속입니다.</p><p>최신화된 강의도 별로 없고, 이거 배울려면 돈을 쓰던가 아니면 삽질을 하던가 해야겠습니다.</p><p><br><br><br></p><h3 id="5-참고-사이트"><a href="#5-참고-사이트" class="headerlink" title="[5] 참고 사이트"></a><strong>[5] 참고 사이트</strong></h3><hr><ol><li><a href="https://vuejs.github.io/vetur/guide/FAQ.html">Vetur 공식 FAQ</a></li><li><a href="https://newbedev.com/vue-3-the-template-root-requires-exactly-one-element-eslint-plugin-vue">Vue 3 The template root requires exactly one element.eslint-plugin-vue</a></li><li><a href="https://codingapple.com/forums/topic/multiple-root-%EC%83%9D%EC%84%B1%EC%9C%BC%EB%A1%9C%EC%9D%B8%ED%95%9C-%EC%97%90%EB%9F%AC/">multiple root 생성으로인한 에러</a></li><li><a href="https://taisou.tistory.com/737">[vue]Vetur 플러그인 관련 오류</a> (저는 이걸로 해결 안됐습니다)</li></ol>]]></content:encoded>
+      
+      
+      <category domain="https://MGS-95.github.io/categories/Framework/">Framework</category>
+      
+      <category domain="https://MGS-95.github.io/categories/Framework/Vue/">Vue</category>
+      
+      
+      <category domain="https://MGS-95.github.io/tags/typescript/">typescript</category>
+      
+      <category domain="https://MGS-95.github.io/tags/framework/">framework</category>
+      
+      <category domain="https://MGS-95.github.io/tags/vue3/">vue3</category>
+      
+      <category domain="https://MGS-95.github.io/tags/vue/">vue</category>
+      
+      <category domain="https://MGS-95.github.io/tags/frontend/">frontend</category>
+      
+      
+      <comments>https://mgs-95.github.io/2021/10/18/2021-10-18-001-vue3-start-error/#disqus_thread</comments>
+      
+    </item>
     
     <item>
       <title>쿠키, 웹 스토리지 사용법(JavaScript)</title>
