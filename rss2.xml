@@ -1,0 +1,621 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0"
+  xmlns:atom="http://www.w3.org/2005/Atom"
+  xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>エンジニアになりたい者</title>
+    <link>https://MGS-95.github.io/</link>
+    
+    <atom:link href="https://mgs-95.github.io/rss2.xml" rel="self" type="application/rss+xml"/>
+    
+    <description>まだ無能だけど頑張っていきたい者</description>
+    <pubDate>Wed, 28 Sep 2022 14:13:53 GMT</pubDate>
+    <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>Amazon CodeWhisperer 프리뷰 사용법 및 후기</title>
+      <link>https://mgs-95.github.io/2022/09/28/2022-09-28-001-aws-code-whisperer/</link>
+      <guid>https://mgs-95.github.io/2022/09/28/2022-09-28-001-aws-code-whisperer/</guid>
+      <pubDate>Wed, 28 Sep 2022 13:06:24 GMT</pubDate>
+      
+      <description>&lt;hr&gt;&lt;br&gt;
+
+&lt;h3 id=&quot;1-개요&quot;&gt;&lt;a href=&quot;#1-개요&quot; class=&quot;headerlink&quot; title=&quot;[1] 개요&quot;&gt;&lt;/a&gt;&lt;strong&gt;[1] 개요&lt;/strong&gt;&lt;/h3&gt;&lt;hr&gt;
+
+&lt;p&gt;오랜만에 포스팅 합니다. 이전 포스팅 날짜를 보니 거의 10개월 만의 포스팅이네요.&lt;/p&gt;</description>
+      
+      
+      
+      <content:encoded><![CDATA[<hr><br><h3 id="1-개요"><a href="#1-개요" class="headerlink" title="[1] 개요"></a><strong>[1] 개요</strong></h3><hr><p>오랜만에 포스팅 합니다. 이전 포스팅 날짜를 보니 거의 10개월 만의 포스팅이네요.</p><span id="more"></span><p>요즘 회사에서는 한창 AWS를 사용하는 프로젝트 중이라, 저도 많이 배우고 있습니다.</p><p>다만, 코딩의 비중이 매우 낮아 사실상 개인적으로 프로그래밍을 하지 않으면 안될 정도네요. </p><p>그런 의미에서 취미로 뭔가 만들려고 하던 중, AWS에서도 AI기반 코드 제안 서비스가 있다고 들어서 이를 사용하고자 하였습니다.</p><p>저는 GitHub Copilot를 사용해 본 적이 없어서 둘을 비교해 볼 수는 없기에 CodeWhisperer 에 대한 이야기만 하고자 합니다.</p><p><br><br><br></p><h3 id="2-Amazon-CodeWhisperer-신청"><a href="#2-Amazon-CodeWhisperer-신청" class="headerlink" title="[2] Amazon CodeWhisperer 신청"></a><strong>[2] Amazon CodeWhisperer 신청</strong></h3><hr><p>우선 CodeWhisperer에 대한 사용 신청을 먼저 해야 합니다.</p><p>현재 CodeWhisperer는 프리뷰 상태이므로 <a href="https://pages.awscloud.com/codewhisperer-sign-up-form.html">여기</a>에서 신청하시면 됩니다.</p><p>신청 후, 며칠이 지나면(본인 기준 1주일 소요) 엑세스 코드가 들어있는 메일이 옵니다.</p><p>또한 메일에는 VSCode, JetBrains 에디터등 IDE에서 사용방법에 대한 링크도 있으므로 들어가셔서 적용하시면 됩니다.<br>참고로 저는 VSCode에서 사용중입니다.</p><p><br><br><br></p><h3 id="3-사용"><a href="#3-사용" class="headerlink" title="[3] 사용"></a><strong>[3] 사용</strong></h3><hr><p>사용법은 매우 간단합니다. 각 언어에 맞게 만들고 싶은 소스를 설명하는 주석을 적고 tab을 누른 뒤 잠시 기다리거나, 함수를 정의하면 됩니다.</p><p>예를 들어 두개의 숫자를 합하는 함수를 만든다고 가정했을 때,</p><p><img src="/img/2022-09-28/001/001.gif?style=centerme" alt="파이썬의 경우" title="대체 텍스트"></p><p><img src="/img/2022-09-28/001/002.gif?style=centerme" alt="JS의 경우" title="대체 텍스트"></p><p>위 그림과 같이 간단한 함수는 주석만 적어도 바로 나옵니다.</p><p>또한 방향키 (←,→)로 다른 코드를 제안받을 수도 있습니다.</p><p>그리고 AWS에서 만든 서비스 답게, AWS 서비스 생성도 가능합니다</p><p><img src="/img/2022-09-28/001/003.gif?style=centerme" alt="JS에서 S3 버킷 생성" title="대체 텍스트"></p><p>가장 유용하다고 느낀 부분은, Lambda 함수 작성 시, api 호출 템플릿을 빠르게 만들 수 있다는 점이었습니다.</p><p><img src="/img/2022-09-28/001/004.gif?style=centerme" alt="JS에서 Lambda function 작성" title="대체 텍스트"></p><p>물론 문법적으로 수정할 부분이 있기야 하지만, 예시 템플릿 하나를 바로 만들어 주니, <br><br>확실히 반복 작업이 줄어드는 장점이 있습니다.</p><blockquote><p>TMI로, 일본어 주석도 대응한다고 합니다</p></blockquote><p><br><br><br></p><h3 id="4-결론"><a href="#4-결론" class="headerlink" title="[4] 결론"></a><strong>[4] 결론</strong></h3><hr><p>솔직히 매우 편리하긴 합니다.<br>프리뷰이고, 따로 신청을 해야 함에도 불구하고 이 정도 퀄리티라면 정식 출시가 기다려지네요.</p><p><br><br><br></p><h3 id="5-참고-사이트"><a href="#5-참고-사이트" class="headerlink" title="[5] 참고 사이트"></a><strong>[5] 참고 사이트</strong></h3><hr><ol><li><a href="https://docs.aws.amazon.com/toolkit-for-vscode/latest/userguide/codewhisperer-overview.html">[공식]Working with CodeWhisperer in VS Code</a></li><li><a href="https://dev.classmethod.jp/articles/amazon-codewhisperer/">【プレビュー】Amazon CodeWhisperer で爆速コーディングしてみた</a></li></ol>]]></content:encoded>
+      
+      
+      <category domain="https://MGS-95.github.io/categories/AWS/">AWS</category>
+      
+      
+      <category domain="https://MGS-95.github.io/tags/aws/">aws</category>
+      
+      <category domain="https://MGS-95.github.io/tags/copilot/">copilot</category>
+      
+      <category domain="https://MGS-95.github.io/tags/code-whisperer/">code whisperer</category>
+      
+      
+      <comments>https://mgs-95.github.io/2022/09/28/2022-09-28-001-aws-code-whisperer/#disqus_thread</comments>
+      
+    </item>
+    
+    <item>
+      <title>지극히 개인적인 생각</title>
+      <link>https://mgs-95.github.io/2022/09/28/2021-10-03-007-memo/</link>
+      <guid>https://mgs-95.github.io/2022/09/28/2021-10-03-007-memo/</guid>
+      <pubDate>Wed, 28 Sep 2022 12:57:15 GMT</pubDate>
+      
+      <description>&lt;hr&gt;&lt;br&gt;
+
+&lt;p&gt;&lt;strong&gt;보는 관점에 따라 민감한 내용이 담겨 있습니다.&lt;/strong&gt;&lt;/p&gt;
+&lt;br&gt;
+
+&lt;blockquote&gt;
+&lt;h3 id=&quot;개발자가-너무-많다&quot;&gt;&lt;a href=&quot;#개발자가-너무-많다&quot; class=&quot;headerlink&quot; title=&quot;개발자가 너무 많다&quot;&gt;&lt;/a&gt;&lt;em&gt;&lt;strong&gt;개발자가 너무 많다&lt;/strong&gt;&lt;/em&gt;&lt;/h3&gt;&lt;/blockquote&gt;</description>
+      
+      
+      
+      <content:encoded><![CDATA[<hr><br><p><strong>보는 관점에 따라 민감한 내용이 담겨 있습니다.</strong></p><br><blockquote><h3 id="개발자가-너무-많다"><a href="#개발자가-너무-많다" class="headerlink" title="개발자가 너무 많다"></a><em><strong>개발자가 너무 많다</strong></em></h3></blockquote><span id="more"></span><br><p>최근 유튜브 추천 영상으로 비전공으로 IT회사에 취업한 사람들의 Vlog나,<br><br>그런 분들의 지식 공유 영상이 뜨면서 꽤 많이 보게 되었는데,<br><br>우선 대부분의 비전공자 분들은 저와 같이 웹쪽으로 취업을 하신 것 같아 보였습니다.<br><br>사실 웹이 입문하기엔 가장 쉽다고도 하고, 실제로도 다른 소프트웨어 엔지니어 대비 자신이 만든 결과물을 빠르게 볼 수 있기도 해서 흥미를 붙이기에는 좋은 분야인 듯 합니다.</p><br><p><u>하지만</u></p><br><p>입문이 쉽다는 거지, 입문 후 배워야 할 내용은 다른 분야랑 차이가 없습니다.<br> 심하면 다른 IT분야보다 더 배워야 합니다.</p><p>그럼에도 불구하고 유튜브에 영상을 올리시는 중소기업에 취직하신</p><p>비전공자 분들이 올리신 영상 중, 꽤 많은 영상들이</p><p>단지 회사 생활에서 기존의 자신이 배웠던 것만 쓰고 마는, </p><p>어찌보면 기계적인 일처리를 하고 있는 것 같아 보였습니다.</p><p><br><br></p><p>몇몇 사람들은 IT에서 일하는 사람들을 이렇게 나누기도 합니다.</p><blockquote><p>그냥 컴퓨터 언어(=코드)를 사용할 줄 아는 코더와,<br>프로그램을 위해 코드를 사용하는 프로그래머와,<br>실제 소프트웨어를 만드는 디벨로퍼, 즉 개발자가 있다.</p><p>보통은 코더, 프로그래머 혹은 코더, 개발자 이렇게 2가지 종류로 나눈다. </p></blockquote><p>그리고 인터넷에서는 ‘<em>비전공자 국비지원은 코더로 양산된다</em>‘ 라고도 합니다.</p><p>얼추 맞는 이야기이긴 합니다. 저도 비전공자이고, 실제로 코더가 된 사람들도 경험했습니다.</p><p>심지어는 단기간으로 웹을 배운 비전공자 출신들이 은어적으로 ‘<strong>웹싸개</strong>‘ 라고 불리기도 합니다.</p><hr><p><img src="/img/2021-10-04/001/001.png" alt="구글에 웹싸개라고 검색한 결과" title="대체 텍스트"></p><hr><br><p>사실 저도 할 말은 없습니다. 저도 지금은 웹싸개나 다름 없는 신세라고 생각하거든요.</p><p>그렇기 때문에 끊임없이 새로운 기술을 익히고, 더더욱 폭 넓은 정보를 익혀야 한다고 생각합니다.</p><br><p>우리와 같은 비전공자 노베이스를 취직 시켜준 회사도 바보가 아닌 이상, 취직에는 이유가 있습니다.</p><blockquote><p>자신이 만약 국비 지원을 다니는데, 국비 지원에서의 취업 연계로 취업하였다면<br>취업을 댓가로 학교와 학원이 이득을 보는 구조이고,</p><p>스스로 찾아서 취업을 하였다 하여도, 자신의 실력이 취업할 실력이 아님에도 되었다면,<br>그 회사는 단지 ‘<strong>웹싸개</strong>‘를 원하는 곳일 뿐입니다.</p></blockquote><p>비전공자들은 대부분은 규모 있는 IT기업에는 취업하지 못합니다.</p><br><p>이전에 모 대기업 게임회사의 AI부서에서 아르바이트를 한 적이 있었는데,<br>해당 부서의 모든 직원분들은 전공자에, 심지어 대부분이 이쪽 분야의 대학원을 졸업하신 분들이었습니다.<br>이는 웹쪽도 마찬가지였습니다.</p><p>비전공자가 입사하기 위해 시도 할 수 있는 방법으로는 ‘<u>경력직으로 입사</u>‘ 밖에는 없는 셈입니다.</p><p>물론 그것도 경력을 채울 때까지 꾸준히 폭 넓고, 깊은 공부를 해야 가능한 이야기죠.</p><p><br><br><br></p><hr><p>제가 제 자신을 포함해서 비전공자 분들에게 말씀드리고 싶은 것은 딱 하나입니다.</p><blockquote><p>취미를 적는 란에 개발이라고 쓸 정도의 마인드를 가지세요. 코딩이 아니라 개발이요.</p></blockquote><p>물론 코딩도 중요하지만, 코딩만 한다면 그건 <a href="http://channy.creation.net/blog/557">코드 몽키</a>와 다를 게 없다고 생각합니다.</p><p>끊임 없이 새로운 기술을 익히고, </p><p>전체적인 개발 프로세스에 대한 공부를 취미로 둘 정도가 되어야 한다는 것입니다.</p><br><p>개발자는 카페에서 여유롭게 노트북 켜놓고 코딩하는, </p><p>비전공자가 보기엔 멋있을 수도 있는 모습은 진정 개발자의 모습이 아닙니다.</p><br><p>특히 4년, 혹은 그 이상의 시간을 IT공부를 한 전공자에 비해 </p><p>1년도 안되는 기간에 배운 지식은 턱 없이 부족합니다. 정말 부족해요.</p><br><p>배우는 기관에 따라 다르지만 제가 배운 기관 기준으로 말씀드리면,</p><p>Java를 배웠고, Spring을 배웠고, 게시판 CRUD 구현하였고, 정보처리기사 자격증 강의도 들어, 총 7개월 정도 교육을 들었습니다.</p><p>조금 더 붙이면 RDBMS사용법도 좀 배우고, 웹에서는 JS, JS의 라이브러리들을 배웠습니다.</p><br><p>배우는 7개월 동안, 그것도 많다고 느껴졌는데, <strong>막상 회사를 들어가니 그게 아니었습니다.</strong></p><blockquote><p>서버에 대한 지식을 익히기 위해 리눅스를 배워야 했고, </p><p>협업을 하기 위해 여러 협업 툴을 다루는 법을 익혀야 했고,</p><p>테스트 주도 개발을 위해 테스트에 대한 전반적이면서 심도있는 지식을 익혀야 했고,</p><p>프론트엔드 프레임워크 및 라이브러리의 넘쳐나는 최신 기술들을 익혀야 했고,</p><p>다른 언어 기반의 프레임워크로 생성한 백엔드의 구조도 알아야 했습니다.</p></blockquote><p>심지어 저는 일본 회사이기에 사양서는 수십, 수백개가 넘는 문서는 일본어로 되어 있습니다.</p><p>그리고 위의 배워야 하는 기술 및 개념은 아직 현재 진행형으로 추가되고 있습니다.</p><p><u>그렇기 때문에 이 블로그에서 간략하게 제가 배운 지식을 기록으로 남기고자 하려는 것입니다.</u></p><p><br><br><br></p><hr><p>약간 다른 이야기지만, 아는 분 중 어떤 개발자 분이 이런 말씀을 하셨습니다.</p><blockquote><p>개발자는 항상 더 나은 코드를 생각해야 한다.</p></blockquote><p>사실 이것도 다들 아는 말입니다. 클린 코드를 지향해야 한다는 건 </p><p>웬만큼 배운 분들이면 다들 압니다. 그렇지만 실천하기엔 힘들죠.</p><p>그럼에도 해야 합니다. 그렇게 해야 이 업계에서 살아남는다고 생각합니다.</p><p>개발자는 끊임없이 고민하고, 공부해야한다는 의미입니다.</p><br><p>다시 유튜브의 이야기로 돌아오자면, 비전공자분들께서 나름대로 열심히 노력하셔서 취업하시고,</p><p>자신들의 일상을 단지 보여주는 영상에서, 일적인 부분은 컨텐츠적인 요소이다. 라고 보면</p><p>사실 이렇게까지 길게 쓸 필요는 없긴 합니다.</p><br><p>다만, 영상만 봤을 때는 그저 <strong>코더의 모습만 보이는 듯 하여</strong> 이렇게 포스팅을 하게 되었습니다.</p><p>만약, 개발이 자신에게 맞지 않다면 과감하게 다른 길로 가는 게 좋다고 생각합니다.</p><br> <p>마지막으로 영상 하나 첨부하고, 오늘의 아카이브는 이것으로 마치도록 하겠습니다.</p><p><strong>개발</strong>이라는 것에 대해 한 번 제대로 생각하는 계기가 되었으면 하는 바람입니다.</p><div class="video-container"><iframe src="https://www.youtube.com/embed/OHbI7u32iyY" frameborder="0" loading="lazy" allowfullscreen></iframe></div>]]></content:encoded>
+      
+      
+      <category domain="https://MGS-95.github.io/categories/Memo/">Memo</category>
+      
+      
+      <category domain="https://MGS-95.github.io/tags/memo/">memo</category>
+      
+      <category domain="https://MGS-95.github.io/tags/youtube/">youtube</category>
+      
+      <category domain="https://MGS-95.github.io/tags/%EB%82%B4-%EC%83%9D%EA%B0%81/">내 생각</category>
+      
+      <category domain="https://MGS-95.github.io/tags/%EB%B9%84%EC%A0%84%EA%B3%B5/">비전공</category>
+      
+      <category domain="https://MGS-95.github.io/tags/%EB%B9%84%EC%A0%84%EA%B3%B5-%EA%B0%9C%EB%B0%9C%EC%9E%90/">비전공 개발자</category>
+      
+      <category domain="https://MGS-95.github.io/tags/%EA%B5%AD%EB%B9%84-%EC%A7%80%EC%9B%90/">국비 지원</category>
+      
+      
+      <comments>https://mgs-95.github.io/2022/09/28/2021-10-03-007-memo/#disqus_thread</comments>
+      
+    </item>
+    
+    <item>
+      <title>첫 투고</title>
+      <link>https://mgs-95.github.io/2022/09/28/2021-09-04-001-hello-world/</link>
+      <guid>https://mgs-95.github.io/2022/09/28/2021-09-04-001-hello-world/</guid>
+      <pubDate>Wed, 28 Sep 2022 12:57:15 GMT</pubDate>
+      
+      <description>&lt;hr&gt;&lt;br&gt;
+
+&lt;h3 id=&quot;한-번-마음-잡고-깃-블로그를-운영하고자-합니다&quot;&gt;&lt;a href=&quot;#한-번-마음-잡고-깃-블로그를-운영하고자-합니다&quot; class=&quot;headerlink&quot; title=&quot;한 번 마음 잡고 깃 블로그를 운영하고자 합니다.&quot;&gt;&lt;/a&gt;&lt;strong&gt;한 번 마음 잡고 깃 블로그를 운영하고자 합니다.&lt;/strong&gt;&lt;/h3&gt;</description>
+      
+      
+      
+      <content:encoded><![CDATA[<hr><br><h3 id="한-번-마음-잡고-깃-블로그를-운영하고자-합니다"><a href="#한-번-마음-잡고-깃-블로그를-운영하고자-합니다" class="headerlink" title="한 번 마음 잡고 깃 블로그를 운영하고자 합니다."></a><strong>한 번 마음 잡고 깃 블로그를 운영하고자 합니다.</strong></h3><span id="more"></span><br>기타 설정은 물론, 아직 검색엔진조차 제대로 설정하지 않아 구글이나 네이버에 검색도 안되기 때문에,<p>아마 이 글을 보시는 분들은 제 깃허브를 통해 들어오신 분들일 듯 합니다. <del>(국비지원 동기들 보고 있나)</del><br><br><br>거창한 건 없고, 프로필 제목 처럼 제 지식을 간단하게 아카이브로 남기고자 합니다.</p><p>첫 투고이니 간단하게 제 소개를 하자면, </p><blockquote><p><strong>국비지원으로 IT공부를 시작한 비전공자 개발조무사</strong></p></blockquote><p>라고 생각합니다. 비전공자를 비하하는 게 아니라 제 실력이 그렇다는 겁니다.</p><p>사실 이 포스팅도 꽤 고민 끝에 수정하였는데, 다음부터는 착실하게 포스팅 하고자 합니다.</p><p>그럼 다음 게시물부터 본격적으로 시작하겠습니다.</p><p><br><hr></p>]]></content:encoded>
+      
+      
+      <category domain="https://MGS-95.github.io/categories/Memo/">Memo</category>
+      
+      
+      <category domain="https://MGS-95.github.io/tags/memo/">memo</category>
+      
+      <category domain="https://MGS-95.github.io/tags/%E5%88%9D%E5%BF%83%E8%80%85/">初心者</category>
+      
+      <category domain="https://MGS-95.github.io/tags/%E5%88%9D%E6%8A%95%E7%A8%BF/">初投稿</category>
+      
+      <category domain="https://MGS-95.github.io/tags/%EC%B2%AB-%ED%88%AC%EA%B3%A0/">첫 투고</category>
+      
+      <category domain="https://MGS-95.github.io/tags/%EC%B2%AB-%EA%B8%80/">첫 글</category>
+      
+      
+      <comments>https://mgs-95.github.io/2022/09/28/2021-09-04-001-hello-world/#disqus_thread</comments>
+      
+    </item>
+    
+    <item>
+      <title>[20211204 기준] Vue3 + Tailwind CSS 프로젝트 생성법</title>
+      <link>https://mgs-95.github.io/2021/12/04/2021-12-04-001-how-to-setup-vue3-with-tailwindcss/</link>
+      <guid>https://mgs-95.github.io/2021/12/04/2021-12-04-001-how-to-setup-vue3-with-tailwindcss/</guid>
+      <pubDate>Sat, 04 Dec 2021 07:20:26 GMT</pubDate>
+      
+      <description>&lt;hr&gt;&lt;br&gt;
+
+&lt;h3 id=&quot;1-개요&quot;&gt;&lt;a href=&quot;#1-개요&quot; class=&quot;headerlink&quot; title=&quot;[1] 개요&quot;&gt;&lt;/a&gt;&lt;strong&gt;[1] 개요&lt;/strong&gt;&lt;/h3&gt;&lt;hr&gt;
+
+&lt;p&gt;이번에도 오랜만의 포스팅입니다.&lt;/p&gt;
+&lt;p&gt;회사 일로 바빠서 쓸 시간이 없었지만,&lt;br&gt;왜 공백이 길었는지 궁금하신 분들은 어차피 없을테니 바로 글 작성하도록 하겠습니다.&lt;/p&gt;</description>
+      
+      
+      
+      <content:encoded><![CDATA[<hr><br><h3 id="1-개요"><a href="#1-개요" class="headerlink" title="[1] 개요"></a><strong>[1] 개요</strong></h3><hr><p>이번에도 오랜만의 포스팅입니다.</p><p>회사 일로 바빠서 쓸 시간이 없었지만,<br>왜 공백이 길었는지 궁금하신 분들은 어차피 없을테니 바로 글 작성하도록 하겠습니다.</p><span id="more"></span><p><br><br><br></p><h3 id="2-Vue3-설치"><a href="#2-Vue3-설치" class="headerlink" title="[2] Vue3 설치"></a><strong>[2] Vue3 설치</strong></h3><hr><ol start="0"><li><p>(참고) Vue.js 와 Vue</p><blockquote><p>같은 의미입니다. 즉, Vue.js = Vue2 or Vue3입니다.<br>왜 당연한 것 같은 이야기를 하냐면, <strong>Angular</strong>는 <strong>AngularJS</strong> 와 <strong>다릅니다</strong>.</p></blockquote></li></ol><br><ol><li><p>사전 설치 준비물</p><blockquote><ul><li><a href="https://nodejs.org/ko/">Nodejs</a> (2021-12-04 기준 16.13.1 *<strong>LTS</strong> 버전 설치)<ul><li>LTS : 장기 지원 버전의 약자로, 안정된 버전 중 가장 최신 버전을 의미</li><li><strong>Nodejs는 무조건 LTS 버전으로 받아야 합니다.</strong> (<a href="https://stackoverflow.com/questions/69692842/error-message-error0308010cdigital-envelope-routinesunsupported">여기 참조</a>)</li></ul></li><li><a href="https://code.visualstudio.com/">vscode</a> (Vue 개발용 IDE, 아래는 추천 확장 프로그램)<ul><li><strong>Vetur</strong> : Vue.js 코드 문법 강조, 디버깅, Linting 지원</li><li><strong>Vue 3 Snippets</strong> : Vue 컴포넌트 작성 시 자동완성 지원</li><li><strong>Vue Peek</strong> : 컴포넌트 추적 가능</li><li><strong>ESLint</strong> : 코드 문법 검사기(Vue, React, Angular 모두 사용)</li></ul></li></ul></blockquote></li></ol><br><ol start="2"><li><p>Vue3 설치 및 프로젝트 생성</p><p> <strong>2-1. Vue CLI 설치</strong></p><blockquote><p>Vue CLI 는 말 그대로 Vue를 CLI(터미널 창)에서 개발하기 위한 도구입니다.</p></blockquote> <br><p> 터미널 창에서 아래의 명령어를 입력합니다.</p> <figure class="highlight plaintext"><figcaption><span>Terminal</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install -g @vue/cli</span><br></pre></td></tr></table></figure><p> (만일, Vue2를 설치하려면 <a href="https://allblack0811.tistory.com/28">이 게시글</a>을 참고해주세요)</p> <br><p> <strong>2-2. Vue3 프로젝트 생성</strong></p><p> 터미널 창에서 아래의 명령어를 입력합니다.</p> <figure class="highlight plaintext"><figcaption><span>Terminal</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">vue create 프로젝트명</span><br></pre></td></tr></table></figure> <br><p> 그러면 아래와 같은 선택지가 나오는데, Vue3를 선택하면 됩니다.</p><p> <img src="/img/2021-12-04/001/001.png?style=centerme" alt="방향키로 Vue 3 선택 후 엔터 " title="대체 텍스트"></p><p> 프로젝트 설치가 완료된 후, 프로젝트가 잘 실행되는지 테스트합니다.</p> <figure class="highlight plaintext"><figcaption><span>Terminal</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">~\프로젝트명&gt; npm run serve</span><br></pre></td></tr></table></figure><p> 잘 실행이 된다면 다음으로 CSS 프레임워크인 Tailwind CSS를 설치합니다</p></li></ol><br><ol start="3"><li><p>(선택) Tailwind CSS 설치</p><p> <strong>3-1. Tailwind CSS 설치</strong></p><p> 터미널 창에서 아래의 명령어를 입력합니다.</p> <figure class="highlight plaintext"><figcaption><span>Terminal</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install -D tailwindcss@latest postcss@latest autoprefixer@latest</span><br></pre></td></tr></table></figure><p> 위의 Tailwind CSS를 설치하면 2021-12-04 기준,<br> Tailwind CSS 적용 후 npm run serve 시 아래와 같은 오류가 발생합니다.</p><blockquote><p>Error: PostCSS plugin tailwindcss requires PostCSS 8.</p></blockquote><p> 쉽게 말해서, Tailwind CSS에서는 PostCSS라는 플러그인의 8버전을 아직 지원안한다는 의미입니다.</p><p> 따라서 PostCSS8 버전을 삭제하고 PostCSS7 버전을 설치합니다</p> <figure class="highlight plaintext"><figcaption><span>Terminal</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">npm uninstall tailwindcss postcss autoprefixer</span><br><span class="line">npm install -D tailwindcss@npm:@tailwindcss/postcss7-compat @tailwindcss/postcss7-compat postcss@^7 autoprefixer@^9</span><br></pre></td></tr></table></figure><blockquote><p>되도록 최신 버전을 쓰는 게 좋다고 생각하기에 일단 8버전 설치를 먼저 시도합니다.</p></blockquote> <br><p> <strong>3-2. postcss.config.js 와 tailwind.config.js 파일 생성</strong></p><p> 터미널 창에서 아래의 명령어를 입력합니다.</p> <figure class="highlight plaintext"><figcaption><span>Terminal</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npx tailwindcss init -p</span><br></pre></td></tr></table></figure><p> 그 후 배포 시 프로젝트 경량화를 위해 필요한 css만 추출하도록<br> tailwind.config.js내 purge 옵션에 대상 파일을 추가합니다.</p> <figure class="highlight js"><figcaption><span>tailwind.config.js</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="variable language_">module</span>.<span class="property">exports</span> = &#123;</span><br><span class="line"><span class="attr">purge</span>: [<span class="string">&#x27;./index.html&#x27;</span>, <span class="string">&#x27;./src/**/*.&#123;vue,js,ts,jsx,tsx&#125;&#x27;</span>], <span class="comment">// 이 부분만 변경</span></span><br><span class="line"><span class="attr">darkMode</span>: <span class="literal">false</span>, <span class="comment">// or &#x27;media&#x27; or &#x27;class&#x27;</span></span><br><span class="line"><span class="attr">theme</span>: &#123;</span><br><span class="line">    <span class="attr">extend</span>: &#123;&#125;,</span><br><span class="line">&#125;,</span><br><span class="line"><span class="attr">variants</span>: &#123;</span><br><span class="line">    <span class="attr">extend</span>: &#123;&#125;,</span><br><span class="line">&#125;,</span><br><span class="line"><span class="attr">plugins</span>: [],</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure> <br><p> <strong>3-3. app.css 생성 후 Tailwind CSS 적용</strong></p><p> 기존의 CSS 대신 Tailwind CSS를 적용 할 수 있게 src 폴더 내 styles라는 폴더 생성 후,<br> 그 안에 app.css라는 파일을 만들어 Tailwind CSS를 적용시킵니다.</p> <figure class="highlight css"><figcaption><span>src/styles/app.css</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">// 아래 코드 모두 추가</span><br><span class="line"><span class="keyword">@tailwind</span> base;</span><br><span class="line"><span class="keyword">@tailwind</span> components;</span><br><span class="line"><span class="keyword">@tailwind</span> utilities;</span><br></pre></td></tr></table></figure><p> 그 후, main.js에 app.css를 적용시킵니다.</p> <figure class="highlight js"><figcaption><span>main.js</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> &#123; createApp &#125; <span class="keyword">from</span> <span class="string">&#x27;vue&#x27;</span></span><br><span class="line"><span class="keyword">import</span> <span class="title class_">App</span> <span class="keyword">from</span> <span class="string">&#x27;./App.vue&#x27;</span></span><br><span class="line"><span class="keyword">import</span> <span class="string">&#x27;./styles/app.css&#x27;</span>; <span class="comment">// 이 코드 추가</span></span><br><span class="line"></span><br><span class="line"><span class="title function_">createApp</span>(<span class="title class_">App</span>).<span class="title function_">mount</span>(<span class="string">&#x27;#app&#x27;</span>)</span><br></pre></td></tr></table></figure> <br><p> <strong>3-4. Tailwind CSS 적용 확인</strong></p><p> App.vue, HelloWorld.vue 둘 다 기본 작성된 CSS는 지우고,<br> 둘 중 하나에 Tailwind CSS가 적용이 잘 됐는지 테스트합니다.</p> <figure class="highlight html"><figcaption><span>HelloWorld.vue</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">template</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;hello&quot;</span>&gt;</span></span><br><span class="line">    <span class="comment">&lt;!-- 해당 요소 내 텍스트를 파란색으로 바꿈 --&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">h1</span> <span class="attr">class</span>=<span class="string">&quot;text-blue-700&quot;</span>&gt;</span>&#123;&#123; msg &#125;&#125;<span class="tag">&lt;/<span class="name">h1</span>&gt;</span></span><br><span class="line">        ...</span><br><span class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">template</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">script</span>&gt;</span></span><br><span class="line">    ...</span><br><span class="line"><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br></pre></td></tr></table></figure><p> 확인 하면 제대로 적용 된 걸 볼 수 있습니다.</p><p> <img src="/img/2021-12-04/001/002.png?style=centerme" alt="적용된 모습" title="대체 텍스트"></p></li></ol><p><br><br><br></p><h3 id="3-참고-사이트"><a href="#3-참고-사이트" class="headerlink" title="[3] 참고 사이트"></a><strong>[3] 참고 사이트</strong></h3><hr><ol><li><a href="https://docs.microsoft.com/ko-kr/windows/dev-environment/javascript/vue-beginners-tutorial">MS 공식 자습서: 초보자를 위한 Vue.js</a></li><li><a href="https://devjavu.space/post/how-to-setup-tailwind-css-in-vue-3/">How to Setup Tailwind CSS in Vue 3</a></li><li><a href="https://tailwindcss.com/docs/guides/vue-3-vite">Install Tailwind CSS with Vue 3 and Vite</a></li></ol>]]></content:encoded>
+      
+      
+      <category domain="https://MGS-95.github.io/categories/Framework/">Framework</category>
+      
+      <category domain="https://MGS-95.github.io/categories/Framework/Vue/">Vue</category>
+      
+      
+      <category domain="https://MGS-95.github.io/tags/typescript/">typescript</category>
+      
+      <category domain="https://MGS-95.github.io/tags/framework/">framework</category>
+      
+      <category domain="https://MGS-95.github.io/tags/vue3/">vue3</category>
+      
+      <category domain="https://MGS-95.github.io/tags/vue/">vue</category>
+      
+      <category domain="https://MGS-95.github.io/tags/frontend/">frontend</category>
+      
+      
+      <comments>https://mgs-95.github.io/2021/12/04/2021-12-04-001-how-to-setup-vue3-with-tailwindcss/#disqus_thread</comments>
+      
+    </item>
+    
+    <item>
+      <title>Vue3 설치 시 vscode Vetur Extension 오류 일시적인 해결법</title>
+      <link>https://mgs-95.github.io/2021/10/18/2021-10-18-001-vue3-start-error/</link>
+      <guid>https://mgs-95.github.io/2021/10/18/2021-10-18-001-vue3-start-error/</guid>
+      <pubDate>Mon, 18 Oct 2021 14:15:02 GMT</pubDate>
+      
+      <description>&lt;hr&gt;&lt;br&gt;
+
+&lt;h3 id=&quot;1-개요&quot;&gt;&lt;a href=&quot;#1-개요&quot; class=&quot;headerlink&quot; title=&quot;[1] 개요&quot;&gt;&lt;/a&gt;&lt;strong&gt;[1] 개요&lt;/strong&gt;&lt;/h3&gt;&lt;hr&gt;
+
+&lt;p&gt;역시 작심 3일인가 봅니다. 오랜만의 포스팅입니다.&lt;/p&gt;
+&lt;p&gt;그럼에도 불구하고 오늘은 간단한 포스팅을 하고자 합니다.&lt;/p&gt;</description>
+      
+      
+      
+      <content:encoded><![CDATA[<hr><br><h3 id="1-개요"><a href="#1-개요" class="headerlink" title="[1] 개요"></a><strong>[1] 개요</strong></h3><hr><p>역시 작심 3일인가 봅니다. 오랜만의 포스팅입니다.</p><p>그럼에도 불구하고 오늘은 간단한 포스팅을 하고자 합니다.</p><span id="more"></span><p>주제넘게, 회사에서 쓰이는 Angular 도 제대로 알지도 못하는 주제에 Vue를 조금 공부해보고자 설치하였습니다.</p><p>사실 여기에서 제 얘기를 길게 말해봤자 해결법을 보러 오신 분들은 관심 없을테니 본론으로 들어갑니다. </p><p><br><br><br></p><h3 id="2-현상"><a href="#2-현상" class="headerlink" title="[2] 현상"></a><strong>[2] 현상</strong></h3><hr><blockquote><p>미리 말해두겠지만, 경고창을 닫는 방법이지, 완전한 해결법은 아니라고 생각합니다.<br>어디에서는 <a href="https://vuejs.github.io/vetur/guide/FAQ.html#vetur-can-t-find-tsconfig-json-jsconfig-json-in-xxxx-xxxxxx">Vuter 공식 FAQ</a>를 보라고 하지만 저는 해결이 안되었습니다</p></blockquote><p>일단 오류는 다음과 같습니다.</p><hr><p><img src="/img/2021-10-18/001/001.png?style=centerme" alt="우측하단에 나오는 Vetur 경고창" title="대체 텍스트"><br><img src="/img/2021-10-18/001/002.png?style=centerme" alt="App.vue에서 문법 오류로 나오는 HelloWorld 태그" title="대체 텍스트"></p><hr><blockquote><p><strong>Vetur can’t find ‘package.json’ in /xxxx/xxxxxx.</strong><br><strong>Vetur can’t find tsconfig.json, jsconfig.json in /xxxx/xxxxxx.</strong><br><strong>The template root requires exactly one element.eslint-plugin-vue</strong></p></blockquote><p>경고2개, 문법 오류1개입니다.</p><p>자료를 찾아보고, 인터넷에 쓰여져있는 여러가지의 해결 방법을 해봤으나, 결국엔 그냥 껐습니다.</p><p><br><br><br></p><h3 id="3-해결"><a href="#3-해결" class="headerlink" title="[3] 해결"></a><strong>[3] 해결</strong></h3><hr><p>vscode에서 F1 누르고</p><blockquote><p>Preferences: Open Settings (JSON)</p></blockquote><p>를 입력합니다. 그 후 나오는 json 파일에서 아래의 두 줄을 입력합니다.</p><figure class="highlight json"><figcaption><span>setting.json</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="punctuation">&#123;</span></span><br><span class="line">                ...</span><br><span class="line">    <span class="attr">&quot;vetur.validation.template&quot;</span><span class="punctuation">:</span> <span class="literal"><span class="keyword">false</span></span><span class="punctuation">,</span></span><br><span class="line">    <span class="attr">&quot;vetur.ignoreProjectWarning&quot;</span><span class="punctuation">:</span> <span class="literal"><span class="keyword">true</span></span><span class="punctuation">,</span></span><br><span class="line">                ...</span><br><span class="line"><span class="punctuation">&#125;</span></span><br></pre></td></tr></table></figure><p>위 코드들을 번역만 해도 알겠지만, 간단하게 설명하자면</p><p>위는 문법 유효성 검사 자체를 해제하는 코드이고, </p><p>아래는 Vetur can’t find … 에 대한 경고를 해제하는 코드입니다. <del>(사실 Vetur만 삭제하면 끝날 일인데)</del></p><p>그런데</p><p><strong>이 글을 작성하면서 조금 더 찾아보니 위의 줄에 대한 해결 방법이 있긴 했습니다.</strong></p><blockquote><p>“vetur.ignoreProjectWarning”: true</p></blockquote><p>처음 App.vue에는 </p><figure class="highlight html"><figcaption><span>App.vue</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">template</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">img</span> <span class="attr">alt</span>=<span class="string">&quot;Vue logo&quot;</span> <span class="attr">src</span>=<span class="string">&quot;./assets/logo.png&quot;</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">HelloWorld</span> <span class="attr">msg</span>=<span class="string">&quot;Welcome to Your Vue.js App&quot;</span>/&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">template</span>&gt;</span></span><br></pre></td></tr></table></figure><p>이런 식으로 작성되어 있을 텐데, 이것을</p><figure class="highlight html"><figcaption><span>App.vue</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">template</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">div</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">img</span> <span class="attr">alt</span>=<span class="string">&quot;Vue logo&quot;</span> <span class="attr">src</span>=<span class="string">&quot;./assets/logo.png&quot;</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">HelloWorld</span> <span class="attr">msg</span>=<span class="string">&quot;Welcome to Your Vue.js App&quot;</span>/&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">template</span>&gt;</span></span><br></pre></td></tr></table></figure><p><strong>이런 식으로 하나의 template 태그 아래, 하나의 div 태그로 또 감싸고, 그 안에 모든 html을 작성하면 됩니다.</strong></p><p><br><br><br></p><h3 id="4-결론"><a href="#4-결론" class="headerlink" title="[4] 결론"></a><strong>[4] 결론</strong></h3><hr><blockquote><p>벌써부터 공부하기 두려운 프레임워크입니다</p></blockquote><p>아니 </p><p>시작하기도 전부터 터지는 오류, 경고에</p><p>Vue에서 많이 쓰인다는 UI 프레임워크인 Vuetify도 Vue3는 지원 안한다고 해서, 결국 구글링의 연속입니다.</p><p>최신화된 강의도 별로 없고, 이거 배울려면 돈을 쓰던가 아니면 삽질을 하던가 해야겠습니다.</p><p><br><br><br></p><h3 id="5-참고-사이트"><a href="#5-참고-사이트" class="headerlink" title="[5] 참고 사이트"></a><strong>[5] 참고 사이트</strong></h3><hr><ol><li><a href="https://vuejs.github.io/vetur/guide/FAQ.html">Vetur 공식 FAQ</a></li><li><a href="https://newbedev.com/vue-3-the-template-root-requires-exactly-one-element-eslint-plugin-vue">Vue 3 The template root requires exactly one element.eslint-plugin-vue</a></li><li><a href="https://codingapple.com/forums/topic/multiple-root-%EC%83%9D%EC%84%B1%EC%9C%BC%EB%A1%9C%EC%9D%B8%ED%95%9C-%EC%97%90%EB%9F%AC/">multiple root 생성으로인한 에러</a></li><li><a href="https://taisou.tistory.com/737">[vue]Vetur 플러그인 관련 오류</a> (저는 이걸로 해결 안됐습니다)</li></ol>]]></content:encoded>
+      
+      
+      <category domain="https://MGS-95.github.io/categories/Framework/">Framework</category>
+      
+      <category domain="https://MGS-95.github.io/categories/Framework/Vue/">Vue</category>
+      
+      
+      <category domain="https://MGS-95.github.io/tags/typescript/">typescript</category>
+      
+      <category domain="https://MGS-95.github.io/tags/framework/">framework</category>
+      
+      <category domain="https://MGS-95.github.io/tags/vue3/">vue3</category>
+      
+      <category domain="https://MGS-95.github.io/tags/vue/">vue</category>
+      
+      <category domain="https://MGS-95.github.io/tags/frontend/">frontend</category>
+      
+      
+      <comments>https://mgs-95.github.io/2021/10/18/2021-10-18-001-vue3-start-error/#disqus_thread</comments>
+      
+    </item>
+    
+    <item>
+      <title>쿠키, 웹 스토리지 사용법(JavaScript)</title>
+      <link>https://mgs-95.github.io/2021/10/09/2021-10-09-003-web-storage/</link>
+      <guid>https://mgs-95.github.io/2021/10/09/2021-10-09-003-web-storage/</guid>
+      <pubDate>Sat, 09 Oct 2021 10:09:45 GMT</pubDate>
+      
+      <description>&lt;hr&gt;&lt;br&gt;
+
+&lt;h3 id=&quot;1-개요&quot;&gt;&lt;a href=&quot;#1-개요&quot; class=&quot;headerlink&quot; title=&quot;[1] 개요&quot;&gt;&lt;/a&gt;&lt;strong&gt;[1] 개요&lt;/strong&gt;&lt;/h3&gt;&lt;hr&gt;
+
+&lt;p&gt;사실 카테고리를 어디에 둘까 매우 고민했습니다.&lt;/p&gt;
+&lt;p&gt;IT 정보로 두려고 했는데, &lt;strong&gt;사용법이 주&lt;/strong&gt; 가 되려면 자바스크립트 코드는 필수니,&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;고민 끝에 언어 카테고리에 적고, 쿠키, 웹 스토리지가 뭔지 간략하게 설명하려고 합니다.&lt;/strong&gt;&lt;/p&gt;</description>
+      
+      
+      
+      <content:encoded><![CDATA[<hr><br><h3 id="1-개요"><a href="#1-개요" class="headerlink" title="[1] 개요"></a><strong>[1] 개요</strong></h3><hr><p>사실 카테고리를 어디에 둘까 매우 고민했습니다.</p><p>IT 정보로 두려고 했는데, <strong>사용법이 주</strong> 가 되려면 자바스크립트 코드는 필수니,</p><p><strong>고민 끝에 언어 카테고리에 적고, 쿠키, 웹 스토리지가 뭔지 간략하게 설명하려고 합니다.</strong></p><span id="more"></span><p><br><br><br></p><h3 id="2-설명"><a href="#2-설명" class="headerlink" title="[2] 설명"></a><strong>[2] 설명</strong></h3><hr><p>우선 대부분 크롬, 파이어폭스, 엣지와 같은 대중적인 브라우저를 사용한다는 가정하에 설명드립니다.<br>저는 크롬을 사용하겠습니다.</p><p>F12를 누르면 개발자 도구가 나오는데, 여기에서 응용프로그램(Application)탭을 클릭합니다.</p><p>그리고 왼쪽 사이드바에서 쿠키, 세션 스토리지, 로컬 스토리지가 나옵니다.</p><p><img src="/img/2021-10-09/002/001.png?style=centerme" alt="이런 화면이 나옵니다." title="대체 텍스트"></p><p><strong>이번 포스트에서는 위의 화면에서 로컬 스토리지, 세션 스토리지, 쿠키를 다룰 예정입니다.</strong></p><p>IndexedDB, 웹 SQL등은 사용자의 브라우저에 저장하는 DB API정도로 이해하면 됩니다.</p><p>어쨋든 위의 3개 저장소를 특정 사이트에서 각각 눌러보면 어떤 목록이 나오거나 안나오기도 합니다.</p><br><blockquote><p>그래서 여길 왜 들어가야 하는데? </p></blockquote><p>지금부터 사용할 코드들이 위 3개 저장소에서 저장되기 때문입니다.</p><blockquote><h3 id="쿠키"><a href="#쿠키" class="headerlink" title="쿠키"></a><strong>쿠키</strong></h3><ul><li><strong>우리가 방문한 웹 사이트의 정보를 클라이언트(우리의 브라우저)에 저장하는 파일</strong>입니다.</li><li>따라서 <strong>브라우저를 닫고 다시 켜도 만료 일자가 남아 있으면 사이트를 들어가도 이전에 설정한 정보 그대로로 보여줍니다.</strong></li><li>쿠키는 특정 사이트 내 최대 저장 갯수가 제한되어 있고, 만료 일자를 정해야 합니다.</li><li>예시) 특정 사이트에서 나오는 하루 동안 보지 않기 팝업창</li></ul></blockquote><blockquote><h3 id="웹-스토리지-세션-HTML5-이상부터-지원"><a href="#웹-스토리지-세션-HTML5-이상부터-지원" class="headerlink" title="웹 스토리지 - 세션 (HTML5 이상부터 지원)"></a><strong>웹 스토리지 - 세션 (HTML5 이상부터 지원)</strong></h3><ul><li><strong>우리가 방문한 웹 사이트의 정보를 클라이언트(우리의 브라우저)에 저장하는 파일</strong>입니다.</li><li>다만, <strong>쿠키와는 다르게 브라우저를 닫으면 저장된 정보가 다 없어집니다.</strong></li><li>예시) 특정 입력 페이지(회원가입 페이지), 일회성 로그인 페이지, 비로그인 장바구니 페이지</li></ul></blockquote><blockquote><h3 id="웹-스토리지-로컬-HTML5-이상부터-지원"><a href="#웹-스토리지-로컬-HTML5-이상부터-지원" class="headerlink" title="웹 스토리지 - 로컬 (HTML5 이상부터 지원)"></a><strong>웹 스토리지 - 로컬 (HTML5 이상부터 지원)</strong></h3><ul><li><strong>우리가 방문한 웹 사이트의 정보를 클라이언트(우리의 브라우저)에 저장하는 파일</strong>입니다.</li><li>이 정보는 <strong>따로 삭제하지 않는 이상 브라우저를 닫아도 영구적으로 남아있습니다.</strong></li><li>예시) 자동 로그인, 특정 사이트 다크모드 등 <del>(제 블로그에서 사용 중입니다)</del></li></ul></blockquote><p>그 외 보안성이라던가, 데이터 용량관련 설명도 있는데,</p><p><strong>사용법을 남기려고 했지, 그런건 필요가 없다고 생각이 듭니다.</strong></p><p><br><br><br></p><h3 id="3-구현"><a href="#3-구현" class="headerlink" title="[3] 구현"></a><strong>[3] 구현</strong></h3><hr><ol><li><p><strong>Local Storage</strong></p><p> 1-1. web-storage 라는 폴더에 index.html과 가져올 js파일인 reference.js를 만듭니다(= 프로젝트 생성)</p> <hr><p> <img src="/img/2021-10-09/003/001.png?style=centerme" alt="빈 껍데기부터 생성합니다" title="대체 텍스트"></p> <hr><p> 1-2. 그리고 이를 vscode 확장팩인 Live Server로 구동시켜봅니다(오프라인에서 직접 열어도 가능)</p> <hr><p> <img src="/img/2021-10-09/003/002.png?style=centerme" alt="구동한 모습" title="대체 텍스트"></p> <hr><p> 1-3. reference.js에서 Local Storage를 생성합니다.</p> <figure class="highlight javascript"><figcaption><span>reference.js</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">(<span class="keyword">function</span> (<span class="params"></span>) &#123;</span><br><span class="line">  <span class="keyword">var</span> value = <span class="string">&quot;영구 저장 값&quot;</span>;</span><br><span class="line">  <span class="variable language_">localStorage</span>.<span class="title function_">setItem</span>(<span class="string">&quot;local&quot;</span>, value);</span><br><span class="line">&#125;)();</span><br></pre></td></tr></table></figure><p> 1-4. 위의 값을 저장 하면 Live Server가 재시작 되므로 바로 콘솔창을 확인할 수 있습니다.</p> <hr><p> <img src="/img/2021-10-09/003/003.png?style=centerme" alt="localStorage가 저장된 모습" title="대체 텍스트"></p> <hr><p> <strong>위의 값은 브라우저를 닫고 다시 켜도 같은 주소 (위에서는 <a href="http://127.0.0.1:5500/)%EB%A9%B4">http://127.0.0.1:5500/)면</a> 영구적으로 남게 됩니다.</strong></p><p> 물론 삭제도 가능합니다. 콘솔창에서 키 / 값 쪽 영역에서 마우스 우클릭하고 삭제 버튼을 누르면 삭제가 됩니다.</p></li><li><p><strong>Session Storage</strong></p><p> 2-1. <strong>Local Storage와 구현 방식은 동일합니다.</strong> JS코드만 바꿔주도록 합니다.</p> <figure class="highlight javascript"><figcaption><span>reference.js</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">(<span class="keyword">function</span> (<span class="params"></span>) &#123;</span><br><span class="line">  <span class="keyword">var</span> value = <span class="string">&quot;브라우저 끄면 사라지는 값&quot;</span>;</span><br><span class="line">  sessionStorage.<span class="title function_">setItem</span>(<span class="string">&quot;session&quot;</span>, value);</span><br><span class="line">&#125;)();</span><br></pre></td></tr></table></figure><p> 2-2. <strong>위의 값은 브라우저를 닫으면 사라지게 됩니다</strong>. (지금은 즉시 실행 함수에 의해 무조건 다시 생김)</p> <hr><p> <img src="/img/2021-10-09/003/004.png?style=centerme" alt="sessionStorage가 저장된 모습" title="대체 텍스트"></p> <hr></li><li><p><strong>Cookie</strong></p><p> 3-1. document.cookie 라는 JS 내장 기능을 이용합니다.</p> <figure class="highlight javascript"><figcaption><span>reference.js</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">(<span class="keyword">function</span> (<span class="params"></span>) &#123;</span><br><span class="line">  <span class="variable language_">document</span>.<span class="property">cookie</span> = <span class="string">&quot;name=value; max-age=3600;&quot;</span>;</span><br><span class="line">&#125;)();</span><br></pre></td></tr></table></figure><p> 3-2. 그럼 콘솔에서는 아래와 같이 나옵니다.</p> <hr><p> <img src="/img/2021-10-09/003/005.png?style=centerme" alt="sessionStorage가 저장된 모습" title="대체 텍스트"></p> <hr><p> 3-3. 위에 필드명에 쓰여진 대로 domain, path, expire / max-age.. 여러가지 정보를 직접 설정 할 수 있습니다. 위 코드 같은 경우엔 쿠키의 유효시간을 1시간(max-age=3600)으로 주었습니다. 자세한건 <strong><a href="https://ko.javascript.info/cookie">모던 JavScript 튜토리얼 쿠키편</a></strong> 을 참고하시면 됩니다.</p></li></ol><p><br><br><br></p><h3 id="4-결론"><a href="#4-결론" class="headerlink" title="[4] 결론"></a><strong>[4] 결론</strong></h3><hr><blockquote><p>예시 사용법에 나와있는 대로 쓰임새를 생각하여, 골라서 쓰시면 됩니다.</p></blockquote><p>다시 말씀드리면,</p><ol><li>세션 스토리지는 정보의 1회성 저장에 용이하며,</li><li>로컬 스토리지는 정보의 영구 저장에 용이하고,</li><li>쿠키는 정보의 특정 기간동안 저장에 용이합니다. </li></ol><p>그 외에 세션이라는, 서버(백엔드) 메모리에 저장되는 데이터도 있지만, 여기서는 다루지 않겠습니다.<br><br>※ <strong>세션은 세션 스토리지와 다른 개념</strong>입니다. (<a href="https://www.quora.com/What-is-the-difference-between-session-server-side-and-session-storage-browser-When-do-I-use-session-storage-vs-cookies">영문 참고</a>)</p><p><br><br><br></p><h3 id="5-참고-사이트"><a href="#5-참고-사이트" class="headerlink" title="[5] 참고 사이트"></a><strong>[5] 참고 사이트</strong></h3><hr><ol><li><a href="https://velog.io/@kler/TIL4-%EB%A1%9C%EC%BB%AC%EC%8A%A4%ED%86%A0%EB%A6%AC%EC%A7%80-%EC%84%B8%EC%85%98%EC%8A%A4%ED%86%A0%EB%A6%AC%EC%A7%80-%EC%BF%A0%ED%82%A4-%EC%A0%95%EB%A6%AC">로컬스토리지, 세션스토리지, 쿠키 정리</a></li><li><a href="https://triplexlab.tistory.com/114">[JavaScript]로컬스토리지, 세션스토리지, 쿠키 정리</a></li><li><a href="https://jindev-t.tistory.com/107">[TIL] Cookie vs LocalStorage vs SessionStorage</a></li><li><a href="https://www.daleseo.com/js-web-storage/">[자바스크립트] 웹 스토리지 (localStorage, sessionStorage) 사용법</a></li><li><a href="https://velog.io/@dorazi/%EC%BF%A0%ED%82%A4-%EC%9B%B9-%EC%8A%A4%ED%86%A0%EB%A6%AC%EC%A7%80-%EB%A1%9C%EC%BB%AC-%EC%8A%A4%ED%86%A0%EB%A6%AC%EC%A7%80-%EC%84%B8%EC%85%98-%EC%8A%A4%ED%86%A0%EB%A6%AC%EC%A7%80">쿠키, 웹 스토리지 (로컬 스토리지, 세션 스토리지)</a></li></ol>]]></content:encoded>
+      
+      
+      <category domain="https://MGS-95.github.io/categories/Language/">Language</category>
+      
+      <category domain="https://MGS-95.github.io/categories/Language/Javascript/">Javascript</category>
+      
+      
+      <category domain="https://MGS-95.github.io/tags/javascript/">javascript</category>
+      
+      <category domain="https://MGS-95.github.io/tags/js/">js</category>
+      
+      <category domain="https://MGS-95.github.io/tags/cookie/">cookie</category>
+      
+      <category domain="https://MGS-95.github.io/tags/session-storage/">session-storage</category>
+      
+      <category domain="https://MGS-95.github.io/tags/local-storage/">local-storage</category>
+      
+      
+      <comments>https://mgs-95.github.io/2021/10/09/2021-10-09-003-web-storage/#disqus_thread</comments>
+      
+    </item>
+    
+    <item>
+      <title>추천 영상 [2] - React 입문자들이 알아야할 Redux 쉽게설명 (8분컷)</title>
+      <link>https://mgs-95.github.io/2021/10/09/2021-10-09-002-describe-redux/</link>
+      <guid>https://mgs-95.github.io/2021/10/09/2021-10-09-002-describe-redux/</guid>
+      <pubDate>Sat, 09 Oct 2021 09:40:31 GMT</pubDate>
+      
+      <description>&lt;hr&gt;&lt;br&gt;
+
+&lt;div class=&quot;video-container&quot;&gt;&lt;iframe src=&quot;https://www.youtube.com/embed/QZcYz2NrDIs&quot; frameborder=&quot;0&quot; loading=&quot;lazy&quot; allowfullscreen&gt;&lt;/iframe&gt;&lt;/div&gt;</description>
+      
+      
+      
+      <content:encoded><![CDATA[<hr><br><div class="video-container"><iframe src="https://www.youtube.com/embed/QZcYz2NrDIs" frameborder="0" loading="lazy" allowfullscreen></iframe></div><span id="more"></span><br><p>저와 같이 Redux가 뭔지도 모르는 사람들에게 쉽게 개념을 설명해주는 좋은 강의라고 생각합니다.</p><p>자세히 공부하면 어려워지는 건 모든 개념이나 기술은 다 그렇기에,</p><p>지금은 단순히 쓰는 <u><strong>이유</strong></u>에 대해서만 알아도 충분하다는 생각이 듭니다.</p><p>회사에서는 Angular를 쓰기에, 아주 조금 배운것 마저 다 잊어버렸긴 한데..</p><p>책도 있으니 시간에 여유가 생기면 다시 공부하고자 합니다.</p><p>P.S.</p><p>위에서 설명해주신 유튜버분의 다른 영상들도 재밌고 쉽게 가르치는 느낌이니, <br>다른 영상들도 보시길 추천드립니다.</p><p><br><hr></p>]]></content:encoded>
+      
+      
+      <category domain="https://MGS-95.github.io/categories/Recommend/">Recommend</category>
+      
+      <category domain="https://MGS-95.github.io/categories/Recommend/Video/">Video</category>
+      
+      
+      <category domain="https://MGS-95.github.io/tags/youtube/">youtube</category>
+      
+      <category domain="https://MGS-95.github.io/tags/javascript/">javascript</category>
+      
+      <category domain="https://MGS-95.github.io/tags/redux/">redux</category>
+      
+      <category domain="https://MGS-95.github.io/tags/react/">react</category>
+      
+      
+      <comments>https://mgs-95.github.io/2021/10/09/2021-10-09-002-describe-redux/#disqus_thread</comments>
+      
+    </item>
+    
+    <item>
+      <title>자바스크립트 동작 원리</title>
+      <link>https://mgs-95.github.io/2021/10/09/2021-10-09-001-how-does-javascript-work-in-browser/</link>
+      <guid>https://mgs-95.github.io/2021/10/09/2021-10-09-001-how-does-javascript-work-in-browser/</guid>
+      <pubDate>Sat, 09 Oct 2021 04:41:18 GMT</pubDate>
+      
+      <description>&lt;hr&gt;&lt;br&gt;
+
+&lt;h3 id=&quot;1-개요&quot;&gt;&lt;a href=&quot;#1-개요&quot; class=&quot;headerlink&quot; title=&quot;[1] 개요&quot;&gt;&lt;/a&gt;&lt;strong&gt;[1] 개요&lt;/strong&gt;&lt;/h3&gt;&lt;hr&gt;
+
+&lt;p&gt;제목 그대로 브라우저상에서 Javascript의 동작 원리를 알아보고자 합니다.&lt;/p&gt;</description>
+      
+      
+      
+      <content:encoded><![CDATA[<hr><br><h3 id="1-개요"><a href="#1-개요" class="headerlink" title="[1] 개요"></a><strong>[1] 개요</strong></h3><hr><p>제목 그대로 브라우저상에서 Javascript의 동작 원리를 알아보고자 합니다.</p><span id="more"></span><p>고작 국비지원으로 JS 배운 저에게는 웹의 영역은, 넓고 넓은 바다같은 존재이므로</p><p>제가 가지고 있는 지식으로 간략하게 이해를 하고, </p><p>이걸 써먹을 수 있을 정도로만 기록하고자 합니다.</p><p><br><br><br></p><h3 id="2-작동원리"><a href="#2-작동원리" class="headerlink" title="[2] 작동원리"></a><strong>[2] 작동원리</strong></h3><hr><p>직관적이고, 간단하게 요약하자면 아래와 같습니다.</p><blockquote><ol><li>개발자가 JS코드를 작성</li><li>이를 HTML에 삽입한 후 HTML을 실행 (파일 자체를 열든, 웹 서버로 실행하든)</li><li>브라우저는 우리가 짠 HTML, CSS, JS 코드를 파싱, 즉 가져옴 (지금은 JS만 소개)</li><li>가져온 JS 브라우저 설치 시 내장된 JS 가상머신이라는 엔진으로 이를 해석하고 실행함. (오늘 설명할 단계)</li><li>여러 변환 및 렌더링을 통해 완성된 결과를 브라우저 화면에 나타냄</li></ol></blockquote><p><br><br><br></p><h3 id="3-자바스크립트-엔진-JavaScript-Engine"><a href="#3-자바스크립트-엔진-JavaScript-Engine" class="headerlink" title="[3] 자바스크립트 엔진(JavaScript Engine)"></a><strong>[3] 자바스크립트 엔진(JavaScript Engine)</strong></h3><hr><blockquote><p>이걸 왜 알아야 해?</p></blockquote><p>굳이, 굳이 따지면 알 필요는 없습니다. 실제로 몰라도 웹 개발은 할 수 있습니다.</p><p><strong>그래도 알면 도움은 됩니다.</strong></p><p>그러니, 간략하게 적도록 합니다.</p><br> <p>다시 설명드리자면, 자바스크립트 엔진(<strong>이하 JS엔진</strong>)은</p><blockquote><p>개발자가 작성한 JS 코드를 해석하고 실행하는 프로그램이자 인터프리터.</p></blockquote><p>JS가 인터프리터 언어이기에 엔진을 인터프리터라고도 합니다.</p><p>그런데 이 JS엔진은 브라우저 종류마다 다르고, 또 브라우저가 아닌 것들(Node.js)에서도 동작하는데</p><p>각 실행 환경마다 다른 엔진을 가지고 있습니다.</p><p>엔진의 명칭 및 종류로는 </p><blockquote><p><strong>V8</strong> : 구글에서 만든 오픈소스 엔진. C++ 기반이며, Node.js와 크롬에서 사용<br><strong>SpiderMonkey</strong> : 최초의 JS엔진. 파이어 폭스에서 사용됨.<br><strong>Chakra</strong> : 인터넷 익스플로러에서 사용됨.<br><strong>JavaScript Core(JSC)</strong> : 애플에서 개발. Safari와 React Native App에서 사용됨.</p></blockquote><p>그 외 여러가지 버전이 있지만 그 중 많이 쓰이는 환경의 엔진을 나열하자면 그렇습니다.</p><p><br><br><br></p><h3 id="4-엔진-동작-원리"><a href="#4-엔진-동작-원리" class="headerlink" title="[4] 엔진 동작 원리"></a><strong>[4] 엔진 동작 원리</strong></h3><hr><p>우선, 엔진에는 뭐가 있는지 보자면 아래와 같이 두가지가 있습니다.</p><blockquote><p><strong>Memory Heap(통칭 Heap)</strong> : 메모리 할당이 일어나는 곳. 쉽게 말해 변수나 함수를 작성하면 이곳에서 저장됨.<br><strong>Call Stack(통칭 Stack)</strong> : 호출한 함수나 변수를 실행시켜주는 곳. 한군데만 존재</p></blockquote><p>JS가 싱글 스레드(스택들이 쌓이는 곳)라고 불리는데, </p><p>위에서 설명했다시피 Call Stack이라는 스레드가 1개이기 때문입니다.</p><p>그리고 전혀 다른 이야기이지만, JS는 Java와 마찬가지로 가비지컬렉터가 있으므로 자동으로 메모리 누수를 방지합니다. 물론 예외는 있습니다.</p><br><p>그렇다면, 위의 두가지 요소가 서로 상호작용하면서 JS를 실행하는 방식은 다음과 같습니다.</p><p><strong>Stack</strong>이라는 곳에서는 선입후출 방식으로 코드가 하나씩 들어가고 나오는데,</p><p>setTimeout같은 함수나, Ajax의 XMLHttpRequest같은 Web API는 JS 엔진 밖에서 실행되므로, 바로 실행되지 않고 일단 Stack에서 빠집니다.</p><p>Web API는 특정 요청에 대한 응답시간을 갖고, 특정 요청의 응답이 완료되면 <strong>Task Queue(= Callback Queue)</strong> 라는 대기실에서 잠시 머문 뒤, Event Loop라는 놈이 Call Stack이 모두 비워지면 큐에 있는 응답(콜백)들을 들어온 순서대로(선입선출) Stack 으로 보내주는 역할을 하고, 다시 Stack에서는 이를 처리합니다.</p><p>아래의 그림은 지금까지 말한 순서를 그림으로 표현한 것입니다.</p><p><img src="/img/2021-10-09/001/001.png?style=centerme" alt="가장 흔하며, 많이 보이는 동작원리 사진. Web APIs라는 곳에서 응답시간만큼 로딩되는 방식" title="대체 텍스트"></p><p><strong>이때, 0초 혹은 0초에 가깝게 응답하는 Web API의 경우에도 무조건 비동기식으로 처리되는 점은 주의해야 합니다.</strong></p><blockquote><p>쉽게 말해 setTimeout같은 비동기 함수 쓰면 무조건 동기적인 처리를 하는 JS함수들 보다 뒤에 출력됩니다.</p></blockquote><p>이를 달리 말하면, 동기적인 처리를 하는 JavaScript에서 엄청 시간이 들여지는 For문을 쓰면 스택에서 계속 돌아가게 되는데, </p><p>스택은 1개이기에 그 For문이 끝나기 전까지 뒤에 있는 다른 작업들은 하지 못합니다. <br>이를 블로킹(blocking)이라고 합니다.</p><p>그래서 비동기 함수가 필요한 것입니다. 참고로 동기 함수에서 비동기 함수로 만드는 방법은 async, await를 사용하면 됩니다.</p><p>아래의 주소는 자바스크립트 동작 방식을 눈으로 확인하며 시험해보는 사이트입니다.</p><p><a href="http://latentflip.com/loupe">http://latentflip.com/loupe</a></p><p><br><br><br></p><h3 id="5-참고-사이트"><a href="#5-참고-사이트" class="headerlink" title="[5] 참고 사이트"></a><strong>[5] 참고 사이트</strong></h3><hr><ol><li><p><a href="https://edu.goorm.io/learn/lecture/557/%EC%9E%90%EB%B0%94%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8-%EC%97%94%EC%A7%84%EC%9D%B4%EB%9E%80">자바스크립트 엔진이란?</a></p></li><li><p><a href="https://corock.tistory.com/467#----%--%EC%-E%--%EB%B-%--%EC%-A%A-%ED%--%AC%EB%A-%BD%ED%-A%B-%--%EC%--%--%EC%A-%--%EC%-D%B-%EB%-E%--">자바스크립트 엔진</a></p></li><li><p><a href="https://velog.io/@hanganda23/JS-%EB%B8%8C%EB%9D%BC%EC%9A%B0%EC%A0%80-%EC%9E%91%EB%8F%99-%EC%9B%90%EB%A6%AC">[JS] 브라우저 작동 원리</a></p></li><li><p><a href="https://oowgnoj.dev/review/advanced-js-1">JavaScript, 인터프리터 언어일까?</a></p></li><li><p><a href="https://kyun2da.dev/CS/%EB%B8%8C%EB%9D%BC%EC%9A%B0%EC%A0%80%EB%8A%94-%EC%96%B4%EB%96%BB%EA%B2%8C-%EB%8F%99%EC%9E%91%ED%95%98%EB%8A%94%EA%B0%80/">브라우저는 어떻게 동작하는가</a></p></li><li><p><a href="https://ko.wikipedia.org/wiki/%EC%9E%90%EB%B0%94%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8_%EC%97%94%EC%A7%84">자바스크립트 엔진(위키피디아)</a></p></li><li><p><a href="https://www.javatpoint.com/how-does-javascript-work">How does JavaScript Work?</a></p></li><li><p><a href="https://velog.io/@seongkyun/fetch-setTimeout%EC%9D%80-%ED%91%9C%EC%A4%80-API%EC%9D%BC%EA%B9%8C-len7n3gc">fetch, setTimeout은 표준 API일까?</a></p></li><li><p><a href="https://www.youtube.com/watch?v=v67LloZ1ieI">개발자 90%가 모르는 자바스크립트 동작원리 (Stack, Queue, event loop)</a> (<strong>강추</strong>)</p></li><li><p><a href="https://taeny.dev/javascript/2%EC%9E%90%EB%B0%94%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8%EC%9E%91%EB%8F%99%EC%9B%90%EB%A6%AC/">2) 자바스크립트 작동원리 (실행 컨텍스트, 싱글스레드, 비동기)</a> (<strong>강추</strong>)</p></li></ol>]]></content:encoded>
+      
+      
+      <category domain="https://MGS-95.github.io/categories/Language/">Language</category>
+      
+      <category domain="https://MGS-95.github.io/categories/Language/Javascript/">Javascript</category>
+      
+      
+      <category domain="https://MGS-95.github.io/tags/javascript/">javascript</category>
+      
+      <category domain="https://MGS-95.github.io/tags/js/">js</category>
+      
+      <category domain="https://MGS-95.github.io/tags/browser/">browser</category>
+      
+      <category domain="https://MGS-95.github.io/tags/principle-of-operation/">principle-of-operation</category>
+      
+      
+      <comments>https://mgs-95.github.io/2021/10/09/2021-10-09-001-how-does-javascript-work-in-browser/#disqus_thread</comments>
+      
+    </item>
+    
+    <item>
+      <title>스프링부트 CORS 정책 허용 설정 방법</title>
+      <link>https://mgs-95.github.io/2021/10/04/2021-10-04-002-allow-cors-issue-in-springboot/</link>
+      <guid>https://mgs-95.github.io/2021/10/04/2021-10-04-002-allow-cors-issue-in-springboot/</guid>
+      <pubDate>Mon, 04 Oct 2021 11:42:16 GMT</pubDate>
+      
+      <description>&lt;hr&gt;&lt;br&gt;
+
+&lt;h3 id=&quot;1-개요&quot;&gt;&lt;a href=&quot;#1-개요&quot; class=&quot;headerlink&quot; title=&quot;[1] 개요&quot;&gt;&lt;/a&gt;&lt;strong&gt;[1] 개요&lt;/strong&gt;&lt;/h3&gt;&lt;hr&gt;
+
+&lt;p&gt;제목에 썼다시피 CORS, 즉 기본적으로 브라우저 상에서 차단하고 있는&lt;br&gt;&lt;strong&gt;교차 출처 리소스 공유 정책에 대한 허용을 Spring에서 허용하는 방법&lt;/strong&gt;을 작성하고자 합니다.&lt;/p&gt;</description>
+      
+      
+      
+      <content:encoded><![CDATA[<hr><br><h3 id="1-개요"><a href="#1-개요" class="headerlink" title="[1] 개요"></a><strong>[1] 개요</strong></h3><hr><p>제목에 썼다시피 CORS, 즉 기본적으로 브라우저 상에서 차단하고 있는<br><strong>교차 출처 리소스 공유 정책에 대한 허용을 Spring에서 허용하는 방법</strong>을 작성하고자 합니다.</p><span id="more"></span><p>그 전에 한 마디 하고 싶은 게 있는데,</p><h3 id="꼭-맨-아래-단원의-참조-포스트-1-2번을-보시길-강력하게-추천합니다"><a href="#꼭-맨-아래-단원의-참조-포스트-1-2번을-보시길-강력하게-추천합니다" class="headerlink" title="꼭, 맨 아래 단원의 참조 포스트 1, 2번을 보시길 강력하게 추천합니다."></a><strong>꼭, 맨 아래 단원의 참조 포스트 <a href="#4-%EC%B0%B8%EC%A1%B0-%EC%82%AC%EC%9D%B4%ED%8A%B8">1, 2</a>번을 보시길 강력하게 추천합니다.</strong></h3><p><br><br><br></p><h3 id="2-방법"><a href="#2-방법" class="headerlink" title="[2] 방법"></a><strong>[2] 방법</strong></h3><hr><blockquote><p>방법이라고 해 봤자 간단합니다. </p><p>프로젝트에서, 어디 각종 설정파일들을 두는 패키지 하나 만들고<br>그곳에 cors를 허용하는 설정을 코드로 입력하면 됩니다.</p><p>보통은 config 라는 이름의 패키지를 만들어서 두긴 합니다.</p><p>스프링뿐만 아니라, 다른 Nodejs의 Express, Python의 Django도 모두 동일한 원리입니다.<br><strong>백엔드에서 이를 허용해주어야 해당 API를 가져올 수 있습니다.</strong></p></blockquote><p>백문이 불여일견이라고, 아래처럼 config 패키지(=폴더)를 만듭니다.</p><p><img src="/img/2021-10-04/003/001.png?style=centerme" alt="여기서 vo는 dto니, dao는 mapper니 이런 얘기는 안하겠습니다." title="대체 텍스트"></p><p>그리고 config 패키지에 자기가 원하는 이름의 클래스를 만들어 줍니다. </p><p>저는 WebConfig 라고 하겠습니다.</p><figure class="highlight java"><figcaption><span>WebConfig.java</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">package</span> 내_패키지_경로.config;</span><br><span class="line"></span><br><span class="line"><span class="keyword">import</span> org.springframework.context.annotation.Configuration;</span><br><span class="line"><span class="keyword">import</span> org.springframework.web.servlet.config.annotation.CorsRegistry;</span><br><span class="line"><span class="keyword">import</span> org.springframework.web.servlet.config.annotation.WebMvcConfigurer;</span><br><span class="line"></span><br><span class="line"><span class="meta">@Configuration</span></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">WebConfig</span> <span class="keyword">implements</span> <span class="title class_">WebMvcConfigurer</span> &#123;</span><br><span class="line">    </span><br><span class="line">    <span class="meta">@Override</span></span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">void</span> <span class="title function_">addCorsMappings</span><span class="params">(CorsRegistry registry)</span> &#123;</span><br><span class="line">        registry.addMapping(<span class="string">&quot;/**&quot;</span>)</span><br><span class="line">                .allowedOrigins(<span class="string">&quot;해당 API를 요청하는 쪽의 url&quot;</span>);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><p>위에 .allowedOrigins() 함수 내 url은 주로 프런트엔드 서버의 요청이 들어올 것입니다.</p><br><p>예를 들어, 자기 로컬 환경에서 만든 React의 경우엔 </p><p><a href="http://localhost:3000가">http://localhost:3000가</a> 프로젝트 root url이 될 것입니다.</p><br><p>그러면 .allowedOrigins(“<a href="http://localhost:3000&quot;">http://localhost:3000&quot;</a>) 와 같이 쓰면,</p><p>해당 url 을 베이스로 사용하는 모든 url에서</p><p>우리가 만든 백엔드의 API를 사용할 수 있게 됩니다.</p><p><br><br><br></p><h3 id="3-결론"><a href="#3-결론" class="headerlink" title="[3] 결론"></a><strong>[3] 결론</strong></h3><hr><blockquote><p><strong>위에서 쓴 대로 그냥 패키지 하나 만들고,</strong><br><strong>파일 하나 만들고,</strong><br><strong>짤막한 코드 몇 줄 적으면 끝입니다.</strong></p></blockquote><p>개인적으로 국비 지원 때 팀 프로젝트 할 때 이것 때문에 꽤나 고생했는데, 방법은 간단했습니다.</p><p>위에서 적은 방법은 <strong>(1) 서버쪽에서 특정 프론트엔드에 CORS 정책 허용하는 방법</strong>입니다.</p><p>서버에서 서버로 통신 시에는, </p><p>다시 말해, <strong>(2) 서버인 백엔드에서 다른 서버의 API를 가져올 때</strong>는 CORS가 적용되지 않습니다.</p><blockquote><p>그럼, <strong>(3) 프론트엔드에서 외부 서버로 CORS 정책 허용을 요청하게 해야 할 때</strong>는 어떻게 하나요?</p></blockquote><p>찾아보니 방법은 꽤 있었습니다. </p><blockquote><ol><li>타인의 프록시 서버를 이용하여 서버 &gt; 서버 통신인 것 처럼 보이게 하기 </li><li>직접 프록시 서버를 구축하여 1번처럼 사용(단, 서버에서 설정도 해주어야 하는 것 같음)</li><li>로컬 환경에서 서버, 클라이언트 모두 실행하였다면 <strong>프론트엔드</strong>에서 http-proxy-middleware 사용</li><li><strong>서버</strong>에서 CORS 정책을 허용하기 (제가 본 게시글에서 사용한 방법입니다) </li><li><strong>서버</strong>에서 CORS 미들웨어 설정하기(Express.js 처럼 미들웨어를 사용하는 서버인 경우)</li></ol></blockquote><p>등이 있다고 합니다. </p><p>모두 시도는 해보지 않았지만, 참조 사이트에 링크를 남기겠습니다.</p><br><p>개인적으로 프론트엔드에서 외부 백엔드에 Http 요청을 보낼 때 CORS 허용하는 방법은 없다고 생각해왔고,<br>국비 지원때도 온갖 방법으로 프론트에서 시도하였지만 실패했었고,<br>프론트에서 가능하다고 말하는 분들을 모두 부정해왔는데, 위에 쓴 대로 된다면 방법이야 있는 것 같습니다.</p><br><p>오늘 한 번 프록시를 이용한 요청을 시도해보려고 합니다.</p><p><br><br><br></p><h3 id="4-참조-사이트"><a href="#4-참조-사이트" class="headerlink" title="[4] 참조 사이트"></a><strong>[4] 참조 사이트</strong></h3><hr><ol><li><strong><a href="https://beomy.github.io/tech/browser/cors/">[Browser] CORS란?</a></strong> (추천1)</li><li><strong><a href="https://velog.io/@vraimentres/CORS">CORS 😫</a></strong> (추천2)</li><li><a href="https://redbinalgorithm.tistory.com/448">CSRF, CORS 개념</a></li><li><a href="https://evan-moon.github.io/2020/05/21/about-cors/">CORS는 왜 이렇게 우리를 힘들게 하는걸까?</a></li><li><a href="https://xiubindev.tistory.com/115">나를 너무나 힘들게 했던 CORS DPFJ 해결하기</a></li></ol>]]></content:encoded>
+      
+      
+      <category domain="https://MGS-95.github.io/categories/Framework/">Framework</category>
+      
+      <category domain="https://MGS-95.github.io/categories/Framework/Spring/">Spring</category>
+      
+      
+      <category domain="https://MGS-95.github.io/tags/spring-boot/">spring boot</category>
+      
+      <category domain="https://MGS-95.github.io/tags/springboot/">springboot</category>
+      
+      <category domain="https://MGS-95.github.io/tags/%EC%8A%A4%ED%94%84%EB%A7%81/">스프링</category>
+      
+      <category domain="https://MGS-95.github.io/tags/%EC%8A%A4%ED%94%84%EB%A7%81%EB%B6%80%ED%8A%B8/">스프링부트</category>
+      
+      <category domain="https://MGS-95.github.io/tags/spring/">spring</category>
+      
+      <category domain="https://MGS-95.github.io/tags/cors/">cors</category>
+      
+      <category domain="https://MGS-95.github.io/tags/%EA%B5%90%EC%B0%A8-%EC%B6%9C%EC%B2%98-%EB%A6%AC%EC%86%8C%EC%8A%A4-%EA%B3%B5%EC%9C%A0/">교차 출처 리소스 공유</category>
+      
+      <category domain="https://MGS-95.github.io/tags/csrf/">csrf</category>
+      
+      <category domain="https://MGS-95.github.io/tags/sop/">sop</category>
+      
+      
+      <comments>https://mgs-95.github.io/2021/10/04/2021-10-04-002-allow-cors-issue-in-springboot/#disqus_thread</comments>
+      
+    </item>
+    
+    <item>
+      <title>타입스크립트 컴파일 및 실행</title>
+      <link>https://mgs-95.github.io/2021/10/04/2021-10-04-001-how-to-compile-typescript/</link>
+      <guid>https://mgs-95.github.io/2021/10/04/2021-10-04-001-how-to-compile-typescript/</guid>
+      <pubDate>Mon, 04 Oct 2021 10:20:19 GMT</pubDate>
+      
+      <description>&lt;hr&gt;&lt;br&gt;
+
+&lt;h3 id=&quot;1-개요&quot;&gt;&lt;a href=&quot;#1-개요&quot; class=&quot;headerlink&quot; title=&quot;[1] 개요&quot;&gt;&lt;/a&gt;&lt;strong&gt;[1] 개요&lt;/strong&gt;&lt;/h3&gt;&lt;hr&gt;
+
+&lt;p&gt;문득, 자바스크립트와 타입스크립트로 짠 프런트엔드 프로젝트를 보면서 문득 생각이 들었습니다.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;아니 생각해보니 자바스크립트랑 타입스크립트 파일을 로컬에서 어떻게 실행하지?&lt;/p&gt;
+&lt;/blockquote&gt;</description>
+      
+      
+      
+      <content:encoded><![CDATA[<hr><br><h3 id="1-개요"><a href="#1-개요" class="headerlink" title="[1] 개요"></a><strong>[1] 개요</strong></h3><hr><p>문득, 자바스크립트와 타입스크립트로 짠 프런트엔드 프로젝트를 보면서 문득 생각이 들었습니다.</p><blockquote><p>아니 생각해보니 자바스크립트랑 타입스크립트 파일을 로컬에서 어떻게 실행하지?</p></blockquote><span id="more"></span><p>문득 생각이 드니 정말 창피한 일이 아닐 수가 없습니다.</p><p>언어를 사용하면서 웹을 만드는 사람이 언어 자체 실행 방법은 모른다니..</p><p><strong>원의 넓이를 구하는 공식은 아는데 정작 곱셈이라는 게 뭔지도 모르는 꼴입니다.</strong></p><p>당장 찾아봤습니다. Nodejs가 컴파일러의 역할을 하는 듯 합니다.</p><p><br><br><br></p><h3 id="2-방법1"><a href="#2-방법1" class="headerlink" title="[2] 방법1"></a><strong>[2] 방법1</strong></h3><hr><blockquote><p>당연하지만, <a href="https://nodejs.org/ko/">Nodejs</a>, <a href="https://www.npmjs.com/package/typescript">Typescript</a>(전역 설치)가 설치되어 있어야 합니다.<br>Typescript 는 터미널에서 npm i typescript -g 로 설치합니다.</p></blockquote><p>아무대나 ts 파일을 생성합니다. 저는 hello.ts 라고 하겠습니다.</p><p>그리고 vscode에서 해당 파일의 경로로 가서 파일을 열고 코드를 추가합니다.</p><figure class="highlight typescript"><figcaption><span>hello.ts</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> <span class="attr">hello</span>: <span class="built_in">string</span> = <span class="string">&quot;hello world&quot;</span>;</span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(hello);</span><br></pre></td></tr></table></figure><p>그 후 해당 hello.ts 파일이 있는 위치에서 터미널을 열고, </p><p>아래와 같이 ts 파일을 자바스크립트로 컴파일(번역) 합니다.</p><figure class="highlight bash"><figcaption><span>Terminal(cmd)</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">C:\Users&gt;tsc hello.ts</span><br></pre></td></tr></table></figure><p>그러면 다음와 같이 js 파일이 생성됩니다.</p><p><img src="/img/2021-10-04/002/001.png?style=centerme" alt="js 파일 생성 후 왜인지는 모르겠지만 vscode에서 오류로 뜨게 됩니다. 무시해도 됩니다." title="대체 말귀"></p><p>어쨋든 js 파일이 생성되었으면 이제 node로 실행합니다.</p><figure class="highlight bash"><figcaption><span>Terminal(cmd)</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">C:\Users&gt;node hello.js</span><br></pre></td></tr></table></figure><p>그럼 아래와 같이 뜹니다.</p><blockquote><p>  C:\Users&gt;node hello.js<br>  hello world</p></blockquote><p><br><br><br></p><h3 id="3-방법2"><a href="#3-방법2" class="headerlink" title="[3] 방법2"></a><strong>[3] 방법2</strong></h3><hr><p>헌데, 위의 방법은 컴파일 후 실행이라는 귀찮음이 있습니다.</p><p>따라서 ts 파일에서 바로 실행해주는 <a href="https://www.npmjs.com/package/ts-node">ts-node</a> 패키지를 지역으로 설치하여, 이것을 컴파일러로 씁니다.</p><p>그리고 폴더 하나 만든 후에 터미널에 아래의 코드를 입력합니다.</p><figure class="highlight bash"><figcaption><span>Terminal(cmd)</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">C:\Users\<span class="built_in">test</span>&gt;npm i ts-node</span><br><span class="line">C:\Users\<span class="built_in">test</span>&gt;tsc --init</span><br></pre></td></tr></table></figure><p><strong>tsc –init은 ts-node를 실행하기 위함입니다.</strong></p><p>설치 완료 후 위와 같이 폴더내에 hello.ts를 만들고 아래의 코드를 입력합니다.</p><figure class="highlight bash"><figcaption><span>Terminal(cmd)</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">C:\Users\<span class="built_in">test</span>&gt;npx ts-node hello.ts</span><br><span class="line">hello world</span><br></pre></td></tr></table></figure><p><br><br><br></p><h3 id="4-여담"><a href="#4-여담" class="headerlink" title="[4] 여담"></a><strong>[4] 여담</strong></h3><hr><p>만약 간단한 Javascript를 실행하고자 한다면, </p><p>그냥 브라우저 개발자도구로 실행하시면 됩니다.</p><blockquote><p>크롬이라면 F12 눌러서 나오는 개발자 도구 창에서 콘솔을 들어가시면 그게 편집기입니다.</p><p>파이어폭스도 동일합니다</p><p>나머지 브라우저는 비슷한 곳에 있거나, 없다면 찾아보시길 권합니다.</p></blockquote><p><br><br><br></p><h3 id="5-참조-사이트"><a href="#5-참조-사이트" class="headerlink" title="[5] 참조 사이트"></a><strong>[5] 참조 사이트</strong></h3><hr><ol><li><a href="https://velog.io/@lucid/JS-Compile%EA%B3%BC-Build">JS Compile과 Build</a></li><li><a href="https://doitnow-man.tistory.com/168">[typescript] 1. 설치</a></li><li><a href="https://harrydony.tistory.com/455">[ typescript ] ts-node를 사용하여 ts를 js로 컴파일 하기전에 터미널에서 출력해보는 방법.</a></li><li><a href="https://ui.toast.com/weekly-pick/ko_20161107">자바스크립트로 컴파일러 만들기</a></li></ol>]]></content:encoded>
+      
+      
+      <category domain="https://MGS-95.github.io/categories/Language/">Language</category>
+      
+      <category domain="https://MGS-95.github.io/categories/Language/Javascript/">Javascript</category>
+      
+      
+      <category domain="https://MGS-95.github.io/tags/javascript/">javascript</category>
+      
+      <category domain="https://MGS-95.github.io/tags/js/">js</category>
+      
+      <category domain="https://MGS-95.github.io/tags/typescript/">typescript</category>
+      
+      <category domain="https://MGS-95.github.io/tags/ts/">ts</category>
+      
+      <category domain="https://MGS-95.github.io/tags/compiler/">compiler</category>
+      
+      <category domain="https://MGS-95.github.io/tags/compile/">compile</category>
+      
+      
+      <comments>https://mgs-95.github.io/2021/10/04/2021-10-04-001-how-to-compile-typescript/#disqus_thread</comments>
+      
+    </item>
+    
+    <item>
+      <title>추천 사이트 - IT 정보</title>
+      <link>https://mgs-95.github.io/2021/10/03/2021-10-03-006-recommend-url/</link>
+      <guid>https://mgs-95.github.io/2021/10/03/2021-10-03-006-recommend-url/</guid>
+      <pubDate>Sun, 03 Oct 2021 13:11:45 GMT</pubDate>
+      
+      <description>&lt;hr&gt;&lt;br&gt;
+
+&lt;h3 id=&quot;1-개요&quot;&gt;&lt;a href=&quot;#1-개요&quot; class=&quot;headerlink&quot; title=&quot;[1] 개요&quot;&gt;&lt;/a&gt;&lt;strong&gt;[1] 개요&lt;/strong&gt;&lt;/h3&gt;&lt;hr&gt;
+
+&lt;p&gt;이 포스트는 참고할 좋은 사이트가 보일 때마다 &lt;del&gt;(무지성으로)&lt;/del&gt; 링크를 추가할 예정입니다.&lt;/p&gt;</description>
+      
+      
+      
+      <content:encoded><![CDATA[<hr><br><h3 id="1-개요"><a href="#1-개요" class="headerlink" title="[1] 개요"></a><strong>[1] 개요</strong></h3><hr><p>이 포스트는 참고할 좋은 사이트가 보일 때마다 <del>(무지성으로)</del> 링크를 추가할 예정입니다.</p><span id="more"></span><p>만약 해당 사이트에 관련되 IT 정보를 정리해서 따로 포스팅한다면,</p><p>체크박스에 표시를 하여 정리 완료되었다는 표시를 할 예정입니다.</p><p>또는 정리할 필요가 없어도 완료 표시로 기재합니다.</p><p><br><br><br></p><h3 id="2-목록"><a href="#2-목록" class="headerlink" title="[2] 목록"></a><strong>[2] 목록</strong></h3><hr><ol><li><input disabled="" type="checkbox"> <a href="https://blog.kingbbode.com/35">젠킨스 사용하여 자동 배포환경 만들어보기</a></li><li><input checked="" disabled="" type="checkbox"> <a href="https://boards.greenhouse.io/deliveryherokoreatech">딜리버리 히어로 코리아 채용 사이트</a></li><li><input checked="" disabled="" type="checkbox"> <a href="https://medium.com/deliverytechkorea">Delivery Tech Korea 요기요 기술 블로그</a></li><li><input checked="" disabled="" type="checkbox"> <a href="https://velog.io/@sukiworld/gather.town">gather.town 소개 및 사용법 - 우왕 가상오피스다!!!</a></li><li><input disabled="" type="checkbox"> <a href="https://medium.com/finda-tech/prometheus%EB%9E%80-cf52c9a8785f">Prometheus란?</a></li><li><input disabled="" type="checkbox"> <a href="https://www.google.com/search?q=graphql+%EC%9D%B4%EB%9E%80">[구글검색] GraphQL이란</a></li><li><input checked="" disabled="" type="checkbox"> <a href="https://julynine2.tistory.com/30">구글 서치 콘솔 사이트맵 등록 오류, URL 색인 요청 해보기</a></li><li><input checked="" disabled="" type="checkbox"> <a href="https://velog.io/@trollering12312/hexo-%EC%8B%9C%EC%9E%91%ED%95%98%EA%B8%B0">hexo 시작하기</a></li><li><input disabled="" type="checkbox"> <a href="https://ko.javascript.info/">모던 JavaScript 튜토리얼</a></li><li><input checked="" disabled="" type="checkbox"> <a href="https://dev-pengun.tistory.com/entry/Spring-Boot-CORS-%EC%84%A4%EC%A0%95%ED%95%98%EA%B8%B0#toc-addMapping">[Spring Boot] CORS 설정하기</a></li><li><input disabled="" type="checkbox"> <a href="https://youtu.be/HraOg7W3VAM">개발자라면 꼭 알아야할 Hash Table 의 모든 것!</a></li><li><input checked="" disabled="" type="checkbox"> <a href="https://datadoctorblog.com/2020/03/25/HEXO-md-image-center/">HEXO 이미지 삽입(이미지 중앙 정렬 방법 포함)</a></li><li><input checked="" disabled="" type="checkbox"> <a href="https://racoonlotty.tistory.com/entry/%EC%BF%A0%ED%82%A4%EC%99%80-%EC%84%B8%EC%85%98-%EA%B7%B8%EB%A6%AC%EA%B3%A0-%EB%A1%9C%EC%BB%AC-%EC%8A%A4%ED%86%A0%EB%A6%AC%EC%A7%80%EC%99%80-%EC%84%B8%EC%85%98-%EC%8A%A4%ED%86%A0%EB%A6%AC%EC%A7%80">쿠키와 세션 그리고 로컬 스토리지와 세션 스토리지</a></li><li><input disabled="" type="checkbox"> <a href="https://developingbear.tistory.com/137?category=773219">[JS] Prototype : 프로토타입 쉽게 이해하기</a></li><li><input disabled="" type="checkbox"> <a href="https://agh2o.tistory.com/12">[Context Switching] 프로세스와 쓰레드에서의 컨텍스트 스위칭</a></li><li><input disabled="" type="checkbox"> <a href="https://devnick.tistory.com/20">OS,배치,시분할, 멀티프로그래밍, 멀티태스킹</a></li><li><input disabled="" type="checkbox"> <a href="https://velog.io/@kim-jaemin420/%EC%8A%A4%EC%BC%80%EC%A4%84%EB%A7%81-%EB%B0%B0%EC%B9%98-%EC%B2%98%EB%A6%AC-%EC%8B%9C%EB%B6%84%ED%95%A0-%EC%8B%9C%EC%8A%A4%ED%85%9C-%EB%A9%80%ED%8B%B0-%ED%83%9C%EC%8A%A4%ED%82%B9-%EB%A9%80%ED%8B%B0-%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D">스케줄링 (배치 처리, 시분할 시스템, 멀티 태스킹, 멀티 프로그래밍)</a></li><li><input disabled="" type="checkbox"> <a href="https://bigstupid.tistory.com/47">컴퓨터공학 Operatiob System 역사</a></li><li><input disabled="" type="checkbox"> <a href="https://blog.daum.net/sualchi/13721346">각종 소스 참고 블로그</a></li><li><input disabled="" type="checkbox"> <a href="https://roadmap.sh/">각종 기술 공부 로드맵</a> (강추)</li><li><input disabled="" type="checkbox"> <a href="https://12factor.net/ko/">The Twelve-Factor App (한국어 버전)</a> (강추)</li></ol>]]></content:encoded>
+      
+      
+      <category domain="https://MGS-95.github.io/categories/Recommend/">Recommend</category>
+      
+      <category domain="https://MGS-95.github.io/categories/Recommend/URL/">URL</category>
+      
+      
+      <category domain="https://MGS-95.github.io/tags/recommend/">recommend</category>
+      
+      
+      <comments>https://mgs-95.github.io/2021/10/03/2021-10-03-006-recommend-url/#disqus_thread</comments>
+      
+    </item>
+    
+    <item>
+      <title>On Premise, Off Premise란?</title>
+      <link>https://mgs-95.github.io/2021/10/03/2021-10-03-005-on-premise/</link>
+      <guid>https://mgs-95.github.io/2021/10/03/2021-10-03-005-on-premise/</guid>
+      <pubDate>Sun, 03 Oct 2021 11:51:32 GMT</pubDate>
+      
+      <description>&lt;hr&gt;&lt;br&gt;
+
+&lt;h3 id=&quot;1-개요&quot;&gt;&lt;a href=&quot;#1-개요&quot; class=&quot;headerlink&quot; title=&quot;[1] 개요&quot;&gt;&lt;/a&gt;&lt;strong&gt;[1] 개요&lt;/strong&gt;&lt;/h3&gt;&lt;hr&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;On premise, 대충 해석하면  ~을 전제로 하다라는 뜻.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;결론부터 말하면 서버를 클라우드에 설치하지 않고, 자체 보유한 전산실 서버에 설치해 운영하는 방식입니다.&lt;/p&gt;</description>
+      
+      
+      
+      <content:encoded><![CDATA[<hr><br><h3 id="1-개요"><a href="#1-개요" class="headerlink" title="[1] 개요"></a><strong>[1] 개요</strong></h3><hr><blockquote><p>On premise, 대충 해석하면  ~을 전제로 하다라는 뜻.</p></blockquote><p>결론부터 말하면 서버를 클라우드에 설치하지 않고, 자체 보유한 전산실 서버에 설치해 운영하는 방식입니다.</p><span id="more"></span><p>다시 풀어서 말하면, 우리가 DB나, Spring과 같은 백엔드나, React와 같은 프런트엔드의 서버를 실행 할때, 실행하는 컴퓨터가 자신의 컴퓨터라면 On premise 방식으로 서버를 운영하고 있는 겁니다.</p><p>이와는 반대로 AWS, Azure, GCP등을 이용하여 우리가 만든 서비스의 서버를 실행하면 그게 Off premise가 됩니다.</p><p><br><br><br></p><h3 id="2-비교"><a href="#2-비교" class="headerlink" title="[2] 비교"></a><strong>[2] 비교</strong></h3><hr><p>어느정도 배우신 분들은 얼핏 보면 Off premise가 좋아보일지도 모르지만, <strong>일반적</strong>으로 각자 장점이 있습니다.</p><br><table><thead><tr><th>요소</th><th>On premise</th><th>Off premise</th></tr></thead><tbody><tr><td>보안성</td><td>상대적으로 높음</td><td>상대적으로 낮음</td></tr><tr><td>인프라 구축 비용</td><td>상대적으로 높음</td><td>상대적으로 낮음</td></tr><tr><td>자동화된 백업</td><td>어려움</td><td>쉬움</td></tr><tr><td>확장 가능</td><td>어려움</td><td>쉬움</td></tr></tbody></table><br><p>위에서 <strong>일반적</strong> 이라고 말한 이유는, 자사가 보안적으로 허술하다면,<br><strong>오히려 대기업이 제공하는 클라우드가 보안적으로 더 우수</strong>할지도 모르기 때문입니다.</p><p>또한 개인 프로젝트는 아무리 싼 클라우드를 구매해도 월에 10만원 전후가 나오는데,<br>그럴 바에 자기 집 컴퓨터를 서버로 쓰는 사람도 있기 마련입니다. <del>(아, 회사 이야긴데 옆으로 좀 샜나?)</del></p><p><br><br><br></p><h3 id="3-결론"><a href="#3-결론" class="headerlink" title="[3] 결론"></a><strong>[3] 결론</strong></h3><hr><p>위의 결론과는 다른 이야기긴 하지만, 어찌 되었든 둘 다 쓰이기는 합니다.</p><p>보안이 중요한 데이터는 On premise 환경에서, 비교적 보안성이 낮은 데이터는 Off premise 환경을 사용한다고 합니다.</p><p>실제로 요기요를 운영하는 <a href="https://boards.greenhouse.io/deliveryherokoreatech/jobs/4231766002">딜러버리 코리아</a>에서는 두개를 같이 사용한다고 되어 있습니다.</p><p><img src="/img/2021-10-03/002/001.png" alt="채용 페이지 특정 직종 설명란에 둘 다 사용한다고 명시되어 있음" title="해당 이미지가 없습니다"></p><br><p>사실 조금만 생각하면 당연한 이야기지만, 이를 계속 상기시킬 목적으로 아카이브를 남깁니다.</p><p><br><br><br></p><h3 id="4-참조-사이트"><a href="#4-참조-사이트" class="headerlink" title="[4] 참조 사이트"></a><strong>[4] 참조 사이트</strong></h3><hr><ol><li><a href="http://wiki.hash.kr/index.php/%EC%98%A8%ED%94%84%EB%A0%88%EB%AF%B8%EC%8A%A4">온프레미스, 해시넷</a></li><li><a href="https://ttend.tistory.com/690">[IT용어] 온프레미스, 오프프레미스</a></li><li><a href="https://m.blog.naver.com/PostView.naver?isHttpsRedirect=true&blogId=dktmrorl&logNo=221745088983">[IT정보] 온프레미스(On-premise) 개념</a></li></ol>]]></content:encoded>
+      
+      
+      <category domain="https://MGS-95.github.io/categories/Information/">Information</category>
+      
+      
+      <category domain="https://MGS-95.github.io/tags/on-premise/">on-premise</category>
+      
+      <category domain="https://MGS-95.github.io/tags/off-premise/">off-premise</category>
+      
+      <category domain="https://MGS-95.github.io/tags/%ED%81%B4%EB%9D%BC%EC%9A%B0%EB%93%9C/">클라우드</category>
+      
+      <category domain="https://MGS-95.github.io/tags/cloud/">cloud</category>
+      
+      <category domain="https://MGS-95.github.io/tags/%EC%84%9C%EB%B2%84/">서버</category>
+      
+      <category domain="https://MGS-95.github.io/tags/server/">server</category>
+      
+      <category domain="https://MGS-95.github.io/tags/%ED%81%B4%EB%9D%BC%EC%9A%B0%EB%93%9C-%EC%BB%B4%ED%93%A8%ED%8C%85/">클라우드 컴퓨팅</category>
+      
+      <category domain="https://MGS-95.github.io/tags/cloud-computing/">cloud computing</category>
+      
+      
+      <comments>https://mgs-95.github.io/2021/10/03/2021-10-03-005-on-premise/#disqus_thread</comments>
+      
+    </item>
+    
+    <item>
+      <title>DevOps란?</title>
+      <link>https://mgs-95.github.io/2021/10/03/2021-10-03-004-devops/</link>
+      <guid>https://mgs-95.github.io/2021/10/03/2021-10-03-004-devops/</guid>
+      <pubDate>Sun, 03 Oct 2021 10:32:37 GMT</pubDate>
+      
+      <description>&lt;hr&gt;&lt;br&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;지극히 주관적인 정보입니다.&lt;/p&gt;
+&lt;/blockquote&gt;</description>
+      
+      
+      
+      <content:encoded><![CDATA[<hr><br><blockquote><p>지극히 주관적인 정보입니다.</p></blockquote><span id="more"></span><br><h3 id="1-개요"><a href="#1-개요" class="headerlink" title="[1] 개요"></a><strong>[1] 개요</strong></h3><hr><p>여러분도 어디선가 들어봤을 겁니다, <strong>DevOps</strong>. 대체 이건 뭔교?</p><p>사실 이 포스트를 쓰면서 저도 감은 잡히지 않습니다.</p><p>다만 이게 개발 방법론이라고는 하는 듯 합니다.</p><blockquote><p>개발 방법론? 그건 또 뭔교?</p></blockquote><p>간단하게 설명드리면,</p><blockquote><p>공동으로 개발을 하는 데 있어서, 이름 그대로 방법을 제시하는 것.</p></blockquote><p>추상적인 말이지만, 실제 알고리즘을 구조를 제외하고, 이론을 이해를 하기엔 이만한 말이 없습니다.</p><p><br><br><br></p><h3 id="2-DevOps"><a href="#2-DevOps" class="headerlink" title="[2] DevOps"></a><strong>[2] DevOps</strong></h3><hr><p>사실 위에서 개발 방법론을 설명했기에 이 종류를 쓰려고 했지만,</p><p>생각해보니 매우 따분해질 것 같아서 그냥 패스합니다.</p><p>우리는 <del>(적어도 저는)</del> 그걸 위해서 작성하는 게 아니니까요.</p><p>간단하게, 개발 방법론의 종류에는 시간적 순서대로</p><blockquote><p>구조적 방법론 &gt; 정보 공학적 방법론 &gt; 객체지향 방법론 &gt; CBD 방법론 &gt; 애자일 방법론</p></blockquote><p>이 있다고 생각하시면 됩니다. 마찬가지로 DevOps도 개발 방법론입니다.</p><br><p>애자일이 이름 그대로 빠르게 프로토타입을 만들고, 요구사항에 맞춰 유연하게 바꿔나가는 방식이라면</p><p><strong>DevOps는 Agile과 유사하지만, 기존의 Agile에서 분리되어 작업하던 개발자(Dev)와 서비스 운영자(Ops)를 합친다는 의미입니다.</strong></p><br><p>다시 말해, 이제 개발이 되면 바로 바로 서비스를 배포할 수 있게 된다는 의미이기도 합니다.</p><blockquote><p>내가 개인 프로젝트 할 땐 내가 개발하고 끝나면 바로 배포할 수 있었는데?</p></blockquote><p>설마 이런 말을 하지는 않겠지만.. </p><p>당연히 회사에서 B2B를 진행하는데 그걸 개인과 비교하지는 않을 거라고 생각합니다.</p><p>어찌보면 그게 DevOps지만, 회사에서는 그걸 적용하기가 쉽지 않았습니다.</p><p>어쨋든, DevOps는 그런 ‘<em><strong>문화이며 개념</strong></em>‘ 입니다. </p><p>이러한 DevOps에서 다루는 개발 방법은 다음과 같습니다.</p><br><blockquote><p><strong>협업, 커뮤니케이션을 중시</strong></p><blockquote><p>당연하다면 당연한 이야기지만, 개발자와 운영자의 협업이 없으면 서비스는 만들어 질 수가 없습니다. 두 팀이 협업을 한다고 해도, 개발팀과 인프라 운영팀이 분리되어 있으면 서로 조율을 하기가 쉽지가 않죠. 쉽게 생각하면 개발자와 운영자가 자주 대화할 수 있는 자리를 마련해야 한다는 의미이기도 합니다.</p></blockquote></blockquote><blockquote><p><strong>CI / CD를 중시</strong></p><blockquote><p>지속적인 통합(Continuous Integrattion) 과<br /><br>지속적인 배포(Continuous Deploy 또는 Continuous Delivery)<br><br>를 합친 말로, 이게 이루어져야 한다는 의미입니다. 다시 말해 개발, 테스트, 배포가 통합되고,자동화되어야 한다는 의미이기도 합니다. 이를 가능하게 해주는 툴은 Jenkins 등이 있습니다.</p></blockquote></blockquote><p>찾아보니 상품도 있었습니다.</p><blockquote><p><strong>번외) 상품</strong></p><blockquote><p>갑자기 상품이라니? 하고 생각할 수도 있겠지만, 대형 IT 기업들은 자체 DevOps 솔루션을 팔고 있습니다. 당장 인터넷에 검색만 해도 IBM, Amazon, Microsoft, Redhat, netapp, Newrelic 등등 여러 기업들이 자체 솔루션을 제공합니다. 아마 위에서 말한 협업, 지속적 통합 및 배포에 필요한 전체 도구를 패키지 상품 형식으로 제공하는 듯 합니다.</p></blockquote></blockquote><p>나중에 기회가 된다면 해당 솔루션을 이용해 보고 싶긴 합니다.</p><p><br><br><br></p><h3 id="3-참조-사이트"><a href="#3-참조-사이트" class="headerlink" title="[3] 참조 사이트"></a><strong>[3] 참조 사이트</strong></h3><hr><ol><li><a href="https://ko.wikipedia.org/wiki/%EC%86%8C%ED%94%84%ED%8A%B8%EC%9B%A8%EC%96%B4_%EA%B0%9C%EB%B0%9C_%EB%B0%A9%EB%B2%95%EB%A1%A0">소프트웨어 개발 방법론, 위키피디아</a></li><li><a href="https://www.uptech.team/blog/software-development-methodologies">8 Best Software Development Methodologies</a></li><li><a href="http://blog.skby.net/%EB%8D%B0%EB%B8%8C%EC%98%B5%EC%8A%A4-devops/">데브옵스 (DevOps)</a></li><li><a href="https://engineering-skcc.github.io/devops/DevOps1-%EC%95%A0%EC%9E%90%EC%9D%BC%EA%B3%BC%EB%8D%B0%EB%B8%8C%EC%98%B5%EC%8A%A4/">데브옵스 알아가기(1) : 애자일과 데브옵스</a></li><li><a href="https://blog.sonim1.com/238">[개발문화탐구] 데브옵스 (DevOps) - 애자일(Agile)</a></li><li><a href="https://m.blog.naver.com/infopub/222022358307">애자일 방법론과 데브옵스의 유래</a></li><li><a href="https://m.blog.naver.com/acornedu/221519913222">DevOps란 무엇일까요?</a></li><li><a href="https://wnsgml972.github.io/devops/2019/02/19/devops/">DevOps란?</a></li><li><a href="https://cloudmt.co.kr/?p=3436">DevOps를 하려면 무엇부터 해야 할까?</a></li><li><a href="https://devuna.tistory.com/56">[DevOps]CI/CD (지속적 통합/지속적 제공) 개념과 과정/ 툴 별 장단점 비교</a></li><li><a href="https://velog.io/@soosungp33/Devops-CICD-%EA%B0%9C%EB%85%90">[Devops] CI/CD 개념</a></li></ol><p><br><hr></p>]]></content:encoded>
+      
+      
+      <category domain="https://MGS-95.github.io/categories/Information/">Information</category>
+      
+      
+      <category domain="https://MGS-95.github.io/tags/devops/">devops</category>
+      
+      <category domain="https://MGS-95.github.io/tags/agile/">agile</category>
+      
+      <category domain="https://MGS-95.github.io/tags/software-development-methodologies/">software_development_methodologies</category>
+      
+      
+      <comments>https://mgs-95.github.io/2021/10/03/2021-10-03-004-devops/#disqus_thread</comments>
+      
+    </item>
+    
+    <item>
+      <title>추천 영상 [1] - 개발자 유튜버를 너무 믿지 마세요!</title>
+      <link>https://mgs-95.github.io/2021/10/03/2021-10-03-003-recommend-video/</link>
+      <guid>https://mgs-95.github.io/2021/10/03/2021-10-03-003-recommend-video/</guid>
+      <pubDate>Sun, 03 Oct 2021 07:57:39 GMT</pubDate>
+      
+      <description>&lt;hr&gt;&lt;br&gt;
+
+&lt;div class=&quot;video-container&quot;&gt;&lt;iframe src=&quot;https://www.youtube.com/embed/h7-p7Iqv7sM&quot; frameborder=&quot;0&quot; loading=&quot;lazy&quot; allowfullscreen&gt;&lt;/iframe&gt;&lt;/div&gt;</description>
+      
+      
+      
+      <content:encoded><![CDATA[<hr><br><div class="video-container"><iframe src="https://www.youtube.com/embed/h7-p7Iqv7sM" frameborder="0" loading="lazy" allowfullscreen></iframe></div><span id="more"></span><br><p>간략하게 소개하자면, 개발자 유튜버들이 어떤 기술이 좋으니 꼭 쓰라는 것에 대해<br>충분한 고민을 하고 난 뒤 결정을 하라는 내용입니다.</p><p>해당 영상에서 느낀점을 적기엔 뭔가 감상문이 될 것 같아서 적지는 않겠습니다.</p><p>다만, 1년 하고도 좀 더 지난 영상임에도 지금 생각해도 맞는 말이라고 생각합니다.</p><p>한 번쯤 보시는 걸 추천합니다.</p><p><br><hr></p>]]></content:encoded>
+      
+      
+      <category domain="https://MGS-95.github.io/categories/Recommend/">Recommend</category>
+      
+      <category domain="https://MGS-95.github.io/categories/Recommend/Video/">Video</category>
+      
+      
+      <category domain="https://MGS-95.github.io/tags/youtube/">youtube</category>
+      
+      <category domain="https://MGS-95.github.io/tags/recommend/">recommend</category>
+      
+      
+      <comments>https://mgs-95.github.io/2021/10/03/2021-10-03-003-recommend-video/#disqus_thread</comments>
+      
+    </item>
+    
+    <item>
+      <title>이카루스 테마에 다크모드 적용하는 법</title>
+      <link>https://mgs-95.github.io/2021/10/03/2021-10-03-002-add-dark-theme-in-icarus/</link>
+      <guid>https://mgs-95.github.io/2021/10/03/2021-10-03-002-add-dark-theme-in-icarus/</guid>
+      <pubDate>Sun, 03 Oct 2021 05:18:18 GMT</pubDate>
+      
+      <description>&lt;hr&gt;&lt;br&gt;
+
+&lt;p&gt;(&lt;strong&gt;&lt;a href=&quot;https://github.com/ppoffice/hexo-theme-icarus/issues/564&quot;&gt;테마 다운로드&lt;/a&gt;&lt;/strong&gt;)&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;현재 제 icarus 버젼은 4.0이고, 다크테마는 FOR ICARUS 4.1로 받은 후 적용하였습니다.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;위의 주소로 들어가셔서 아래 그림에서 표시한 부분을 클릭하면,&lt;br&gt;DarkMode가 추가된 icarus 테마를 받을 수 있습니다.&lt;/p&gt;</description>
+      
+      
+      
+      <content:encoded><![CDATA[<hr><br><p>(<strong><a href="https://github.com/ppoffice/hexo-theme-icarus/issues/564">테마 다운로드</a></strong>)</p><blockquote><p>현재 제 icarus 버젼은 4.0이고, 다크테마는 FOR ICARUS 4.1로 받은 후 적용하였습니다.</p></blockquote><p>위의 주소로 들어가셔서 아래 그림에서 표시한 부분을 클릭하면,<br>DarkMode가 추가된 icarus 테마를 받을 수 있습니다.</p><span id="more"></span><p><img src="/img/2021-10-03/001/001.png" title="ㅇ"></p><p>만약 기존에 이미 icarus 테마가 있다면 혹시 모르니 백업하시고,<br>위 테마와 그냥 폴더 자체를 바꾸시면 됩니다.<br><br><br>바꾸고 난 뒤, logo 이미지가 안보여지는데,<br>위 사진과 같이 light 일때와 dark 일때 사진 경로를 따로 지정해야 보입니다.<br><br><br>그 후 다시 Hexo 프로젝트르 배포하시고 잠시 시간이 지나야 적용이 됩니다.<br><br><br>개인적으로 CSS는 브라우저 상에서 업데이트 시 은근 느리게 적용되는 것 같습니다.</p><p><br><hr></p>]]></content:encoded>
+      
+      
+      <category domain="https://MGS-95.github.io/categories/Hexo/">Hexo</category>
+      
+      
+      <category domain="https://MGS-95.github.io/tags/hexo/">hexo</category>
+      
+      
+      <comments>https://mgs-95.github.io/2021/10/03/2021-10-03-002-add-dark-theme-in-icarus/#disqus_thread</comments>
+      
+    </item>
+    
+    <item>
+      <title>Markdown 기초 문법</title>
+      <link>https://mgs-95.github.io/2021/10/03/2021-10-03-001-markdown/</link>
+      <guid>https://mgs-95.github.io/2021/10/03/2021-10-03-001-markdown/</guid>
+      <pubDate>Sat, 02 Oct 2021 16:53:54 GMT</pubDate>
+      
+      <description>&lt;hr&gt;&lt;br&gt;
+
+&lt;h3 id=&quot;1-들어가기-앞서&quot;&gt;&lt;a href=&quot;#1-들어가기-앞서&quot; class=&quot;headerlink&quot; title=&quot;[1] 들어가기 앞서&quot;&gt;&lt;/a&gt;&lt;strong&gt;[1] 들어가기 앞서&lt;/strong&gt;&lt;/h3&gt;&lt;hr&gt;
+
+&lt;p&gt;&lt;strong&gt;이것부터 말합니다.&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;MarkDown은 MarkUp 언어와 동일하게 Java, Ruby, Javascript와 같은 프로그래밍 언어는 아닙니다.&lt;/strong&gt;&lt;/p&gt;</description>
+      
+      
+      
+      <content:encoded><![CDATA[<hr><br><h3 id="1-들어가기-앞서"><a href="#1-들어가기-앞서" class="headerlink" title="[1] 들어가기 앞서"></a><strong>[1] 들어가기 앞서</strong></h3><hr><p><strong>이것부터 말합니다.</strong></p><p><strong>MarkDown은 MarkUp 언어와 동일하게 Java, Ruby, Javascript와 같은 프로그래밍 언어는 아닙니다.</strong></p><span id="more"></span><p><br><br><br></p><h3 id="2-설명"><a href="#2-설명" class="headerlink" title="[2] 설명"></a><strong>[2] 설명</strong></h3><hr><h4 id="MarkUp-이란"><a href="#MarkUp-이란" class="headerlink" title="MarkUp 이란?"></a><em><strong>MarkUp 이란?</strong></em></h4><blockquote><p>쉽게 말씀드리면 MarkUp은 Tag라는 것을 이용하여 문서의 구조를 명시하는 언어입니다. </p></blockquote><p>우리가 많이 보던 HTML, XML, SVG 등이 해당됩니다.<br>(JSON, YAML 파일은 분류는 마크업으로 되어 있지만, 구조와 쓰임이 다릅니다)</p><br><h4 id="MarkDown-이란"><a href="#MarkDown-이란" class="headerlink" title="MarkDown 이란?"></a><em><strong>MarkDown 이란?</strong></em></h4><blockquote><p>MarkUp이 Tag를 이용한 것이라면, MarkDown은 일반 텍스트로 쓰는 마크업 언어입니다.</p></blockquote><p>우리가 메모장에서 텍스트를 적는 것처럼 쓰는데, 유용한 기능이 추가된 언어라고 생각하면 편합니다.</p><p>파일의 확장자는 .md 이며, Hexo에서의 간단 사용 방식은 아래에 기술합니다.</p><p><br><br><br></p><h3 id="3-기초적인-문법"><a href="#3-기초적인-문법" class="headerlink" title="[3] 기초적인 문법"></a><strong>[3] 기초적인 문법</strong></h3><hr><ol><li>글쓰기 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">텍스트 적듯이 적습니다.</span><br><span class="line"></span><br><span class="line">**해당 문장의 글씨를 두껍게, 즉 강조를 할 수 있습니다**</span><br><span class="line">*이탈릭체(비스듬한 글씨체)는 이런 식으로 적습니다*</span><br><span class="line">***두꺼우면서 비스듬하게 적으려면 별표를 세 번 합니다***</span><br><span class="line">~~취소선은 이런 식으로 적습니다~~</span><br><span class="line">&lt;u&gt;밑줄을 적을 수도 있습니다&lt;u&gt;</span><br><span class="line"></span><br><span class="line">위의 순서대로 네 기능은 각각 __할말__    _할말_    ___할말___    ~할말~ 로 써도 가능합니다.</span><br></pre></td></tr></table></figure></li></ol><br><ol start="2"><li>인용구 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">&gt; 텍스트 적듯이 적습니다.</span><br><span class="line">&gt;&gt; 로 중첩된 인용문 사용 가능</span><br><span class="line">&gt;&gt;&gt; 로 또 중첩된 인용문 사용 가능</span><br><span class="line"></span><br><span class="line">또는 </span><br><span class="line"></span><br><span class="line">&#123;% blockquote %&#125;</span><br><span class="line">이런 식으로도 적습니다. </span><br><span class="line">&#123;% endblockquote %&#125;</span><br><span class="line"></span><br><span class="line">또한 blockquote 쪽에 [author[, source]] [link] [source_link_title] 등 여러 정보를 추가할 수 있습니다.</span><br></pre></td></tr></table></figure></li></ol><br><ol start="3"><li><p>코드 블럭(or 블럭 내 텍스트)</p><p> 3-1. 기본</p> <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">&#x27;&#x27;&#x27;</span><br><span class="line">텍스트 적듯이 적습니다. 단, &#x27;&#x27;&#x27;을 ```로 바꾸어야 합니다.</span><br><span class="line">&#x27;&#x27;&#x27;</span><br><span class="line"></span><br><span class="line">&#x27;&#x27;&#x27; Python</span><br><span class="line">이와 같이 특정 언어의 코드 블럭을 생성할 수도 있습니다. ex) MarkDown, Javascript, Python, Ruby...</span><br><span class="line">&#x27;&#x27;&#x27;</span><br></pre></td></tr></table></figure><p> 3-2. Python용 코드 블럭 예시</p> <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">for</span> i <span class="keyword">in</span> <span class="built_in">range</span>(<span class="number">1</span>, <span class="number">10</span>, <span class="number">1</span>):</span><br><span class="line">    <span class="built_in">print</span>(<span class="string">f&quot;간단한 for문을 출력합니다. <span class="subst">&#123;i&#125;</span>번째&quot;</span>)</span><br></pre></td></tr></table></figure><p> 3-3. 아래는 bash용 코드 블럭 예시</p> <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ vim ./~zshrc</span><br></pre></td></tr></table></figure></li></ol><br><ol start="4"><li>제목(글자 크기) <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">(&lt;h1&gt; 에 해당) # 제목 1</span><br><span class="line">(&lt;h2&gt; 에 해당) ## 제목 2</span><br><span class="line">(&lt;h3&gt; 에 해당) ### 제목 3</span><br><span class="line">(&lt;h4&gt; 에 해당) #### 제목 4</span><br><span class="line">(&lt;h5&gt; 에 해당) ##### 제목 5</span><br><span class="line">(&lt;h6&gt; 에 해당) ###### 제목 6</span><br></pre></td></tr></table></figure></li></ol><br><ol start="5"><li><p>iframe 및 타 영상 사이트</p><p> 5-1. iframe</p> <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&#123;% iframe URL입력 가로길이 세로길이 %&#125;</span><br></pre></td></tr></table></figure><p> 가끔씩 youtube 처럼 연결 거부로 뜨는 사이트가 있는데, embed 태그로 가져와야 합니다. 예를 들어,</p> <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&#123;% iframe https://www.youtube.com/embed/dQw4w9WgXcQ 100% 500 %&#125; 이런 식으로 가져옵니다.</span><br></pre></td></tr></table></figure><p> 여기서 세로 길이는 100%으로 하면 매우 짧기 때문에 위와 같이 300~500을 추천합니다.</p><p> 5-2. youtube</p> <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&#123;% youtube dQw4w9WgXcQ %&#125; (유튜브 비디오 ID를 입력)</span><br></pre></td></tr></table></figure><p> 그 외 여러 삽입 기능이 있으니 찾아보시는 걸 추천드립니다.</p></li></ol><br><ol start="6"><li><p>링크 삽입</p><p> 6-1. 하이퍼링크</p> <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[유튜브](https://www.youtube.com/)</span><br></pre></td></tr></table></figure><p> 6-2. 이미지</p> <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">![이미지 제목](/img/이미지파일.png &quot;대체 텍스트&quot;)</span><br></pre></td></tr></table></figure><p> 위의 /img/~ 이 경로는 보통 자기가 설치한 테마 폴더가 기본 값인데, icarus 테마를 예시로 들자면,<br> icarus 테마 폴더 내 source 폴더에 img 혹은 image라는 폴더가 있는데, 그곳에서 가져옵니다.</p></li></ol><br><ol start="7"><li><p>테이블</p><p> 7-1. 기본</p> <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">|제목|내용|설명|</span><br><span class="line">|------|---|---|</span><br><span class="line">|테스트1|테스트2|테스트3|</span><br><span class="line">|테스트1|테스트2|테스트3|</span><br><span class="line">|테스트1|테스트2|테스트3|</span><br></pre></td></tr></table></figure><p> 7-2. 기능 추가</p> <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">|컬럼1|컬럼2|</span><br><span class="line">|:-:|:-:|</span><br><span class="line">|값1-1|값2-1|</span><br><span class="line">|값1-2|값2-2|</span><br><span class="line">|값1-3|값2-3|</span><br></pre></td></tr></table></figure><p> 자세한 설명은 <strong><a href="https://inasie.github.io/it%EC%9D%BC%EB%B0%98/%EB%A7%88%ED%81%AC%EB%8B%A4%EC%9A%B4-%ED%91%9C-%EB%A7%8C%EB%93%A4%EA%B8%B0/">여기</a></strong> 참고해 주시면됩니다.</p></li></ol><br><ol start="8"><li>요약문(포스트 미리보기) <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">미리보기에 보여질 내용</span><br><span class="line">미리보기에 보여질 내용</span><br><span class="line">미리보기에 보여질 내용</span><br><span class="line">&lt;!-- more --&gt;</span><br></pre></td></tr></table></figure></li></ol><br><ol start="9"><li>드롭다운(접히기, 펴기)<pre><code>    &lt;details&gt;    &lt;summary&gt;접기/펼치기 버튼&lt;/summary&gt;    &lt;div markdown=&quot;1&quot;&gt;        내용    &lt;/div&gt;    &lt;/details&gt;</code></pre></li></ol><p><br><br><br></p><h3 id="4-참고-사이트"><a href="#4-참고-사이트" class="headerlink" title="[4] 참고 사이트"></a><strong>[4] 참고 사이트</strong></h3><hr><ol><li><a href="https://skyksit.com/hexo/markdown/">마크다운 문법</a></li><li><a href="https://gold-dragon.tistory.com/53">MarkDown(마크다운) 문법</a></li><li><a href="https://heropy.blog/2017/09/30/markdown/">MarkDown 사용법 총정리</a> (적극 추천)</li><li><a href="https://hexo.io/ko/docs/">Hexo 공식 문서(왼쪽 탭에서 Basic Usage 부분 열람)</a></li><li><a href="https://lynmp.com/ko/article/title/markdown-list-to811c9dc50n">마크다운(Markdown) 문법 - 목록(리스트), 체크박스</a></li></ol><p><br><hr></p>]]></content:encoded>
+      
+      
+      <category domain="https://MGS-95.github.io/categories/Language/">Language</category>
+      
+      <category domain="https://MGS-95.github.io/categories/Language/MarkDown/">MarkDown</category>
+      
+      
+      <category domain="https://MGS-95.github.io/tags/hexo/">hexo</category>
+      
+      <category domain="https://MGS-95.github.io/tags/markdown/">markdown</category>
+      
+      <category domain="https://MGS-95.github.io/tags/language/">language</category>
+      
+      
+      <comments>https://mgs-95.github.io/2021/10/03/2021-10-03-001-markdown/#disqus_thread</comments>
+      
+    </item>
+    
+    <item>
+      <title>Hexo 블로그 설치 A to Z</title>
+      <link>https://mgs-95.github.io/2021/09/04/2021-09-04-002-install-hexo/</link>
+      <guid>https://mgs-95.github.io/2021/09/04/2021-09-04-002-install-hexo/</guid>
+      <pubDate>Sat, 04 Sep 2021 07:17:42 GMT</pubDate>
+      
+      <description>&lt;hr&gt;&lt;br&gt;
+
+&lt;h3 id=&quot;1-설치-및-배포-관련&quot;&gt;&lt;a href=&quot;#1-설치-및-배포-관련&quot; class=&quot;headerlink&quot; title=&quot;[1] 설치 및 배포 관련&quot;&gt;&lt;/a&gt;&lt;strong&gt;[1] 설치 및 배포 관련&lt;/strong&gt;&lt;/h3&gt;&lt;hr&gt;
+
+&lt;p&gt;(사전에 &lt;a href=&quot;https://git-scm.com/downloads&quot;&gt;Git&lt;/a&gt; 설치 필요)&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;[공식] &lt;a href=&quot;https://hexo.io/ko/index.html&quot;&gt;Hexo 공식 사이트&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;[공식] &lt;a href=&quot;https://github.com/hexojs/hexo&quot;&gt;Hexo 설치 공식 가이드 1&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;[공식] &lt;a href=&quot;https://hexo.io/docs/&quot;&gt;Hexo 설치 공식 가이드 2&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;[개인] &lt;a href=&quot;https://velog.io/@recordboy/%ED%97%A5%EC%86%8CHEXO%EB%A5%BC-%EC%9D%B4%EC%9A%A9%ED%95%9C-%EA%B9%83%ED%97%88%EB%B8%8C-%EB%B8%94%EB%A1%9C%EA%B7%B8-%EB%A7%8C%EB%93%A4%EA%B8%B0&quot;&gt;헥소(HEXO)를 이용한 깃허브 블로그 만들기&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;[개인] &lt;a href=&quot;https://futurecreator.github.io/2016/06/14/get-started-with-hexo/&quot;&gt;워드프레스보다 쉬운 Hexo 블로그 시작하기&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;[개인] &lt;a href=&quot;https://futurecreator.github.io/2016/06/21/hexo-basic-usage/&quot;&gt;Hexo 기본 사용법&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;[개인] &lt;a href=&quot;https://github.com/ppoffice/hexo-theme-icarus&quot;&gt;Hexo 이카루스 테마&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;</description>
+      
+      
+      
+      <content:encoded><![CDATA[<hr><br><h3 id="1-설치-및-배포-관련"><a href="#1-설치-및-배포-관련" class="headerlink" title="[1] 설치 및 배포 관련"></a><strong>[1] 설치 및 배포 관련</strong></h3><hr><p>(사전에 <a href="https://git-scm.com/downloads">Git</a> 설치 필요)</p><ol><li>[공식] <a href="https://hexo.io/ko/index.html">Hexo 공식 사이트</a></li><li>[공식] <a href="https://github.com/hexojs/hexo">Hexo 설치 공식 가이드 1</a></li><li>[공식] <a href="https://hexo.io/docs/">Hexo 설치 공식 가이드 2</a></li><li>[개인] <a href="https://velog.io/@recordboy/%ED%97%A5%EC%86%8CHEXO%EB%A5%BC-%EC%9D%B4%EC%9A%A9%ED%95%9C-%EA%B9%83%ED%97%88%EB%B8%8C-%EB%B8%94%EB%A1%9C%EA%B7%B8-%EB%A7%8C%EB%93%A4%EA%B8%B0">헥소(HEXO)를 이용한 깃허브 블로그 만들기</a></li><li>[개인] <a href="https://futurecreator.github.io/2016/06/14/get-started-with-hexo/">워드프레스보다 쉬운 Hexo 블로그 시작하기</a></li><li>[개인] <a href="https://futurecreator.github.io/2016/06/21/hexo-basic-usage/">Hexo 기본 사용법</a></li><li>[개인] <a href="https://github.com/ppoffice/hexo-theme-icarus">Hexo 이카루스 테마</a></li></ol><span id="more"></span><p><br><br><br></p><h3 id="2-간단-명령어-모음"><a href="#2-간단-명령어-모음" class="headerlink" title="[2] 간단 명령어 모음"></a><strong>[2] 간단 명령어 모음</strong></h3><hr ><ol><li><strong>게시물 생성</strong></li></ol><figure class="highlight bash"><figcaption><span>Terminal</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p><br><ol start="2"><li><strong>서버 실행 (본인 프로젝트 파일 경로에서 Terminal로 실행)</strong></li></ol><figure class="highlight bash"><figcaption><span>Terminal</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p><br><ol start="3"><li><strong>정적 파일들 생성</strong></li></ol><figure class="highlight bash"><figcaption><span>Terminal</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p><br><ol start="4"><li><strong>원격 사이트에 배포 ex) Github</strong></li></ol><figure class="highlight bash"><figcaption><span>Terminal</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p><br><ol start="5"><li><strong>Ex) 현재 본인의 배포 키워드</strong></li></ol><figure class="highlight bash"><figcaption><span>Terminal</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">C:\Users\blog&gt;hexo clean &amp;&amp; hexo generate</span><br><span class="line">C:\Users\blog&gt;hexo deploy</span><br></pre></td></tr></table></figure><p><br><hr></p>]]></content:encoded>
+      
+      
+      <category domain="https://MGS-95.github.io/categories/Hexo/">Hexo</category>
+      
+      
+      <category domain="https://MGS-95.github.io/tags/hexo/">hexo</category>
+      
+      
+      <comments>https://mgs-95.github.io/2021/09/04/2021-09-04-002-install-hexo/#disqus_thread</comments>
+      
+    </item>
+    
+  </channel>
+</rss>
