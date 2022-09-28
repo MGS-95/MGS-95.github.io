@@ -1,99 +1,123 @@
 <!doctype html>
-<html lang="ko"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"><meta><title>DevOps란? - エンジニアになりたい者</title><link rel="manifest" href="/manifest.json"><meta name="application-name" content="エンジニアになりたい者"><meta name="msapplication-TileImage" content="/img/favicon.svg"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-title" content="エンジニアになりたい者"><meta name="apple-mobile-web-app-status-bar-style" content="default"><meta name="description" content="지극히 주관적인 정보입니다."><meta property="og:type" content="blog"><meta property="og:title" content="DevOps란?"><meta property="og:url" content="https://mgs-95.github.io/2021/10/03/2021-10-03-004-devops/"><meta property="og:site_name" content="エンジニアになりたい者"><meta property="og:description" content="지극히 주관적인 정보입니다."><meta property="og:locale" content="ko_KR"><meta property="og:image" content="https://mgs-95.github.io/img/og_image.png"><meta property="article:published_time" content="2021-10-03T10:32:37.000Z"><meta property="article:modified_time" content="2022-09-28T12:57:15.809Z"><meta property="article:author" content="MG.S"><meta property="article:tag" content="devops"><meta property="article:tag" content="agile"><meta property="article:tag" content="software_development_methodologies"><meta property="twitter:card" content="summary"><meta property="twitter:image" content="/img/og_image.png"><script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","mainEntityOfPage":{"@type":"WebPage","@id":"https://mgs-95.github.io/2021/10/03/2021-10-03-004-devops/"},"headline":"エンジニアになりたい者","image":["https://mgs-95.github.io/img/og_image.png"],"datePublished":"2021-10-03T10:32:37.000Z","dateModified":"2022-09-28T12:57:15.809Z","author":{"@type":"Person","name":"MG.S"},"description":"지극히 주관적인 정보입니다."}</script><link rel="canonical" href="https://mgs-95.github.io/2021/10/03/2021-10-03-004-devops/"><link rel="icon" href="/img/favicon.svg"><link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/all.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlight.js@9.12.0/styles/atom-one-light.css"><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;600&amp;family=Source+Code+Pro"><link rel="stylesheet" href="/css/default.css"><style>body>.footer,body>.navbar,body>.section{opacity:0}</style><!--!--><!--!--><!--!--><script src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js" defer></script><!--!--><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/cookieconsent@3.1.1/build/cookieconsent.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightgallery@1.6.8/dist/css/lightgallery.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/justifiedGallery@3.7.0/dist/css/justifiedGallery.min.css"><script src="https://www.googletagmanager.com/gtag/js?id=G-R5Q8Y7JZYY" async></script><script>window.dataLayer = window.dataLayer || [];
+<html lang="ko"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"><meta><title>지극히 개인적인 생각 - エンジニアになりたい者</title><link rel="manifest" href="/manifest.json"><meta name="application-name" content="エンジニアになりたい者"><meta name="msapplication-TileImage" content="/img/favicon.svg"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-title" content="エンジニアになりたい者"><meta name="apple-mobile-web-app-status-bar-style" content="default"><meta name="description" content="보는 관점에 따라 민감한 내용이 담겨 있습니다.    개발자가 너무 많다"><meta property="og:type" content="blog"><meta property="og:title" content="지극히 개인적인 생각"><meta property="og:url" content="https://mgs-95.github.io/2021/10/03/2021-10-03-007-memo/"><meta property="og:site_name" content="エンジニアになりたい者"><meta property="og:description" content="보는 관점에 따라 민감한 내용이 담겨 있습니다.    개발자가 너무 많다"><meta property="og:locale" content="ko_KR"><meta property="og:image" content="https://mgs-95.github.io/img/2021-10-04/001/001.png"><meta property="article:published_time" content="2021-10-03T14:11:45.000Z"><meta property="article:modified_time" content="2022-09-28T14:17:21.576Z"><meta property="article:author" content="MG.S"><meta property="article:tag" content="memo"><meta property="article:tag" content="youtube"><meta property="article:tag" content="내 생각"><meta property="article:tag" content="비전공"><meta property="article:tag" content="비전공 개발자"><meta property="article:tag" content="국비 지원"><meta property="twitter:card" content="summary"><meta property="twitter:image" content="/img/2021-10-04/001/001.png"><script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","mainEntityOfPage":{"@type":"WebPage","@id":"https://mgs-95.github.io/2021/10/03/2021-10-03-007-memo/"},"headline":"エンジニアになりたい者","image":["https://mgs-95.github.io/img/2021-10-04/001/001.png"],"datePublished":"2021-10-03T14:11:45.000Z","dateModified":"2022-09-28T14:17:21.576Z","author":{"@type":"Person","name":"MG.S"},"description":"보는 관점에 따라 민감한 내용이 담겨 있습니다.    개발자가 너무 많다"}</script><link rel="canonical" href="https://mgs-95.github.io/2021/10/03/2021-10-03-007-memo/"><link rel="icon" href="/img/favicon.svg"><link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/all.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlight.js@9.12.0/styles/atom-one-light.css"><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;600&amp;family=Source+Code+Pro"><link rel="stylesheet" href="/css/default.css"><style>body>.footer,body>.navbar,body>.section{opacity:0}</style><!--!--><!--!--><!--!--><script src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js" defer></script><!--!--><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/cookieconsent@3.1.1/build/cookieconsent.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightgallery@1.6.8/dist/css/lightgallery.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/justifiedGallery@3.7.0/dist/css/justifiedGallery.min.css"><script src="https://www.googletagmanager.com/gtag/js?id=G-R5Q8Y7JZYY" async></script><script>window.dataLayer = window.dataLayer || [];
         function gtag(){dataLayer.push(arguments);}
         gtag('js', new Date());
     
         gtag('config', 'G-R5Q8Y7JZYY');</script><!--!--><script src="https://cdn.jsdelivr.net/npm/pace-js@1.0.2/pace.min.js"></script><!--!--><!--!--><meta name="generator" content="Hexo 5.4.2"><link rel="alternate" href="/rss2.xml" title="エンジニアになりたい者" type="application/rss+xml">
-</head><body class="is-2-column"><script type="text/javascript" src="/js/imaegoo/night.js"></script><canvas id="universe"></canvas><nav class="navbar navbar-main"><div class="container"><div class="navbar-brand justify-content-center"><a class="navbar-item navbar-logo" href="/"><img class="logo-img" src="/img/logo.svg" alt="エンジニアになりたい者" height="28"><img class="logo-img-dark" src="/img/logo.svg" alt="エンジニアになりたい者" height="28"></a></div><div class="navbar-menu"><div class="navbar-start"><a class="navbar-item" href="/">Home</a><a class="navbar-item" href="/archives">Archives</a><a class="navbar-item" href="/categories">Categories</a><a class="navbar-item" href="/tags">Tags</a><a class="navbar-item" href="/about">About</a></div><div class="navbar-end"><a class="navbar-item" target="_blank" rel="external nofollow noopener noreferrer" title="Download on GitHub" href="https://github.com/MGS-95/MGS-95.github.io"><i class="fab fa-github"></i></a><a class="navbar-item night" id="night-nav" title="Night Mode" href="javascript:;"><i class="fas fa-moon" id="night-icon"></i></a><a class="navbar-item search" title="검색" href="javascript:;"><i class="fas fa-search"></i></a></div></div></div></nav><section class="section"><div class="container"><div class="columns"><div class="column order-2 column-main is-8-tablet is-8-desktop is-8-widescreen"><div class="card"><article class="card-content article" role="article"><div class="article-meta is-size-7 is-uppercase level is-mobile"><div class="level-left"><span class="level-item"><time datetime="2021-10-03T10:32:37.000Z" title="2021. 10. 3. 오후 7:32:37">2021-10-03</time>&nbsp;게시 됨</span><span class="level-item"><time datetime="2022-09-28T12:57:15.809Z" title="2022. 9. 28. 오후 9:57:15">2022-09-28</time>&nbsp;업데이트 됨</span><span class="level-item"><a class="link-muted" href="/categories/Information/">Information</a></span><span class="level-item">8분안에 읽기 (약 1180 단어)</span><span class="level-item" id="busuanzi_container_page_pv"><span id="busuanzi_value_page_pv">0</span>회 방문</span></div></div><h1 class="title is-3 is-size-4-mobile">DevOps란?</h1><div class="content"><hr><br>
+</head><body class="is-2-column"><script type="text/javascript" src="/js/imaegoo/night.js"></script><canvas id="universe"></canvas><nav class="navbar navbar-main"><div class="container"><div class="navbar-brand justify-content-center"><a class="navbar-item navbar-logo" href="/"><img class="logo-img" src="/img/logo.svg" alt="エンジニアになりたい者" height="28"><img class="logo-img-dark" src="/img/logo.svg" alt="エンジニアになりたい者" height="28"></a></div><div class="navbar-menu"><div class="navbar-start"><a class="navbar-item" href="/">Home</a><a class="navbar-item" href="/archives">Archives</a><a class="navbar-item" href="/categories">Categories</a><a class="navbar-item" href="/tags">Tags</a><a class="navbar-item" href="/about">About</a></div><div class="navbar-end"><a class="navbar-item" target="_blank" rel="external nofollow noopener noreferrer" title="Download on GitHub" href="https://github.com/MGS-95/MGS-95.github.io"><i class="fab fa-github"></i></a><a class="navbar-item night" id="night-nav" title="Night Mode" href="javascript:;"><i class="fas fa-moon" id="night-icon"></i></a><a class="navbar-item search" title="검색" href="javascript:;"><i class="fas fa-search"></i></a></div></div></div></nav><section class="section"><div class="container"><div class="columns"><div class="column order-2 column-main is-8-tablet is-8-desktop is-8-widescreen"><div class="card"><article class="card-content article" role="article"><div class="article-meta is-size-7 is-uppercase level is-mobile"><div class="level-left"><span class="level-item"><time datetime="2021-10-03T14:11:45.000Z" title="2021. 10. 3. 오후 11:11:45">2021-10-03</time>&nbsp;게시 됨</span><span class="level-item"><time datetime="2022-09-28T14:17:21.576Z" title="2022. 9. 28. 오후 11:17:21">2022-09-28</time>&nbsp;업데이트 됨</span><span class="level-item"><a class="link-muted" href="/categories/Memo/">Memo</a></span><span class="level-item">13분안에 읽기 (약 2009 단어)</span><span class="level-item" id="busuanzi_container_page_pv"><span id="busuanzi_value_page_pv">0</span>회 방문</span></div></div><h1 class="title is-3 is-size-4-mobile">지극히 개인적인 생각</h1><div class="content"><hr><br>
+
+<p><strong>보는 관점에 따라 민감한 내용이 담겨 있습니다.</strong></p>
+<br>
 
 <blockquote>
-<p>지극히 주관적인 정보입니다.</p>
-</blockquote>
+<h3 id="개발자가-너무-많다"><a href="#개발자가-너무-많다" class="headerlink" title="개발자가 너무 많다"></a><em><strong>개발자가 너무 많다</strong></em></h3></blockquote>
 <span id="more"></span>
 
 <br>
 
-<h3 id="1-개요"><a href="#1-개요" class="headerlink" title="[1] 개요"></a><strong>[1] 개요</strong></h3><hr>
+<p>최근 유튜브 추천 영상으로 비전공으로 IT회사에 취업한 사람들의 Vlog나,<br><br>그런 분들의 지식 공유 영상이 뜨면서 꽤 많이 보게 되었는데,<br><br>우선 대부분의 비전공자 분들은 저와 같이 웹쪽으로 취업을 하신 것 같아 보였습니다.<br><br>사실 웹이 입문하기엔 가장 쉽다고도 하고, 실제로도 다른 소프트웨어 엔지니어 대비 자신이 만든 결과물을 빠르게 볼 수 있기도 해서 흥미를 붙이기에는 좋은 분야인 듯 합니다.</p>
+<br>
 
-<p>여러분도 어디선가 들어봤을 겁니다, <strong>DevOps</strong>. 대체 이건 뭔교?</p>
-<p>사실 이 포스트를 쓰면서 저도 감은 잡히지 않습니다.</p>
-<p>다만 이게 개발 방법론이라고는 하는 듯 합니다.</p>
+<p><u>하지만</u></p>
+<br>
+
+<p>입문이 쉽다는 거지, 입문 후 배워야 할 내용은 다른 분야랑 차이가 없습니다.<br> 심하면 다른 IT분야보다 더 배워야 합니다.</p>
+<p>그럼에도 불구하고 유튜브에 영상을 올리시는 중소기업에 취직하신</p>
+<p>비전공자 분들이 올리신 영상 중, 꽤 많은 영상들이</p>
+<p>단지 회사 생활에서 기존의 자신이 배웠던 것만 쓰고 마는, </p>
+<p>어찌보면 기계적인 일처리를 하고 있는 것 같아 보였습니다.</p>
+<p><br><br></p>
+<p>몇몇 사람들은 IT에서 일하는 사람들을 이렇게 나누기도 합니다.</p>
 <blockquote>
-<p>개발 방법론? 그건 또 뭔교?</p>
+<p>그냥 컴퓨터 언어(=코드)를 사용할 줄 아는 코더와,<br>프로그램을 위해 코드를 사용하는 프로그래머와,<br>실제 소프트웨어를 만드는 디벨로퍼, 즉 개발자가 있다.</p>
+<p>보통은 코더, 프로그래머 혹은 코더, 개발자 이렇게 2가지 종류로 나눈다. </p>
 </blockquote>
-<p>간단하게 설명드리면,</p>
+<p>그리고 인터넷에서는 ‘<em>비전공자 국비지원은 코더로 양산된다</em>‘ 라고도 합니다.</p>
+<p>얼추 맞는 이야기이긴 합니다. 저도 비전공자이고, 실제로 코더가 된 사람들도 경험했습니다.</p>
+<p>심지어는 단기간으로 웹을 배운 비전공자 출신들이 은어적으로 ‘<strong>웹싸개</strong>‘ 라고 불리기도 합니다.</p>
+<hr>
+<p><img src="/img/2021-10-04/001/001.png" alt="구글에 웹싸개라고 검색한 결과" title="대체 텍스트"></p>
+<hr>
+<br>
+
+<p>사실 저도 할 말은 없습니다. 저도 지금은 웹싸개나 다름 없는 신세라고 생각하거든요.</p>
+<p>그렇기 때문에 끊임없이 새로운 기술을 익히고, 더더욱 폭 넓은 정보를 익혀야 한다고 생각합니다.</p>
+<br>
+
+<p>우리와 같은 비전공자 노베이스를 취직 시켜준 회사도 바보가 아닌 이상, 취직에는 이유가 있습니다.</p>
 <blockquote>
-<p>공동으로 개발을 하는 데 있어서, 이름 그대로 방법을 제시하는 것.</p>
+<p>자신이 만약 국비 지원을 다니는데, 국비 지원에서의 취업 연계로 취업하였다면<br>취업을 댓가로 학교와 학원이 이득을 보는 구조이고,</p>
+<p>스스로 찾아서 취업을 하였다 하여도, 자신의 실력이 취업할 실력이 아님에도 되었다면,<br>그 회사는 단지 ‘<strong>웹싸개</strong>‘를 원하는 곳일 뿐입니다.</p>
 </blockquote>
-<p>추상적인 말이지만, 실제 알고리즘을 구조를 제외하고, 이론을 이해를 하기엔 이만한 말이 없습니다.</p>
+<p>비전공자들은 대부분은 규모 있는 IT기업에는 취업하지 못합니다.</p>
+<br>
+
+<p>이전에 모 대기업 게임회사의 AI부서에서 아르바이트를 한 적이 있었는데,<br>해당 부서의 모든 직원분들은 전공자에, 심지어 대부분이 이쪽 분야의 대학원을 졸업하신 분들이었습니다.<br>이는 웹쪽도 마찬가지였습니다.</p>
+<p>비전공자가 입사하기 위해 시도 할 수 있는 방법으로는 ‘<u>경력직으로 입사</u>‘ 밖에는 없는 셈입니다.</p>
+<p>물론 그것도 경력을 채울 때까지 꾸준히 폭 넓고, 깊은 공부를 해야 가능한 이야기죠.</p>
 <p><br><br><br></p>
-<h3 id="2-DevOps"><a href="#2-DevOps" class="headerlink" title="[2] DevOps"></a><strong>[2] DevOps</strong></h3><hr>
+<hr>
 
-<p>사실 위에서 개발 방법론을 설명했기에 이 종류를 쓰려고 했지만,</p>
-<p>생각해보니 매우 따분해질 것 같아서 그냥 패스합니다.</p>
-<p>우리는 <del>(적어도 저는)</del> 그걸 위해서 작성하는 게 아니니까요.</p>
-<p>간단하게, 개발 방법론의 종류에는 시간적 순서대로</p>
+<p>제가 제 자신을 포함해서 비전공자 분들에게 말씀드리고 싶은 것은 딱 하나입니다.</p>
 <blockquote>
-<p>구조적 방법론 &gt; 정보 공학적 방법론 &gt; 객체지향 방법론 &gt; CBD 방법론 &gt; 애자일 방법론</p>
+<p>취미를 적는 란에 개발이라고 쓸 정도의 마인드를 가지세요. 코딩이 아니라 개발이요.</p>
 </blockquote>
-<p>이 있다고 생각하시면 됩니다. 마찬가지로 DevOps도 개발 방법론입니다.</p>
+<p>물론 코딩도 중요하지만, 코딩만 한다면 그건 <a target="_blank" rel="external nofollow noopener noreferrer" href="http://channy.creation.net/blog/557">코드 몽키</a>와 다를 게 없다고 생각합니다.</p>
+<p>끊임 없이 새로운 기술을 익히고, </p>
+<p>전체적인 개발 프로세스에 대한 공부를 취미로 둘 정도가 되어야 한다는 것입니다.</p>
 <br>
 
-<p>애자일이 이름 그대로 빠르게 프로토타입을 만들고, 요구사항에 맞춰 유연하게 바꿔나가는 방식이라면</p>
-<p><strong>DevOps는 Agile과 유사하지만, 기존의 Agile에서 분리되어 작업하던 개발자(Dev)와 서비스 운영자(Ops)를 합친다는 의미입니다.</strong></p>
+<p>개발자는 카페에서 여유롭게 노트북 켜놓고 코딩하는, </p>
+<p>비전공자가 보기엔 멋있을 수도 있는 모습은 진정 개발자의 모습이 아닙니다.</p>
 <br>
 
-<p>다시 말해, 이제 개발이 되면 바로 바로 서비스를 배포할 수 있게 된다는 의미이기도 합니다.</p>
-<blockquote>
-<p>내가 개인 프로젝트 할 땐 내가 개발하고 끝나면 바로 배포할 수 있었는데?</p>
-</blockquote>
-<p>설마 이런 말을 하지는 않겠지만.. </p>
-<p>당연히 회사에서 B2B를 진행하는데 그걸 개인과 비교하지는 않을 거라고 생각합니다.</p>
-<p>어찌보면 그게 DevOps지만, 회사에서는 그걸 적용하기가 쉽지 않았습니다.</p>
-<p>어쨋든, DevOps는 그런 ‘<em><strong>문화이며 개념</strong></em>‘ 입니다. </p>
-<p>이러한 DevOps에서 다루는 개발 방법은 다음과 같습니다.</p>
+<p>특히 4년, 혹은 그 이상의 시간을 IT공부를 한 전공자에 비해 </p>
+<p>1년도 안되는 기간에 배운 지식은 턱 없이 부족합니다. 정말 부족해요.</p>
 <br>
 
+<p>배우는 기관에 따라 다르지만 제가 배운 기관 기준으로 말씀드리면,</p>
+<p>Java를 배웠고, Spring을 배웠고, 게시판 CRUD 구현하였고, 정보처리기사 자격증 강의도 들어, 총 7개월 정도 교육을 들었습니다.</p>
+<p>조금 더 붙이면 RDBMS사용법도 좀 배우고, 웹에서는 JS, JS의 라이브러리들을 배웠습니다.</p>
+<br>
+
+<p>배우는 7개월 동안, 그것도 많다고 느껴졌는데, <strong>막상 회사를 들어가니 그게 아니었습니다.</strong></p>
 <blockquote>
-<p><strong>협업, 커뮤니케이션을 중시</strong></p>
-<blockquote>
-<p>당연하다면 당연한 이야기지만, 개발자와 운영자의 협업이 없으면 서비스는 만들어 질 수가 없습니다. 두 팀이 협업을 한다고 해도, 개발팀과 인프라 운영팀이 분리되어 있으면 서로 조율을 하기가 쉽지가 않죠. 쉽게 생각하면 개발자와 운영자가 자주 대화할 수 있는 자리를 마련해야 한다는 의미이기도 합니다.</p>
+<p>서버에 대한 지식을 익히기 위해 리눅스를 배워야 했고, </p>
+<p>협업을 하기 위해 여러 협업 툴을 다루는 법을 익혀야 했고,</p>
+<p>테스트 주도 개발을 위해 테스트에 대한 전반적이면서 심도있는 지식을 익혀야 했고,</p>
+<p>프론트엔드 프레임워크 및 라이브러리의 넘쳐나는 최신 기술들을 익혀야 했고,</p>
+<p>다른 언어 기반의 프레임워크로 생성한 백엔드의 구조도 알아야 했습니다.</p>
 </blockquote>
-</blockquote>
-<blockquote>
-<p><strong>CI / CD를 중시</strong></p>
-<blockquote>
-<p>지속적인 통합(Continuous Integrattion) 과<br><br>지속적인 배포(Continuous Deploy 또는 Continuous Delivery)<br><br>를 합친 말로, 이게 이루어져야 한다는 의미입니다. 다시 말해 개발, 테스트, 배포가 통합되고,자동화되어야 한다는 의미이기도 합니다. 이를 가능하게 해주는 툴은 Jenkins 등이 있습니다.</p>
-</blockquote>
-</blockquote>
-<p>찾아보니 상품도 있었습니다.</p>
-<blockquote>
-<p><strong>번외) 상품</strong></p>
-<blockquote>
-<p>갑자기 상품이라니? 하고 생각할 수도 있겠지만, 대형 IT 기업들은 자체 DevOps 솔루션을 팔고 있습니다. 당장 인터넷에 검색만 해도 IBM, Amazon, Microsoft, Redhat, netapp, Newrelic 등등 여러 기업들이 자체 솔루션을 제공합니다. 아마 위에서 말한 협업, 지속적 통합 및 배포에 필요한 전체 도구를 패키지 상품 형식으로 제공하는 듯 합니다.</p>
-</blockquote>
-</blockquote>
-<p>나중에 기회가 된다면 해당 솔루션을 이용해 보고 싶긴 합니다.</p>
+<p>심지어 저는 일본 회사이기에 사양서는 수십, 수백개가 넘는 문서는 일본어로 되어 있습니다.</p>
+<p>그리고 위의 배워야 하는 기술 및 개념은 아직 현재 진행형으로 추가되고 있습니다.</p>
+<p><u>그렇기 때문에 이 블로그에서 간략하게 제가 배운 지식을 기록으로 남기고자 하려는 것입니다.</u></p>
 <p><br><br><br></p>
-<h3 id="3-참조-사이트"><a href="#3-참조-사이트" class="headerlink" title="[3] 참조 사이트"></a><strong>[3] 참조 사이트</strong></h3><hr>
+<hr>
 
-<ol>
-<li><a target="_blank" rel="external nofollow noopener noreferrer" href="https://ko.wikipedia.org/wiki/%EC%86%8C%ED%94%84%ED%8A%B8%EC%9B%A8%EC%96%B4_%EA%B0%9C%EB%B0%9C_%EB%B0%A9%EB%B2%95%EB%A1%A0">소프트웨어 개발 방법론, 위키피디아</a></li>
-<li><a target="_blank" rel="external nofollow noopener noreferrer" href="https://www.uptech.team/blog/software-development-methodologies">8 Best Software Development Methodologies</a></li>
-<li><a target="_blank" rel="external nofollow noopener noreferrer" href="http://blog.skby.net/%EB%8D%B0%EB%B8%8C%EC%98%B5%EC%8A%A4-devops/">데브옵스 (DevOps)</a></li>
-<li><a target="_blank" rel="external nofollow noopener noreferrer" href="https://engineering-skcc.github.io/devops/DevOps1-%EC%95%A0%EC%9E%90%EC%9D%BC%EA%B3%BC%EB%8D%B0%EB%B8%8C%EC%98%B5%EC%8A%A4/">데브옵스 알아가기(1) : 애자일과 데브옵스</a></li>
-<li><a target="_blank" rel="external nofollow noopener noreferrer" href="https://blog.sonim1.com/238">[개발문화탐구] 데브옵스 (DevOps) - 애자일(Agile)</a></li>
-<li><a target="_blank" rel="external nofollow noopener noreferrer" href="https://m.blog.naver.com/infopub/222022358307">애자일 방법론과 데브옵스의 유래</a></li>
-<li><a target="_blank" rel="external nofollow noopener noreferrer" href="https://m.blog.naver.com/acornedu/221519913222">DevOps란 무엇일까요?</a></li>
-<li><a target="_blank" rel="external nofollow noopener noreferrer" href="https://wnsgml972.github.io/devops/2019/02/19/devops/">DevOps란?</a></li>
-<li><a target="_blank" rel="external nofollow noopener noreferrer" href="https://cloudmt.co.kr/?p=3436">DevOps를 하려면 무엇부터 해야 할까?</a></li>
-<li><a target="_blank" rel="external nofollow noopener noreferrer" href="https://devuna.tistory.com/56">[DevOps]CI/CD (지속적 통합/지속적 제공) 개념과 과정/ 툴 별 장단점 비교</a></li>
-<li><a target="_blank" rel="external nofollow noopener noreferrer" href="https://velog.io/@soosungp33/Devops-CICD-%EA%B0%9C%EB%85%90">[Devops] CI/CD 개념</a></li>
-</ol>
-<p><br><hr></p>
-</div><div class="article-licensing box"><div class="licensing-title"><p>DevOps란?</p><p><a href="https://mgs-95.github.io/2021/10/03/2021-10-03-004-devops/">https://mgs-95.github.io/2021/10/03/2021-10-03-004-devops/</a></p></div><div class="licensing-meta level is-mobile"><div class="level-left"><div class="level-item is-narrow"><div><h6>Author</h6><p>MG.S</p></div></div><div class="level-item is-narrow"><div><h6>Posted on</h6><p>2021-10-03</p></div></div><div class="level-item is-narrow"><div><h6>Updated on</h6><p>2022-09-28</p></div></div><div class="level-item is-narrow"><div><h6>Licensed under</h6><p><a class="icon" rel="external nofollow noopener noreferrer" target="_blank" title="Creative Commons" href="https://creativecommons.org/"><i class="fab fa-creative-commons"></i></a><a class="icon" rel="external nofollow noopener noreferrer" target="_blank" title="Attribution" href="https://creativecommons.org/licenses/by/4.0/"><i class="fab fa-creative-commons-by"></i></a><a class="icon" rel="external nofollow noopener noreferrer" target="_blank" title="Noncommercial" href="https://creativecommons.org/licenses/by-nc/4.0/"><i class="fab fa-creative-commons-nc"></i></a></p></div></div></div></div></div><div class="article-tags is-size-7 mb-4"><span class="mr-2">#</span><a class="link-muted mr-2" rel="tag" href="/tags/devops/">devops</a><a class="link-muted mr-2" rel="tag" href="/tags/agile/">agile</a><a class="link-muted mr-2" rel="tag" href="/tags/software-development-methodologies/">software_development_methodologies</a></div><!--!--></article></div><!--!--><div class="card"><nav class="post-navigation mt-4 level is-mobile card-content"><div class="level-start"><a class="article-nav-prev level level-item link-muted" href="/2021/10/03/2021-10-03-005-on-premise/"><i class="level-item fas fa-chevron-left"></i><span class="level-item">On Premise, Off Premise란?</span></a></div><div class="level-end"><a class="article-nav-next level level-item link-muted" href="/2021/10/03/2021-10-03-003-recommend-video/"><span class="level-item">추천 영상 [1] - 개발자 유튜버를 너무 믿지 마세요!</span><i class="level-item fas fa-chevron-right"></i></a></div></nav></div><div class="card"><div class="card-content"><h3 class="title is-5">댓글</h3><div id="disqus_thread"><noscript>Please enable JavaScript to view the <a target="_blank" rel="noopener" href="//disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript></div><script>var disqus_config = function () {
-            this.page.url = 'https://mgs-95.github.io/2021/10/03/2021-10-03-004-devops/';
-            this.page.identifier = '2021/10/03/2021-10-03-004-devops/';
+<p>약간 다른 이야기지만, 아는 분 중 어떤 개발자 분이 이런 말씀을 하셨습니다.</p>
+<blockquote>
+<p>개발자는 항상 더 나은 코드를 생각해야 한다.</p>
+</blockquote>
+<p>사실 이것도 다들 아는 말입니다. 클린 코드를 지향해야 한다는 건 </p>
+<p>웬만큼 배운 분들이면 다들 압니다. 그렇지만 실천하기엔 힘들죠.</p>
+<p>그럼에도 해야 합니다. 그렇게 해야 이 업계에서 살아남는다고 생각합니다.</p>
+<p>개발자는 끊임없이 고민하고, 공부해야한다는 의미입니다.</p>
+<br>
+
+<p>다시 유튜브의 이야기로 돌아오자면, 비전공자분들께서 나름대로 열심히 노력하셔서 취업하시고,</p>
+<p>자신들의 일상을 단지 보여주는 영상에서, 일적인 부분은 컨텐츠적인 요소이다. 라고 보면</p>
+<p>사실 이렇게까지 길게 쓸 필요는 없긴 합니다.</p>
+<br>
+
+<p>다만, 영상만 봤을 때는 그저 <strong>코더의 모습만 보이는 듯 하여</strong> 이렇게 포스팅을 하게 되었습니다.</p>
+<p>만약, 개발이 자신에게 맞지 않다면 과감하게 다른 길로 가는 게 좋다고 생각합니다.</p>
+<br> 
+
+<p>마지막으로 영상 하나 첨부하고, 오늘의 아카이브는 이것으로 마치도록 하겠습니다.</p>
+<p><strong>개발</strong>이라는 것에 대해 한 번 제대로 생각하는 계기가 되었으면 하는 바람입니다.</p>
+<div class="video-container"><iframe src="https://www.youtube.com/embed/OHbI7u32iyY" frameborder="0" loading="lazy" allowfullscreen></iframe></div></div><div class="article-licensing box"><div class="licensing-title"><p>지극히 개인적인 생각</p><p><a href="https://mgs-95.github.io/2021/10/03/2021-10-03-007-memo/">https://mgs-95.github.io/2021/10/03/2021-10-03-007-memo/</a></p></div><div class="licensing-meta level is-mobile"><div class="level-left"><div class="level-item is-narrow"><div><h6>Author</h6><p>MG.S</p></div></div><div class="level-item is-narrow"><div><h6>Posted on</h6><p>2021-10-03</p></div></div><div class="level-item is-narrow"><div><h6>Updated on</h6><p>2022-09-28</p></div></div><div class="level-item is-narrow"><div><h6>Licensed under</h6><p><a class="icon" rel="external nofollow noopener noreferrer" target="_blank" title="Creative Commons" href="https://creativecommons.org/"><i class="fab fa-creative-commons"></i></a><a class="icon" rel="external nofollow noopener noreferrer" target="_blank" title="Attribution" href="https://creativecommons.org/licenses/by/4.0/"><i class="fab fa-creative-commons-by"></i></a><a class="icon" rel="external nofollow noopener noreferrer" target="_blank" title="Noncommercial" href="https://creativecommons.org/licenses/by-nc/4.0/"><i class="fab fa-creative-commons-nc"></i></a></p></div></div></div></div></div><div class="article-tags is-size-7 mb-4"><span class="mr-2">#</span><a class="link-muted mr-2" rel="tag" href="/tags/memo/">memo</a><a class="link-muted mr-2" rel="tag" href="/tags/youtube/">youtube</a><a class="link-muted mr-2" rel="tag" href="/tags/%EB%82%B4-%EC%83%9D%EA%B0%81/">내 생각</a><a class="link-muted mr-2" rel="tag" href="/tags/%EB%B9%84%EC%A0%84%EA%B3%B5/">비전공</a><a class="link-muted mr-2" rel="tag" href="/tags/%EB%B9%84%EC%A0%84%EA%B3%B5-%EA%B0%9C%EB%B0%9C%EC%9E%90/">비전공 개발자</a><a class="link-muted mr-2" rel="tag" href="/tags/%EA%B5%AD%EB%B9%84-%EC%A7%80%EC%9B%90/">국비 지원</a></div><!--!--></article></div><!--!--><div class="card"><nav class="post-navigation mt-4 level is-mobile card-content"><div class="level-start"><a class="article-nav-prev level level-item link-muted" href="/2021/10/04/2021-10-04-001-how-to-compile-typescript/"><i class="level-item fas fa-chevron-left"></i><span class="level-item">타입스크립트 컴파일 및 실행</span></a></div><div class="level-end"><a class="article-nav-next level level-item link-muted" href="/2021/10/03/2021-10-03-006-recommend-url/"><span class="level-item">추천 사이트 - IT 정보</span><i class="level-item fas fa-chevron-right"></i></a></div></nav></div><div class="card"><div class="card-content"><h3 class="title is-5">댓글</h3><div id="disqus_thread"><noscript>Please enable JavaScript to view the <a target="_blank" rel="noopener" href="//disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript></div><script>var disqus_config = function () {
+            this.page.url = 'https://mgs-95.github.io/2021/10/03/2021-10-03-007-memo/';
+            this.page.identifier = '2021/10/03/2021-10-03-007-memo/';
         };
         (function() {
             var d = document, s = d.createElement('script');  

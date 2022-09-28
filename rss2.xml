@@ -44,78 +44,6 @@
     </item>
     
     <item>
-      <title>지극히 개인적인 생각</title>
-      <link>https://mgs-95.github.io/2022/09/28/2021-10-03-007-memo/</link>
-      <guid>https://mgs-95.github.io/2022/09/28/2021-10-03-007-memo/</guid>
-      <pubDate>Wed, 28 Sep 2022 12:57:15 GMT</pubDate>
-      
-      <description>&lt;hr&gt;&lt;br&gt;
-
-&lt;p&gt;&lt;strong&gt;보는 관점에 따라 민감한 내용이 담겨 있습니다.&lt;/strong&gt;&lt;/p&gt;
-&lt;br&gt;
-
-&lt;blockquote&gt;
-&lt;h3 id=&quot;개발자가-너무-많다&quot;&gt;&lt;a href=&quot;#개발자가-너무-많다&quot; class=&quot;headerlink&quot; title=&quot;개발자가 너무 많다&quot;&gt;&lt;/a&gt;&lt;em&gt;&lt;strong&gt;개발자가 너무 많다&lt;/strong&gt;&lt;/em&gt;&lt;/h3&gt;&lt;/blockquote&gt;</description>
-      
-      
-      
-      <content:encoded><![CDATA[<hr><br><p><strong>보는 관점에 따라 민감한 내용이 담겨 있습니다.</strong></p><br><blockquote><h3 id="개발자가-너무-많다"><a href="#개발자가-너무-많다" class="headerlink" title="개발자가 너무 많다"></a><em><strong>개발자가 너무 많다</strong></em></h3></blockquote><span id="more"></span><br><p>최근 유튜브 추천 영상으로 비전공으로 IT회사에 취업한 사람들의 Vlog나,<br><br>그런 분들의 지식 공유 영상이 뜨면서 꽤 많이 보게 되었는데,<br><br>우선 대부분의 비전공자 분들은 저와 같이 웹쪽으로 취업을 하신 것 같아 보였습니다.<br><br>사실 웹이 입문하기엔 가장 쉽다고도 하고, 실제로도 다른 소프트웨어 엔지니어 대비 자신이 만든 결과물을 빠르게 볼 수 있기도 해서 흥미를 붙이기에는 좋은 분야인 듯 합니다.</p><br><p><u>하지만</u></p><br><p>입문이 쉽다는 거지, 입문 후 배워야 할 내용은 다른 분야랑 차이가 없습니다.<br> 심하면 다른 IT분야보다 더 배워야 합니다.</p><p>그럼에도 불구하고 유튜브에 영상을 올리시는 중소기업에 취직하신</p><p>비전공자 분들이 올리신 영상 중, 꽤 많은 영상들이</p><p>단지 회사 생활에서 기존의 자신이 배웠던 것만 쓰고 마는, </p><p>어찌보면 기계적인 일처리를 하고 있는 것 같아 보였습니다.</p><p><br><br></p><p>몇몇 사람들은 IT에서 일하는 사람들을 이렇게 나누기도 합니다.</p><blockquote><p>그냥 컴퓨터 언어(=코드)를 사용할 줄 아는 코더와,<br>프로그램을 위해 코드를 사용하는 프로그래머와,<br>실제 소프트웨어를 만드는 디벨로퍼, 즉 개발자가 있다.</p><p>보통은 코더, 프로그래머 혹은 코더, 개발자 이렇게 2가지 종류로 나눈다. </p></blockquote><p>그리고 인터넷에서는 ‘<em>비전공자 국비지원은 코더로 양산된다</em>‘ 라고도 합니다.</p><p>얼추 맞는 이야기이긴 합니다. 저도 비전공자이고, 실제로 코더가 된 사람들도 경험했습니다.</p><p>심지어는 단기간으로 웹을 배운 비전공자 출신들이 은어적으로 ‘<strong>웹싸개</strong>‘ 라고 불리기도 합니다.</p><hr><p><img src="/img/2021-10-04/001/001.png" alt="구글에 웹싸개라고 검색한 결과" title="대체 텍스트"></p><hr><br><p>사실 저도 할 말은 없습니다. 저도 지금은 웹싸개나 다름 없는 신세라고 생각하거든요.</p><p>그렇기 때문에 끊임없이 새로운 기술을 익히고, 더더욱 폭 넓은 정보를 익혀야 한다고 생각합니다.</p><br><p>우리와 같은 비전공자 노베이스를 취직 시켜준 회사도 바보가 아닌 이상, 취직에는 이유가 있습니다.</p><blockquote><p>자신이 만약 국비 지원을 다니는데, 국비 지원에서의 취업 연계로 취업하였다면<br>취업을 댓가로 학교와 학원이 이득을 보는 구조이고,</p><p>스스로 찾아서 취업을 하였다 하여도, 자신의 실력이 취업할 실력이 아님에도 되었다면,<br>그 회사는 단지 ‘<strong>웹싸개</strong>‘를 원하는 곳일 뿐입니다.</p></blockquote><p>비전공자들은 대부분은 규모 있는 IT기업에는 취업하지 못합니다.</p><br><p>이전에 모 대기업 게임회사의 AI부서에서 아르바이트를 한 적이 있었는데,<br>해당 부서의 모든 직원분들은 전공자에, 심지어 대부분이 이쪽 분야의 대학원을 졸업하신 분들이었습니다.<br>이는 웹쪽도 마찬가지였습니다.</p><p>비전공자가 입사하기 위해 시도 할 수 있는 방법으로는 ‘<u>경력직으로 입사</u>‘ 밖에는 없는 셈입니다.</p><p>물론 그것도 경력을 채울 때까지 꾸준히 폭 넓고, 깊은 공부를 해야 가능한 이야기죠.</p><p><br><br><br></p><hr><p>제가 제 자신을 포함해서 비전공자 분들에게 말씀드리고 싶은 것은 딱 하나입니다.</p><blockquote><p>취미를 적는 란에 개발이라고 쓸 정도의 마인드를 가지세요. 코딩이 아니라 개발이요.</p></blockquote><p>물론 코딩도 중요하지만, 코딩만 한다면 그건 <a href="http://channy.creation.net/blog/557">코드 몽키</a>와 다를 게 없다고 생각합니다.</p><p>끊임 없이 새로운 기술을 익히고, </p><p>전체적인 개발 프로세스에 대한 공부를 취미로 둘 정도가 되어야 한다는 것입니다.</p><br><p>개발자는 카페에서 여유롭게 노트북 켜놓고 코딩하는, </p><p>비전공자가 보기엔 멋있을 수도 있는 모습은 진정 개발자의 모습이 아닙니다.</p><br><p>특히 4년, 혹은 그 이상의 시간을 IT공부를 한 전공자에 비해 </p><p>1년도 안되는 기간에 배운 지식은 턱 없이 부족합니다. 정말 부족해요.</p><br><p>배우는 기관에 따라 다르지만 제가 배운 기관 기준으로 말씀드리면,</p><p>Java를 배웠고, Spring을 배웠고, 게시판 CRUD 구현하였고, 정보처리기사 자격증 강의도 들어, 총 7개월 정도 교육을 들었습니다.</p><p>조금 더 붙이면 RDBMS사용법도 좀 배우고, 웹에서는 JS, JS의 라이브러리들을 배웠습니다.</p><br><p>배우는 7개월 동안, 그것도 많다고 느껴졌는데, <strong>막상 회사를 들어가니 그게 아니었습니다.</strong></p><blockquote><p>서버에 대한 지식을 익히기 위해 리눅스를 배워야 했고, </p><p>협업을 하기 위해 여러 협업 툴을 다루는 법을 익혀야 했고,</p><p>테스트 주도 개발을 위해 테스트에 대한 전반적이면서 심도있는 지식을 익혀야 했고,</p><p>프론트엔드 프레임워크 및 라이브러리의 넘쳐나는 최신 기술들을 익혀야 했고,</p><p>다른 언어 기반의 프레임워크로 생성한 백엔드의 구조도 알아야 했습니다.</p></blockquote><p>심지어 저는 일본 회사이기에 사양서는 수십, 수백개가 넘는 문서는 일본어로 되어 있습니다.</p><p>그리고 위의 배워야 하는 기술 및 개념은 아직 현재 진행형으로 추가되고 있습니다.</p><p><u>그렇기 때문에 이 블로그에서 간략하게 제가 배운 지식을 기록으로 남기고자 하려는 것입니다.</u></p><p><br><br><br></p><hr><p>약간 다른 이야기지만, 아는 분 중 어떤 개발자 분이 이런 말씀을 하셨습니다.</p><blockquote><p>개발자는 항상 더 나은 코드를 생각해야 한다.</p></blockquote><p>사실 이것도 다들 아는 말입니다. 클린 코드를 지향해야 한다는 건 </p><p>웬만큼 배운 분들이면 다들 압니다. 그렇지만 실천하기엔 힘들죠.</p><p>그럼에도 해야 합니다. 그렇게 해야 이 업계에서 살아남는다고 생각합니다.</p><p>개발자는 끊임없이 고민하고, 공부해야한다는 의미입니다.</p><br><p>다시 유튜브의 이야기로 돌아오자면, 비전공자분들께서 나름대로 열심히 노력하셔서 취업하시고,</p><p>자신들의 일상을 단지 보여주는 영상에서, 일적인 부분은 컨텐츠적인 요소이다. 라고 보면</p><p>사실 이렇게까지 길게 쓸 필요는 없긴 합니다.</p><br><p>다만, 영상만 봤을 때는 그저 <strong>코더의 모습만 보이는 듯 하여</strong> 이렇게 포스팅을 하게 되었습니다.</p><p>만약, 개발이 자신에게 맞지 않다면 과감하게 다른 길로 가는 게 좋다고 생각합니다.</p><br> <p>마지막으로 영상 하나 첨부하고, 오늘의 아카이브는 이것으로 마치도록 하겠습니다.</p><p><strong>개발</strong>이라는 것에 대해 한 번 제대로 생각하는 계기가 되었으면 하는 바람입니다.</p><div class="video-container"><iframe src="https://www.youtube.com/embed/OHbI7u32iyY" frameborder="0" loading="lazy" allowfullscreen></iframe></div>]]></content:encoded>
-      
-      
-      <category domain="https://MGS-95.github.io/categories/Memo/">Memo</category>
-      
-      
-      <category domain="https://MGS-95.github.io/tags/memo/">memo</category>
-      
-      <category domain="https://MGS-95.github.io/tags/youtube/">youtube</category>
-      
-      <category domain="https://MGS-95.github.io/tags/%EB%82%B4-%EC%83%9D%EA%B0%81/">내 생각</category>
-      
-      <category domain="https://MGS-95.github.io/tags/%EB%B9%84%EC%A0%84%EA%B3%B5/">비전공</category>
-      
-      <category domain="https://MGS-95.github.io/tags/%EB%B9%84%EC%A0%84%EA%B3%B5-%EA%B0%9C%EB%B0%9C%EC%9E%90/">비전공 개발자</category>
-      
-      <category domain="https://MGS-95.github.io/tags/%EA%B5%AD%EB%B9%84-%EC%A7%80%EC%9B%90/">국비 지원</category>
-      
-      
-      <comments>https://mgs-95.github.io/2022/09/28/2021-10-03-007-memo/#disqus_thread</comments>
-      
-    </item>
-    
-    <item>
-      <title>첫 투고</title>
-      <link>https://mgs-95.github.io/2022/09/28/2021-09-04-001-hello-world/</link>
-      <guid>https://mgs-95.github.io/2022/09/28/2021-09-04-001-hello-world/</guid>
-      <pubDate>Wed, 28 Sep 2022 12:57:15 GMT</pubDate>
-      
-      <description>&lt;hr&gt;&lt;br&gt;
-
-&lt;h3 id=&quot;한-번-마음-잡고-깃-블로그를-운영하고자-합니다&quot;&gt;&lt;a href=&quot;#한-번-마음-잡고-깃-블로그를-운영하고자-합니다&quot; class=&quot;headerlink&quot; title=&quot;한 번 마음 잡고 깃 블로그를 운영하고자 합니다.&quot;&gt;&lt;/a&gt;&lt;strong&gt;한 번 마음 잡고 깃 블로그를 운영하고자 합니다.&lt;/strong&gt;&lt;/h3&gt;</description>
-      
-      
-      
-      <content:encoded><![CDATA[<hr><br><h3 id="한-번-마음-잡고-깃-블로그를-운영하고자-합니다"><a href="#한-번-마음-잡고-깃-블로그를-운영하고자-합니다" class="headerlink" title="한 번 마음 잡고 깃 블로그를 운영하고자 합니다."></a><strong>한 번 마음 잡고 깃 블로그를 운영하고자 합니다.</strong></h3><span id="more"></span><br>기타 설정은 물론, 아직 검색엔진조차 제대로 설정하지 않아 구글이나 네이버에 검색도 안되기 때문에,<p>아마 이 글을 보시는 분들은 제 깃허브를 통해 들어오신 분들일 듯 합니다. <del>(국비지원 동기들 보고 있나)</del><br><br><br>거창한 건 없고, 프로필 제목 처럼 제 지식을 간단하게 아카이브로 남기고자 합니다.</p><p>첫 투고이니 간단하게 제 소개를 하자면, </p><blockquote><p><strong>국비지원으로 IT공부를 시작한 비전공자 개발조무사</strong></p></blockquote><p>라고 생각합니다. 비전공자를 비하하는 게 아니라 제 실력이 그렇다는 겁니다.</p><p>사실 이 포스팅도 꽤 고민 끝에 수정하였는데, 다음부터는 착실하게 포스팅 하고자 합니다.</p><p>그럼 다음 게시물부터 본격적으로 시작하겠습니다.</p><p><br><hr></p>]]></content:encoded>
-      
-      
-      <category domain="https://MGS-95.github.io/categories/Memo/">Memo</category>
-      
-      
-      <category domain="https://MGS-95.github.io/tags/memo/">memo</category>
-      
-      <category domain="https://MGS-95.github.io/tags/%E5%88%9D%E5%BF%83%E8%80%85/">初心者</category>
-      
-      <category domain="https://MGS-95.github.io/tags/%E5%88%9D%E6%8A%95%E7%A8%BF/">初投稿</category>
-      
-      <category domain="https://MGS-95.github.io/tags/%EC%B2%AB-%ED%88%AC%EA%B3%A0/">첫 투고</category>
-      
-      <category domain="https://MGS-95.github.io/tags/%EC%B2%AB-%EA%B8%80/">첫 글</category>
-      
-      
-      <comments>https://mgs-95.github.io/2022/09/28/2021-09-04-001-hello-world/#disqus_thread</comments>
-      
-    </item>
-    
-    <item>
       <title>[20211204 기준] Vue3 + Tailwind CSS 프로젝트 생성법</title>
       <link>https://mgs-95.github.io/2021/12/04/2021-12-04-001-how-to-setup-vue3-with-tailwindcss/</link>
       <guid>https://mgs-95.github.io/2021/12/04/2021-12-04-001-how-to-setup-vue3-with-tailwindcss/</guid>
@@ -386,6 +314,45 @@
     </item>
     
     <item>
+      <title>지극히 개인적인 생각</title>
+      <link>https://mgs-95.github.io/2021/10/03/2021-10-03-007-memo/</link>
+      <guid>https://mgs-95.github.io/2021/10/03/2021-10-03-007-memo/</guid>
+      <pubDate>Sun, 03 Oct 2021 14:11:45 GMT</pubDate>
+      
+      <description>&lt;hr&gt;&lt;br&gt;
+
+&lt;p&gt;&lt;strong&gt;보는 관점에 따라 민감한 내용이 담겨 있습니다.&lt;/strong&gt;&lt;/p&gt;
+&lt;br&gt;
+
+&lt;blockquote&gt;
+&lt;h3 id=&quot;개발자가-너무-많다&quot;&gt;&lt;a href=&quot;#개발자가-너무-많다&quot; class=&quot;headerlink&quot; title=&quot;개발자가 너무 많다&quot;&gt;&lt;/a&gt;&lt;em&gt;&lt;strong&gt;개발자가 너무 많다&lt;/strong&gt;&lt;/em&gt;&lt;/h3&gt;&lt;/blockquote&gt;</description>
+      
+      
+      
+      <content:encoded><![CDATA[<hr><br><p><strong>보는 관점에 따라 민감한 내용이 담겨 있습니다.</strong></p><br><blockquote><h3 id="개발자가-너무-많다"><a href="#개발자가-너무-많다" class="headerlink" title="개발자가 너무 많다"></a><em><strong>개발자가 너무 많다</strong></em></h3></blockquote><span id="more"></span><br><p>최근 유튜브 추천 영상으로 비전공으로 IT회사에 취업한 사람들의 Vlog나,<br><br>그런 분들의 지식 공유 영상이 뜨면서 꽤 많이 보게 되었는데,<br><br>우선 대부분의 비전공자 분들은 저와 같이 웹쪽으로 취업을 하신 것 같아 보였습니다.<br><br>사실 웹이 입문하기엔 가장 쉽다고도 하고, 실제로도 다른 소프트웨어 엔지니어 대비 자신이 만든 결과물을 빠르게 볼 수 있기도 해서 흥미를 붙이기에는 좋은 분야인 듯 합니다.</p><br><p><u>하지만</u></p><br><p>입문이 쉽다는 거지, 입문 후 배워야 할 내용은 다른 분야랑 차이가 없습니다.<br> 심하면 다른 IT분야보다 더 배워야 합니다.</p><p>그럼에도 불구하고 유튜브에 영상을 올리시는 중소기업에 취직하신</p><p>비전공자 분들이 올리신 영상 중, 꽤 많은 영상들이</p><p>단지 회사 생활에서 기존의 자신이 배웠던 것만 쓰고 마는, </p><p>어찌보면 기계적인 일처리를 하고 있는 것 같아 보였습니다.</p><p><br><br></p><p>몇몇 사람들은 IT에서 일하는 사람들을 이렇게 나누기도 합니다.</p><blockquote><p>그냥 컴퓨터 언어(=코드)를 사용할 줄 아는 코더와,<br>프로그램을 위해 코드를 사용하는 프로그래머와,<br>실제 소프트웨어를 만드는 디벨로퍼, 즉 개발자가 있다.</p><p>보통은 코더, 프로그래머 혹은 코더, 개발자 이렇게 2가지 종류로 나눈다. </p></blockquote><p>그리고 인터넷에서는 ‘<em>비전공자 국비지원은 코더로 양산된다</em>‘ 라고도 합니다.</p><p>얼추 맞는 이야기이긴 합니다. 저도 비전공자이고, 실제로 코더가 된 사람들도 경험했습니다.</p><p>심지어는 단기간으로 웹을 배운 비전공자 출신들이 은어적으로 ‘<strong>웹싸개</strong>‘ 라고 불리기도 합니다.</p><hr><p><img src="/img/2021-10-04/001/001.png" alt="구글에 웹싸개라고 검색한 결과" title="대체 텍스트"></p><hr><br><p>사실 저도 할 말은 없습니다. 저도 지금은 웹싸개나 다름 없는 신세라고 생각하거든요.</p><p>그렇기 때문에 끊임없이 새로운 기술을 익히고, 더더욱 폭 넓은 정보를 익혀야 한다고 생각합니다.</p><br><p>우리와 같은 비전공자 노베이스를 취직 시켜준 회사도 바보가 아닌 이상, 취직에는 이유가 있습니다.</p><blockquote><p>자신이 만약 국비 지원을 다니는데, 국비 지원에서의 취업 연계로 취업하였다면<br>취업을 댓가로 학교와 학원이 이득을 보는 구조이고,</p><p>스스로 찾아서 취업을 하였다 하여도, 자신의 실력이 취업할 실력이 아님에도 되었다면,<br>그 회사는 단지 ‘<strong>웹싸개</strong>‘를 원하는 곳일 뿐입니다.</p></blockquote><p>비전공자들은 대부분은 규모 있는 IT기업에는 취업하지 못합니다.</p><br><p>이전에 모 대기업 게임회사의 AI부서에서 아르바이트를 한 적이 있었는데,<br>해당 부서의 모든 직원분들은 전공자에, 심지어 대부분이 이쪽 분야의 대학원을 졸업하신 분들이었습니다.<br>이는 웹쪽도 마찬가지였습니다.</p><p>비전공자가 입사하기 위해 시도 할 수 있는 방법으로는 ‘<u>경력직으로 입사</u>‘ 밖에는 없는 셈입니다.</p><p>물론 그것도 경력을 채울 때까지 꾸준히 폭 넓고, 깊은 공부를 해야 가능한 이야기죠.</p><p><br><br><br></p><hr><p>제가 제 자신을 포함해서 비전공자 분들에게 말씀드리고 싶은 것은 딱 하나입니다.</p><blockquote><p>취미를 적는 란에 개발이라고 쓸 정도의 마인드를 가지세요. 코딩이 아니라 개발이요.</p></blockquote><p>물론 코딩도 중요하지만, 코딩만 한다면 그건 <a href="http://channy.creation.net/blog/557">코드 몽키</a>와 다를 게 없다고 생각합니다.</p><p>끊임 없이 새로운 기술을 익히고, </p><p>전체적인 개발 프로세스에 대한 공부를 취미로 둘 정도가 되어야 한다는 것입니다.</p><br><p>개발자는 카페에서 여유롭게 노트북 켜놓고 코딩하는, </p><p>비전공자가 보기엔 멋있을 수도 있는 모습은 진정 개발자의 모습이 아닙니다.</p><br><p>특히 4년, 혹은 그 이상의 시간을 IT공부를 한 전공자에 비해 </p><p>1년도 안되는 기간에 배운 지식은 턱 없이 부족합니다. 정말 부족해요.</p><br><p>배우는 기관에 따라 다르지만 제가 배운 기관 기준으로 말씀드리면,</p><p>Java를 배웠고, Spring을 배웠고, 게시판 CRUD 구현하였고, 정보처리기사 자격증 강의도 들어, 총 7개월 정도 교육을 들었습니다.</p><p>조금 더 붙이면 RDBMS사용법도 좀 배우고, 웹에서는 JS, JS의 라이브러리들을 배웠습니다.</p><br><p>배우는 7개월 동안, 그것도 많다고 느껴졌는데, <strong>막상 회사를 들어가니 그게 아니었습니다.</strong></p><blockquote><p>서버에 대한 지식을 익히기 위해 리눅스를 배워야 했고, </p><p>협업을 하기 위해 여러 협업 툴을 다루는 법을 익혀야 했고,</p><p>테스트 주도 개발을 위해 테스트에 대한 전반적이면서 심도있는 지식을 익혀야 했고,</p><p>프론트엔드 프레임워크 및 라이브러리의 넘쳐나는 최신 기술들을 익혀야 했고,</p><p>다른 언어 기반의 프레임워크로 생성한 백엔드의 구조도 알아야 했습니다.</p></blockquote><p>심지어 저는 일본 회사이기에 사양서는 수십, 수백개가 넘는 문서는 일본어로 되어 있습니다.</p><p>그리고 위의 배워야 하는 기술 및 개념은 아직 현재 진행형으로 추가되고 있습니다.</p><p><u>그렇기 때문에 이 블로그에서 간략하게 제가 배운 지식을 기록으로 남기고자 하려는 것입니다.</u></p><p><br><br><br></p><hr><p>약간 다른 이야기지만, 아는 분 중 어떤 개발자 분이 이런 말씀을 하셨습니다.</p><blockquote><p>개발자는 항상 더 나은 코드를 생각해야 한다.</p></blockquote><p>사실 이것도 다들 아는 말입니다. 클린 코드를 지향해야 한다는 건 </p><p>웬만큼 배운 분들이면 다들 압니다. 그렇지만 실천하기엔 힘들죠.</p><p>그럼에도 해야 합니다. 그렇게 해야 이 업계에서 살아남는다고 생각합니다.</p><p>개발자는 끊임없이 고민하고, 공부해야한다는 의미입니다.</p><br><p>다시 유튜브의 이야기로 돌아오자면, 비전공자분들께서 나름대로 열심히 노력하셔서 취업하시고,</p><p>자신들의 일상을 단지 보여주는 영상에서, 일적인 부분은 컨텐츠적인 요소이다. 라고 보면</p><p>사실 이렇게까지 길게 쓸 필요는 없긴 합니다.</p><br><p>다만, 영상만 봤을 때는 그저 <strong>코더의 모습만 보이는 듯 하여</strong> 이렇게 포스팅을 하게 되었습니다.</p><p>만약, 개발이 자신에게 맞지 않다면 과감하게 다른 길로 가는 게 좋다고 생각합니다.</p><br> <p>마지막으로 영상 하나 첨부하고, 오늘의 아카이브는 이것으로 마치도록 하겠습니다.</p><p><strong>개발</strong>이라는 것에 대해 한 번 제대로 생각하는 계기가 되었으면 하는 바람입니다.</p><div class="video-container"><iframe src="https://www.youtube.com/embed/OHbI7u32iyY" frameborder="0" loading="lazy" allowfullscreen></iframe></div>]]></content:encoded>
+      
+      
+      <category domain="https://MGS-95.github.io/categories/Memo/">Memo</category>
+      
+      
+      <category domain="https://MGS-95.github.io/tags/memo/">memo</category>
+      
+      <category domain="https://MGS-95.github.io/tags/youtube/">youtube</category>
+      
+      <category domain="https://MGS-95.github.io/tags/%EB%82%B4-%EC%83%9D%EA%B0%81/">내 생각</category>
+      
+      <category domain="https://MGS-95.github.io/tags/%EB%B9%84%EC%A0%84%EA%B3%B5/">비전공</category>
+      
+      <category domain="https://MGS-95.github.io/tags/%EB%B9%84%EC%A0%84%EA%B3%B5-%EA%B0%9C%EB%B0%9C%EC%9E%90/">비전공 개발자</category>
+      
+      <category domain="https://MGS-95.github.io/tags/%EA%B5%AD%EB%B9%84-%EC%A7%80%EC%9B%90/">국비 지원</category>
+      
+      
+      <comments>https://mgs-95.github.io/2021/10/03/2021-10-03-007-memo/#disqus_thread</comments>
+      
+    </item>
+    
+    <item>
       <title>추천 사이트 - IT 정보</title>
       <link>https://mgs-95.github.io/2021/10/03/2021-10-03-006-recommend-url/</link>
       <guid>https://mgs-95.github.io/2021/10/03/2021-10-03-006-recommend-url/</guid>
@@ -614,6 +581,39 @@
       
       
       <comments>https://mgs-95.github.io/2021/09/04/2021-09-04-002-install-hexo/#disqus_thread</comments>
+      
+    </item>
+    
+    <item>
+      <title>첫 투고</title>
+      <link>https://mgs-95.github.io/2021/09/04/2021-09-04-001-hello-world/</link>
+      <guid>https://mgs-95.github.io/2021/09/04/2021-09-04-001-hello-world/</guid>
+      <pubDate>Sat, 04 Sep 2021 06:17:42 GMT</pubDate>
+      
+      <description>&lt;hr&gt;&lt;br&gt;
+
+&lt;h3 id=&quot;한-번-마음-잡고-깃-블로그를-운영하고자-합니다&quot;&gt;&lt;a href=&quot;#한-번-마음-잡고-깃-블로그를-운영하고자-합니다&quot; class=&quot;headerlink&quot; title=&quot;한 번 마음 잡고 깃 블로그를 운영하고자 합니다.&quot;&gt;&lt;/a&gt;&lt;strong&gt;한 번 마음 잡고 깃 블로그를 운영하고자 합니다.&lt;/strong&gt;&lt;/h3&gt;</description>
+      
+      
+      
+      <content:encoded><![CDATA[<hr><br><h3 id="한-번-마음-잡고-깃-블로그를-운영하고자-합니다"><a href="#한-번-마음-잡고-깃-블로그를-운영하고자-합니다" class="headerlink" title="한 번 마음 잡고 깃 블로그를 운영하고자 합니다."></a><strong>한 번 마음 잡고 깃 블로그를 운영하고자 합니다.</strong></h3><span id="more"></span><br>기타 설정은 물론, 아직 검색엔진조차 제대로 설정하지 않아 구글이나 네이버에 검색도 안되기 때문에,<p>아마 이 글을 보시는 분들은 제 깃허브를 통해 들어오신 분들일 듯 합니다. <del>(국비지원 동기들 보고 있나)</del><br><br><br>거창한 건 없고, 프로필 제목 처럼 제 지식을 간단하게 아카이브로 남기고자 합니다.</p><p>첫 투고이니 간단하게 제 소개를 하자면, </p><blockquote><p><strong>국비지원으로 IT공부를 시작한 비전공자 개발조무사</strong></p></blockquote><p>라고 생각합니다. 비전공자를 비하하는 게 아니라 제 실력이 그렇다는 겁니다.</p><p>사실 이 포스팅도 꽤 고민 끝에 수정하였는데, 다음부터는 착실하게 포스팅 하고자 합니다.</p><p>그럼 다음 게시물부터 본격적으로 시작하겠습니다.</p><p><br><hr></p>]]></content:encoded>
+      
+      
+      <category domain="https://MGS-95.github.io/categories/Memo/">Memo</category>
+      
+      
+      <category domain="https://MGS-95.github.io/tags/memo/">memo</category>
+      
+      <category domain="https://MGS-95.github.io/tags/%E5%88%9D%E5%BF%83%E8%80%85/">初心者</category>
+      
+      <category domain="https://MGS-95.github.io/tags/%E5%88%9D%E6%8A%95%E7%A8%BF/">初投稿</category>
+      
+      <category domain="https://MGS-95.github.io/tags/%EC%B2%AB-%ED%88%AC%EA%B3%A0/">첫 투고</category>
+      
+      <category domain="https://MGS-95.github.io/tags/%EC%B2%AB-%EA%B8%80/">첫 글</category>
+      
+      
+      <comments>https://mgs-95.github.io/2021/09/04/2021-09-04-001-hello-world/#disqus_thread</comments>
       
     </item>
     

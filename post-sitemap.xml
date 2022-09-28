@@ -9,6 +9,22 @@
 
 
     <url>
+        <loc>https://MGS-95.github.io/2021/09/04/2021-09-04-001-hello-world/</loc>
+        <lastmod>2022-09-28T14:18:13.249Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://MGS-95.github.io/2021/10/03/2021-10-03-007-memo/</loc>
+        <lastmod>2022-09-28T14:17:21.576Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
         <loc>https://MGS-95.github.io/2022/09/28/2022-09-28-001-aws-code-whisperer/</loc>
         <lastmod>2022-09-28T14:13:53.957Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -33,7 +49,7 @@
     </url>
 
     <url>
-        <loc>https://MGS-95.github.io/2022/09/28/2021-10-03-007-memo/</loc>
+        <loc>https://MGS-95.github.io/2021/10/09/2021-10-09-001-how-does-javascript-work-in-browser/</loc>
         <lastmod>2022-09-28T12:57:15.810Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -49,23 +65,7 @@
     </url>
 
     <url>
-        <loc>https://MGS-95.github.io/2021/10/09/2021-10-09-001-how-does-javascript-work-in-browser/</loc>
-        <lastmod>2022-09-28T12:57:15.810Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
         <loc>https://MGS-95.github.io/2021/10/09/2021-10-09-002-describe-redux/</loc>
-        <lastmod>2022-09-28T12:57:15.810Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://MGS-95.github.io/2021/10/09/2021-10-09-003-web-storage/</loc>
         <lastmod>2022-09-28T12:57:15.810Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -81,8 +81,8 @@
     </url>
 
     <url>
-        <loc>https://MGS-95.github.io/2022/09/28/2021-09-04-001-hello-world/</loc>
-        <lastmod>2022-09-28T12:57:15.809Z</lastmod>
+        <loc>https://MGS-95.github.io/2021/10/09/2021-10-09-003-web-storage/</loc>
+        <lastmod>2022-09-28T12:57:15.810Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
@@ -90,22 +90,6 @@
 
     <url>
         <loc>https://MGS-95.github.io/2021/09/04/2021-09-04-002-install-hexo/</loc>
-        <lastmod>2022-09-28T12:57:15.809Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://MGS-95.github.io/2021/10/03/2021-10-03-002-add-dark-theme-in-icarus/</loc>
-        <lastmod>2022-09-28T12:57:15.809Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://MGS-95.github.io/2021/10/03/2021-10-03-003-recommend-video/</loc>
         <lastmod>2022-09-28T12:57:15.809Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -121,7 +105,23 @@
     </url>
 
     <url>
+        <loc>https://MGS-95.github.io/2021/10/03/2021-10-03-003-recommend-video/</loc>
+        <lastmod>2022-09-28T12:57:15.809Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
         <loc>https://MGS-95.github.io/2021/10/03/2021-10-03-004-devops/</loc>
+        <lastmod>2022-09-28T12:57:15.809Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://MGS-95.github.io/2021/10/03/2021-10-03-002-add-dark-theme-in-icarus/</loc>
         <lastmod>2022-09-28T12:57:15.809Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
